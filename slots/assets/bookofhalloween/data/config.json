@@ -1,0 +1,521 @@
+{
+  "common": {
+    "name": "common"
+  },
+
+  "sounds": {
+    "soundPath": "sounds/"
+  },
+
+  "data": {
+    "gameId": "8",
+    "gameName": "Book of Halloween",
+
+    "path": "data/",
+    "configFile": "config.json",
+    "stgConfig": "config_stg.json",
+
+    "width": 130,
+    "height": 155,
+    "columns": 5,
+    "rows": 3,
+
+    "symbols": [
+      {
+        "filename": "symbols/a",
+        "paytable": [0, 4, 40, 200, 500],
+        "texture": null
+      },
+      {
+        "filename": "symbols/b",
+        "paytable": [0, 3, 30, 150, 300],
+        "texture": null
+      },
+      {
+        "filename": "symbols/c",
+        "paytable": [0, 3, 25, 100, 200],
+        "texture": null
+      },
+      {
+        "filename": "symbols/d",
+        "paytable": [0, 0, 20, 75, 150],
+        "texture": null
+      },
+      {
+        "filename": "symbols/e",
+        "paytable": [0, 0, 15, 50, 100],
+        "texture": null
+      },
+      {
+        "filename": "symbols/f",
+        "paytable": [0, 0, 10, 30, 80],
+        "texture": null
+      },
+      {
+        "filename": "symbols/g",
+        "paytable": [0, 0, 5, 20, 60],
+        "texture": null
+      },
+      {
+        "filename": "symbols/s",
+        "paytable": [0, 0, 4, 15, 50],
+        "texture": null
+      },
+      {
+        "filename": "symbols/w",
+        "paytable": [0, 0, 4, 15, 50],
+        "texture": null
+      }
+    ]
+  },
+
+  "desktop": {
+    "prop": {},
+
+    "Background": {
+      "frameId": "background",
+      "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+    },
+
+    "preloader": {
+      "view": {},
+      "bg": { "x": 0, "y": 0, "w": 0, "h": 0, "c": "0x000000" },
+      "logo": { "frameId": "loadingLogo" },
+      "loadingBarBg": { "frameId": "loadingBarBg" },
+      "loadingBarFill": { "frameId": "loadingBarFill" }
+    },
+
+    "IntroScene": {
+      "GameLogo": {
+        "frameId": "logos/gameLogo",
+        "prop": { "x": -5, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      },
+      "continueBtn": {
+        "frameId": "intro/fsContinueBtn",
+        "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      }
+    },
+
+    "GameScene": {
+      "GameLogo": {
+        "frameId": "gameLogo",
+        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+      },
+
+      "Machine": {
+        "view": {
+          "x": 0,
+          "y": 95,
+          "center": 1,
+          "wid": 1370,
+          "hei": 936,
+          "columns": 5,
+          "topGap": 40
+        },
+        "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
+        "reelBg": {
+          "frameId": "reelBg",
+          "isReelsBg": true,
+          "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 }
+        },
+        "reelFrame": {
+          "frameId": "reelFrame",
+          "x": 0,
+          "y": 0,
+          "sx": 1,
+          "sy": 1
+        }
+      },
+
+      "Controls": {
+        "view": { "x": 16, "y": 16, "bottom": 1, "center": 1, "bottomGap": 4 },
+        "bg": { "frameId": "bg", "x": 0, "y": 0 },
+        "spinBtn": {
+          "frameId": "btn",
+          "x": 0,
+          "y": -56,
+          "bottom": 1,
+          "center": 1,
+          "wid": 238,
+          "hei": 238
+        },
+        "maxBet": { "frameId": "bg", "x": 0, "y": 0 },
+        "autoSpinBg": { "frameId": "autoSpin/bg", "x": 0, "y": 0 },
+
+        "providerLogo": {
+          "frameId": "providerLogo",
+          "prop": { "x": 5, "y": 10, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+        },
+        "time": {
+          "txtCode": "",
+          "prop": {
+            "x": 1200,
+            "y": 30,
+            "ax": 0.5,
+            "ay": 0.5,
+            "visible": false
+          },
+          "sty": {
+            "fontSize": 15,
+            "fontFamily": "ProximaNova_Bold",
+            "fontWeight": "bold",
+            "fill": "#FFFFFF",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          }
+        },
+        "menu": {
+          "view": { "x": 0, "y": 0, "bottom": 1, "bGap": 45 },
+          "menuBtn": {
+            "frameId": "menu/bg",
+            "icon": "menu/openIcon",
+            "x": 70,
+            "y": 670,
+            "sx": 1.2, "sy": 1.2,
+            "visible": true
+          },
+          "homeBtn": {
+            "frameId": "menu/bg",
+            "icon": "menu/homeIcon",
+            "x": 1250,
+            "y": 670,
+            "visible": false
+          },
+          "audioBtn": {
+            "name": "audioBtn",
+            "frameId": "menu/bg",
+            "icons": ["menu/audioIcon_on", "menu/audioIcon_off"],
+            "x": 1190,
+            "y": 670,
+            "sx": 1.2, "sy": 1.2,
+            "visible": true
+          },
+          "optionsCtn": [
+            {
+              "name": "infoBtn",
+              "frameId": "options/bg",
+              "icon": "options/infoIcon"
+            },
+            {
+              "name": "settingsBtn",
+              "frameId": "options/bg",
+              "icon": "options/settingsIcon"
+            },
+            {
+              "name": "rulesBtn",
+              "frameId": "options/bg",
+              "icon": "options/rulesIcon"
+            },
+            {
+              "name": "fullscreenBtn",
+              "frameId": "options/bg",
+              "icons": ["options/fullScreenIcon", "options/normalScreenIcon"]
+            }
+          ]
+        },
+        "panel": {
+          "bg": { "frameId": "panel/bg", "wid": 234, "hei": 58 },
+          "txtStyle": {
+            "fontSize": 20,
+            "fontFamily": "ProximaNova_Bold",
+            "fontWeight": "bold",
+            "fill": "#ffffff",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          },
+          "valueStyle": {
+            "fontSize": 30,
+            "fontFamily": "ProximaNova_Bold",
+            "fontWeight": "bold",
+            "fill": "#ffffff",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          },
+
+          "lines": {
+            "txtCode": "LINES",
+            "prop": { "x": 70, "y": 90, "ax": 0.5, "visible": false }
+          },
+          "coins": {
+            "txtCode": "COINVALUE",
+            "prop": { "x": 210, "y": 90, "ax": 0.5, "visible": false }
+          },
+          "balance": {
+            "txtCode": "BALANCE",
+            "prop": { "x": 860, "y": 80, "ax": 0.5, "ay": 0.5 }
+          },
+          "betMinus": {
+            "frameId": "panel/minuIcon",
+            "prop": { "x": 190, "y": 90, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+          },
+          "bet": {
+            "txtCode": "BET",
+            "prop": { "x": 300, "y": 80, "ax": 0.5, "ay": 0.5 }
+          },
+          "betPulse": {
+            "frameId": "panel/pulseIcon",
+            "prop": { "x": 370, "y": 90, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+          },
+          "win": {
+            "txtCode": "WINNING",
+            "prop": { "x": 1060, "y": 80, "ax": 0.5, "ay": 0.5 }
+          },
+
+          "linesValue": {
+            "txtCode": "0",
+            "prop": { "x": 70, "y": 112, "ax": 0.5, "visible": false }
+          },
+          "coinsValue": {
+            "txtCode": "0",
+            "prop": { "x": 210, "y": 112, "ax": 0.5, "visible": false }
+          },
+          "balanceValue": {
+            "txtCode": "$243",
+            "prop": { "x": 860, "y": 112, "ax": 0.5, "ay": 0.5 }
+          },
+
+          "betValue": {
+            "txtCode": "$123",
+            "prop": { "x": 300, "y": 112, "ax": 0.5, "ay": 0.5 }
+          },
+          "winValue": {
+            "txtCode": "0",
+            "prop": { "x": 1060, "y": 112, "ax": 0.5, "ay": 0.5 }
+          }
+        },
+        "spinControl": {
+          "view": {
+            "x": 640,
+            "y": 660,
+            "visible": true
+          },
+          "betBtn": {
+            "name": "betBtn",
+            "frameId": "panel/maxBet/bg",
+            "icon": "panel/maxBet/icon_normal",
+            "x": 60,
+            "y": 30,
+            "visible": false,
+            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
+          },
+          "autoBtn": {
+            "name": "autoBtn",
+            "frameId": "panel/autoSpin/bg",
+            "icons": [
+              "panel/autoSpin/playIcon_normal",
+              "panel/autoSpin/stopIcon_normal"
+            ],
+            "x": -80,
+            "y": 15,
+            "visible": true,
+            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
+          },
+          "quickBtn": {
+            "name": "quickBtn",
+            "frameId": "panel/quickSpin/bg",
+            "icons": [
+              "panel/quickSpin/icon_normal",
+              "panel/quickSpin/icon_normal"
+            ],
+            "x": 80,
+            "y": 15,
+            "visible": true,
+            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
+          },
+          "spinBtn": {
+            "name": "spinBtn",
+            "frameId": "panel/spin/bg",
+            "icons": [
+              "panel/spin/playIcon_normal",
+              "panel/spin/stopIcon_normal"
+            ],
+            "x": 0,
+            "y": 0,
+            "visible": true
+          }
+        }
+      },
+
+      "Overlay": {
+        "Settings": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/settingsIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "name": "settingsTitle",
+            "txtCode": "GAME_SETTINGS",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "ProximaNova_Bold",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          },
+
+          "audio": {
+            "title": {
+              "name": "audioTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 320, "y": 150, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "audioLabel",
+                "txtCode": "AUDIO",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "ProximaNova_Bold",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "audioText",
+              "txtCode": "Volume\nSound Effects\nAmbience Sound",
+              "prop": { "x": 220, "y": 200 },
+              "sty": {
+                "fontFamily": "ProximaNova",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          },
+
+          "options": {
+            "title": {
+              "name": "optionsTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 320, "y": 430, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "optionsLabel",
+                "txtCode": "OPTIONS",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "ProximaNova_Bold",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "optionsTxt",
+              "txtCode": "Quick Spin\nPress space bar to spin/stop",
+              "prop": { "x": 220, "y": 480 },
+              "sty": {
+                "fontFamily": "ProximaNova",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          },
+
+          "autospin": {
+            "title": {
+              "name": "autoSpinTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 800, "y": 150, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "autoSpinLabel",
+                "txtCode": "STOP AUTO SPIN",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "ProximaNova_Bold",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "asOnAnyWinTxt",
+              "txtCode": "On any win\nOn per session win limit of",
+              "prop": { "x": 700, "y": 200 },
+              "sty": {
+                "fontFamily": "ProximaNova",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            },
+            "txt1": {
+              "name": "asOnAnyWinTxt1",
+              "txtCode": "On per session loss limit of",
+              "prop": { "x": 700, "y": 410 },
+              "sty": {
+                "fontFamily": "ProximaNova",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          }
+        },
+
+        "Paytable": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/infoIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "txtCode": "PAYTABLE",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "ProximaNova_Bold",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          },
+
+          "leftArrow": {
+            "frameId": "paytable/arrow/btn",
+            "prop": { "x": 40, "y": 360, "ax": 0.5, "ay": 0.5 }
+          },
+          "rightArrow": {
+            "frameId": "paytable/arrow/btn",
+            "prop": {
+              "x": 1240,
+              "y": 360,
+              "ax": 0.5,
+              "ay": 0.5,
+              "sx": -1,
+              "sy": 1
+            }
+          }
+        },
+
+        "Rules": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/rulesIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "txtCode": "RULES",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "ProximaNova_Bold",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          }
+        }
+      }
+    }
+  }
+}
