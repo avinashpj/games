@@ -166,15 +166,24 @@
           }
         },
         "menu": {
-          "view": { "x": 0, "y": 675, "bottom": 1, "bGap": 45 },
+          "view": { "x": 0, "y": 650, "bottom": 1, "bGap": 0 },
           "menuBtn": {
-            "frameId": "menu/bg",
-            "icon": "menu/openIcon",
+            "frameId": "menu/openIcon",
+            "icon": "",
             "x": 70,
-            "y": 0,
+            "y": 20,
             "sx": 1,
             "sy": 1,
             "visible": true
+          },
+          "menuCloseBtn": {
+            "frameId": "menu/closeIcon",
+            "icon": "",
+            "x": 70,
+            "y": 20,
+            "sx": 1,
+            "sy": 1,
+            "visible": false
           },
           "homeBtn": {
             "frameId": "menu/bg",
@@ -183,37 +192,39 @@
             "y": 0,
             "visible": false
           },
-          "audioBtn": {
-            "name": "audioBtn",
-            "frameId": "menu/bg",
-            "icons": ["menu/audioIcon_on", "menu/audioIcon_off"],
-            "x": 1190,
-            "y": 0,
+          "muteBtn": {
+            "name": "muteIcon",
+            "frameId": "options/muteIcon",
+            "icon": "",
+            "x": 1210,
+            "y": 20,
+            "sx": 1,
+            "sy": 1,
+            "visible": true
+          },
+          "unmuteBtn": {
+            "name": "unmuteIcon",
+            "frameId": "options/unmuteIcon",
+            "icon": "",            
+            "x": 1210,
+            "y": 20,
             "sx": 1,
             "sy": 1,
             "visible": true
           },
           "optionsCtn": [
             {
-              "name": "infoBtn",
-              "frameId": "options/bg",
-              "icon": "options/infoIcon"
+              "name": "infoIcon",
+              "frameId": "options/infoIcon",
+              "icon": "",
+               "x": 0, "y": 0, "ax": 0.5, "ay": 0.5,"visible": true
             },
             {
-              "name": "settingsBtn",
-              "frameId": "options/bg",
-              "icon": "options/settingsIcon"
-            },
-            {
-              "name": "rulesBtn",
-              "frameId": "options/bg",
-              "icon": "options/rulesIcon"
-            },
-            {
-              "name": "fullscreenBtn",
-              "frameId": "options/bg",
-              "icons": ["options/fullScreenIcon", "options/normalScreenIcon"]
-            }
+              "name": "settingIcon",
+              "frameId": "options/settingIcon",
+              "icon": "",
+               "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true
+            }            
           ]
         },
         "panel": {
@@ -621,51 +632,80 @@
         "menu": {
           "view": { "x": 0, "y": 0, "bottom": 1, "bGap": 45 },
           "menuBtn": {
-            "frameId": "menu/bg",
-            "icon": "menu/openIcon",
+            "frameId": "menu/openIcon",
+            "icon": "",
+            "x": 30,
+            "y": 0,
+            "sx": 0.8,
+            "sy": 0.8,
+            "visible": true
+          },
+          "menuCloseBtn": {
+            "frameId": "menu/closeIcon",
+            "icon": "",
             "x": 30,
             "y": 0,
             "sx": 1,
             "sy": 1,
-            "visible": true
+            "visible": false
           },
           "homeBtn": {
             "frameId": "menu/bg",
             "icon": "menu/homeIcon",
-            "x": 0,
-            "y": 0,
+            "x": 0.8,
+            "y": 0.8,
             "visible": false
           },
-          "audioBtn": {
-            "name": "audioBtn",
-            "frameId": "menu/bg",
-            "icons": ["menu/audioIcon_on", "menu/audioIcon_off"],
+          "muteBtn": {
+            "name": "muteIcon",
+            "frameId": "options/muteIcon",
+            "icon": "",
             "x": 0,
             "y": 0,
-            "sx": 1,
-            "sy": 1,
+            "sx": 0.8,
+            "sy": 0.8,
+            "visible": true
+          },
+          "unmuteBtn": {
+            "name": "unmuteIcon",
+            "frameId": "options/unmuteIcon",
+            "icon": "",
+            "x": 0,
+            "y": 0,
+            "sx": 0.8,
+            "sy": 0.8,
+            "visible": true
+          },
+          "audioBtn": {
+            "name": "unmuteIcon",
+            "frameId": "menu/unmuteIcon",
+            "icons": ["menu/unmuteIcon", "menu/muteIcon"],
+            "x": 0,
+            "y": 0,
+            "sx": 0.8,
+            "sy": 0.8,
             "visible": true
           },
           "optionsCtn": [
             {
-              "name": "infoBtn",
-              "frameId": "options/bg",
-              "icon": "options/infoIcon"
+              "name": "infoIcon",
+              "frameId": "options/infoIcon",
+              "icon": "",
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
             },
             {
-              "name": "settingsBtn",
-              "frameId": "options/bg",
-              "icon": "options/settingsIcon"
-            },
-            {
-              "name": "rulesBtn",
-              "frameId": "options/bg",
-              "icon": "options/rulesIcon"
-            },
-            {
-              "name": "fullscreenBtn",
-              "frameId": "options/bg",
-              "icons": ["options/fullScreenIcon", "options/normalScreenIcon"]
+              "name": "settingIcon",
+              "frameId": "options/settingIcon",
+              "icon": "",
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
             }
           ]
         },
@@ -714,12 +754,12 @@
 
           "balance": {
             "txtCode": "BALANCE",
-            "prop": { "x": 70, "y": 110, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 12, "y": 100, "ax": 0, "ay": 0.5 }
           },
 
           "win": {
             "txtCode": "WINNING",
-            "prop": { "x": 0, "y": 110, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 0, "y": 100, "ax": 1, "ay": 0.5 }
           },
 
           "linesValue": {
@@ -738,12 +778,12 @@
 
           "balanceValue": {
             "txtCode": "$243",
-            "prop": { "x": 70, "y": 130, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 12, "y": 120, "ax": 0, "ay": 0.5 }
           },
 
           "winValue": {
             "txtCode": "0",
-            "prop": { "x": 0, "y": 130, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 0, "y": 120, "ax": 1, "ay": 0.5 }
           }
         },
         "spinControl": {
