@@ -715,7 +715,7 @@
             "letterSpacing": 1
           },
           "valueStyle": {
-            "fontSize": 20,
+            "fontSize": 18,
             "fontFamily": "ProximaNova_Bold",
             "fontWeight": "bold",
             "fill": "#ffffff",
@@ -796,25 +796,24 @@
             "visible": false,
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
-          "autoBtn": {
+          "autoPlayBtn": {
             "name": "autoBtn",
-            "frameId": "panel/autoSpin/bg",
-            "icons": [
-              "panel/autoSpin/playIcon_normal",
-              "panel/autoSpin/stopIcon_normal"
-            ],
-            "x": -80,
-            "y": 15,
-            "visible": true,
+            "frameId": "panel/autoSpin/playIcon",
+            "icon":"",
+            "prop": { "x": -80, "y": 15,"ax": 0.5, "ay": 0.5,  "visible": true},
+            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
+          },
+           "autoStopBtn": {
+            "name": "autoBtn",
+            "frameId": "panel/autoSpin/stopIcon",
+            "icon":"",
+            "prop": { "x": -80, "y": 15,"ax": 0.5, "ay": 0.5,  "visible": true},
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
           "quickBtn": {
             "name": "quickBtn",
-            "frameId": "panel/quickSpin/bg",
-            "icons": [
-              "panel/quickSpin/icon_normal",
-              "panel/quickSpin/icon_normal"
-            ],
+            "frameId": "panel/quickSpin/icon",
+            "icon": "",
             "x": 80,
             "y": 15,
             "visible": true,
