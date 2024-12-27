@@ -725,8 +725,8 @@
           ]
         },
         "panel": {
-          "portraitBg": { "frameId": "panel/portrait_bg", "prop":{  "x":0, "y":-640, "wid": 0, "hei": 0 } },
-          "bg": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
+          "portraitBg": { "frameId": "panel/bgPort", "prop":{  "x":0, "y":-640, "wid": 0, "hei": 0 } },
+          "bg": { "frameId": "panel/bgLand", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
           "txtStyle": {
             "fontSize": 12,
             "fontFamily": "regularFont",

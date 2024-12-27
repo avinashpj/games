@@ -200,6 +200,22 @@
 	"spriteSourceSize": {"x":0,"y":8,"w":1280,"h":147},
 	"sourceSize": {"w":1280,"h":155}
 },
+"panel/bgLand":
+{
+	"frame": {"x":1,"y":1,"w":1280,"h":147},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":8,"w":1280,"h":147},
+	"sourceSize": {"w":1280,"h":155}
+},
+"panel/bgPort":
+{
+	"frame": {"x":150,"y":1,"w":720,"h":602},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":38,"w":720,"h":602},
+	"sourceSize": {"w":720,"h":640}
+},
 "panel/minuIcon_disabled":
 {
 	"frame": {"x":237,"y":767,"w":42,"h":42},
@@ -231,14 +247,6 @@
 	"trimmed": true,
 	"spriteSourceSize": {"x":4,"y":4,"w":42,"h":42},
 	"sourceSize": {"w":50,"h":50}
-},
-"panel/portrait_bg":
-{
-	"frame": {"x":150,"y":1,"w":720,"h":602},
-	"rotated": true,
-	"trimmed": true,
-	"spriteSourceSize": {"x":0,"y":38,"w":720,"h":602},
-	"sourceSize": {"w":720,"h":640}
 },
 "panel/pulseIcon_disabled":
 {
@@ -311,6 +319,6 @@
 	"format": "RGBA8888",
 	"size": {"w":753,"h":1282},
 	"scale": "1.0",
-	"smartupdate": "$TexturePacker:SmartUpdate:5505adf9d8a1fcb2c3bdd60f010a12d1:08ae20e0419f7f2b7ddc8ea1559f015a:cb9f03a401df2378315ab738073c6f7d$"
+	"smartupdate": "$TexturePacker:SmartUpdate:844d441210747d1ddb832a789d2e0ee0:0bf6f98d265b29802731a2a56308aa94:cb9f03a401df2378315ab738073c6f7d$"
 }
 }
