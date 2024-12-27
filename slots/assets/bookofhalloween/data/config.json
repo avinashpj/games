@@ -2,7 +2,7 @@
   "common": {
     "name": "common"
   },
-
+  
   "sounds": {
     "soundPath": "sounds/"
   },
@@ -158,7 +158,7 @@
           },
           "sty": {
             "fontSize": 15,
-            "fontFamily": "ProximaNova_Bold",
+            "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#FFFFFF",
             "stroke": { "color": "#391400", "width": 5, "join": "round" },
@@ -205,7 +205,7 @@
           "unmuteBtn": {
             "name": "unmuteIcon",
             "frameId": "options/unmuteIcon",
-            "icon": "",            
+            "icon": "",
             "x": 1210,
             "y": 20,
             "sx": 1,
@@ -217,29 +217,37 @@
               "name": "infoIcon",
               "frameId": "options/infoIcon",
               "icon": "",
-               "x": 0, "y": 0, "ax": 0.5, "ay": 0.5,"visible": true
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
             },
             {
               "name": "settingIcon",
               "frameId": "options/settingIcon",
               "icon": "",
-               "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true
-            }            
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            }
           ]
         },
         "panel": {
-          "bg": { "frameId": "panel/bg", "wid": 234, "hei": 58 },
+          "bg": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 }},
           "txtStyle": {
-            "fontSize": 20,
-            "fontFamily": "ProximaNova_Bold",
+            "fontSize": 12,
+            "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
             "stroke": { "color": "#391400", "width": 5, "join": "round" },
             "letterSpacing": 1
           },
           "valueStyle": {
-            "fontSize": 30,
-            "fontFamily": "ProximaNova_Bold",
+            "fontSize": 25,
+            "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
             "stroke": { "color": "#391400", "width": 5, "join": "round" },
@@ -256,45 +264,45 @@
           },
           "balance": {
             "txtCode": "BALANCE",
-            "prop": { "x": 860, "y": 80, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 860, "y": -75, "ax": 0.5, "ay": 0.5 }
           },
           "betMinus": {
             "frameId": "panel/minuIcon",
-            "prop": { "x": 190, "y": 90, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+            "prop": { "x": 210, "y": -48, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
           },
           "bet": {
             "txtCode": "BET",
-            "prop": { "x": 300, "y": 80, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 300, "y": -75, "ax": 0.5, "ay": 0.5 }
           },
           "betPulse": {
             "frameId": "panel/pulseIcon",
-            "prop": { "x": 370, "y": 90, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+            "prop": { "x": 390, "y": -48, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
           },
           "win": {
             "txtCode": "WINNING",
-            "prop": { "x": 1060, "y": 80, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 1060, "y": -75, "ax": 0.5, "ay": 0.5 }
           },
 
           "linesValue": {
             "txtCode": "0",
-            "prop": { "x": 70, "y": 112, "ax": 0.5, "visible": false }
+            "prop": { "x": 70, "y": -48, "ax": 0.5, "visible": false }
           },
           "coinsValue": {
             "txtCode": "0",
-            "prop": { "x": 210, "y": 112, "ax": 0.5, "visible": false }
+            "prop": { "x": 210, "y": -48, "ax": 0.5, "visible": false }
           },
           "balanceValue": {
             "txtCode": "$243",
-            "prop": { "x": 860, "y": 112, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 860, "y": -48, "ax": 0.5, "ay": 0.5 }
           },
 
           "betValue": {
             "txtCode": "$123",
-            "prop": { "x": 300, "y": 112, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 300, "y": -48, "ax": 0.5, "ay": 0.5 }
           },
           "winValue": {
             "txtCode": "0",
-            "prop": { "x": 1060, "y": 112, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 1060, "y": -48, "ax": 0.5, "ay": 0.5 }
           }
         },
         "spinControl": {
@@ -311,15 +319,27 @@
           "autoPlayBtn": {
             "name": "autoBtn",
             "frameId": "panel/autoSpin/playIcon",
-            "icon":"",
-            "prop": { "x": -80, "y": 15,"ax": 0.5, "ay": 0.5,  "visible": true},
+            "icon": "",
+            "prop": {
+              "x": -80,
+              "y": 10,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            },
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
           "autoStopBtn": {
             "name": "autoBtn",
             "frameId": "panel/autoSpin/stopIcon",
-            "icon":"",
-            "prop": { "x": -80, "y": 15,"ax": 0.5, "ay": 0.5,  "visible": true},
+            "icon": "",
+            "prop": {
+              "x": -80,
+              "y": 10,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            },
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
           "quickBtn": {
@@ -327,7 +347,7 @@
             "frameId": "panel/quickSpin/icon",
             "icon": "",
             "x": 80,
-            "y": 15,
+            "y": 10,
             "visible": true,
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
@@ -357,7 +377,7 @@
             "txtCode": "GAME_SETTINGS",
             "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
             "sty": {
-              "fontFamily": "ProximaNova_Bold",
+              "fontFamily": "regularFont",
               "fontSize": 50,
               "fill": "#FFFFFF",
               "align": "left"
@@ -374,7 +394,7 @@
                 "txtCode": "AUDIO",
                 "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
                 "sty": {
-                  "fontFamily": "ProximaNova_Bold",
+                  "fontFamily": "regularFont",
                   "fill": ["#084b6f", "#107b98"],
                   "fontSize": 30,
                   "align": "left",
@@ -387,7 +407,7 @@
               "txtCode": "Volume\nSound Effects\nAmbience Sound",
               "prop": { "x": 220, "y": 200 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -406,7 +426,7 @@
                 "txtCode": "OPTIONS",
                 "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
                 "sty": {
-                  "fontFamily": "ProximaNova_Bold",
+                  "fontFamily": "regularFont",
                   "fill": ["#084b6f", "#107b98"],
                   "fontSize": 30,
                   "align": "left",
@@ -419,7 +439,7 @@
               "txtCode": "Quick Spin\nPress space bar to spin/stop",
               "prop": { "x": 220, "y": 480 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -438,7 +458,7 @@
                 "txtCode": "STOP AUTO SPIN",
                 "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
                 "sty": {
-                  "fontFamily": "ProximaNova_Bold",
+                  "fontFamily": "regularFont",
                   "fill": ["#084b6f", "#107b98"],
                   "fontSize": 30,
                   "align": "left",
@@ -451,7 +471,7 @@
               "txtCode": "On any win\nOn per session win limit of",
               "prop": { "x": 700, "y": 200 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -463,7 +483,7 @@
               "txtCode": "On per session loss limit of",
               "prop": { "x": 700, "y": 410 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -483,7 +503,7 @@
             "txtCode": "PAYTABLE",
             "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
             "sty": {
-              "fontFamily": "ProximaNova_Bold",
+              "fontFamily": "regularFont",
               "fontSize": 50,
               "fill": "#FFFFFF",
               "align": "left"
@@ -517,7 +537,7 @@
             "txtCode": "RULES",
             "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
             "sty": {
-              "fontFamily": "ProximaNova_Bold",
+              "fontFamily": "regularFont",
               "fontSize": 50,
               "fill": "#FFFFFF",
               "align": "left"
@@ -617,7 +637,7 @@
           },
           "sty": {
             "fontSize": 15,
-            "fontFamily": "ProximaNova_Bold",
+            "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#FFFFFF",
             "stroke": { "color": "#391400", "width": 5, "join": "round" },
@@ -705,10 +725,11 @@
           ]
         },
         "panel": {
-          "bg": { "frameId": "panel/bg", "wid": 234, "hei": 58 },
+          "portraitBg": { "frameId": "panel/portrait_bg", "prop":{  "x":0, "y":-640, "wid": 0, "hei": 0 } },
+          "bg": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
           "txtStyle": {
             "fontSize": 12,
-            "fontFamily": "ProximaNova_Bold",
+            "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
             "stroke": { "color": "#391400", "width": 5, "join": "round" },
@@ -716,7 +737,7 @@
           },
           "valueStyle": {
             "fontSize": 18,
-            "fontFamily": "ProximaNova_Bold",
+            "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
             "stroke": { "color": "#391400", "width": 5, "join": "round" },
@@ -734,27 +755,27 @@
 
           "betMinus": {
             "frameId": "panel/minuIcon",
-            "prop": { "x": 100, "y": 50, "sx": 0.8, "sy": 0.8, "ax": 0, "ay": 0 }
+            "prop": { "x": 100, "y": -98, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5 }          
           },
 
           "bet": {
             "txtCode": "BET",
-            "prop": { "x": 0, "y": 40, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 0, "y": -125, "ax": 0.5, "ay": 0.5 }
           },
 
           "betPulse": {
             "frameId": "panel/pulseIcon",
-            "prop": { "x": 230, "y": 50, "sx": 0.8, "sy": 0.8, "ax": 0, "ay": 0 }
+            "prop": { "x": 260, "y": -98, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5}
           },
 
           "balance": {
             "txtCode": "BALANCE",
-            "prop": { "x": 12, "y": 100, "ax": 0, "ay": 0.5 }
+            "prop": { "x": 12, "y": -50, "ax": 0, "ay": 0.5 }
           },
 
           "win": {
             "txtCode": "WINNING",
-            "prop": { "x": 0, "y": 100, "ax": 1, "ay": 0.5 }
+            "prop": { "x": 0, "y": -50, "ax": 1, "ay": 0.5 }
           },
 
           "linesValue": {
@@ -768,17 +789,17 @@
 
           "betValue": {
             "txtCode": "$123",
-            "prop": { "x": 0, "y": 70, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": 0, "y": -98, "ax": 0.5, "ay": 0.5 }
           },
 
           "balanceValue": {
             "txtCode": "$243",
-            "prop": { "x": 12, "y": 120, "ax": 0, "ay": 0.5 }
+            "prop": { "x": 12, "y": -30, "ax": 0, "ay": 0.5 }
           },
 
           "winValue": {
             "txtCode": "0",
-            "prop": { "x": 0, "y": 120, "ax": 1, "ay": 0.5 }
+            "prop": { "x": 0, "y": -30, "ax": 1, "ay": 0.5 }
           }
         },
         "spinControl": {
@@ -799,15 +820,27 @@
           "autoPlayBtn": {
             "name": "autoBtn",
             "frameId": "panel/autoSpin/playIcon",
-            "icon":"",
-            "prop": { "x": -80, "y": 15,"ax": 0.5, "ay": 0.5,  "visible": true},
+            "icon": "",
+            "prop": {
+              "x": -80,
+              "y": 15,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            },
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
-           "autoStopBtn": {
+          "autoStopBtn": {
             "name": "autoBtn",
             "frameId": "panel/autoSpin/stopIcon",
-            "icon":"",
-            "prop": { "x": -80, "y": 15,"ax": 0.5, "ay": 0.5,  "visible": true},
+            "icon": "",
+            "prop": {
+              "x": -80,
+              "y": 15,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            },
             "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
           },
           "quickBtn": {
@@ -845,7 +878,7 @@
             "txtCode": "GAME_SETTINGS",
             "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
             "sty": {
-              "fontFamily": "ProximaNova_Bold",
+              "fontFamily": "regularFont",
               "fontSize": 50,
               "fill": "#FFFFFF",
               "align": "left"
@@ -862,7 +895,7 @@
                 "txtCode": "AUDIO",
                 "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
                 "sty": {
-                  "fontFamily": "ProximaNova_Bold",
+                  "fontFamily": "regularFont",
                   "fill": ["#084b6f", "#107b98"],
                   "fontSize": 30,
                   "align": "left",
@@ -875,7 +908,7 @@
               "txtCode": "Volume\nSound Effects\nAmbience Sound",
               "prop": { "x": 220, "y": 200 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -894,7 +927,7 @@
                 "txtCode": "OPTIONS",
                 "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
                 "sty": {
-                  "fontFamily": "ProximaNova_Bold",
+                  "fontFamily": "regularFont",
                   "fill": ["#084b6f", "#107b98"],
                   "fontSize": 30,
                   "align": "left",
@@ -907,7 +940,7 @@
               "txtCode": "Quick Spin\nPress space bar to spin/stop",
               "prop": { "x": 220, "y": 480 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -926,7 +959,7 @@
                 "txtCode": "STOP AUTO SPIN",
                 "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
                 "sty": {
-                  "fontFamily": "ProximaNova_Bold",
+                  "fontFamily": "regularFont",
                   "fill": ["#084b6f", "#107b98"],
                   "fontSize": 30,
                   "align": "left",
@@ -939,7 +972,7 @@
               "txtCode": "On any win\nOn per session win limit of",
               "prop": { "x": 700, "y": 200 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -951,7 +984,7 @@
               "txtCode": "On per session loss limit of",
               "prop": { "x": 700, "y": 410 },
               "sty": {
-                "fontFamily": "ProximaNova",
+                "fontFamily": "regularFont",
                 "fill": "#FFFFFF",
                 "fontSize": 35,
                 "align": "left",
@@ -971,7 +1004,7 @@
             "txtCode": "PAYTABLE",
             "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
             "sty": {
-              "fontFamily": "ProximaNova_Bold",
+              "fontFamily": "regularFont",
               "fontSize": 50,
               "fill": "#FFFFFF",
               "align": "left"
@@ -1005,7 +1038,7 @@
             "txtCode": "RULES",
             "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
             "sty": {
-              "fontFamily": "ProximaNova_Bold",
+              "fontFamily": "regularFont",
               "fontSize": 50,
               "fill": "#FFFFFF",
               "align": "left"

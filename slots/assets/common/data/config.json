@@ -5,12 +5,12 @@
     "path": "fonts/",
     "fontFamily": [
       {
-        "alias": "ProximaNova_Bold",
-        "src": "ProximaNova_XtraConmdcensedBold.woff"
+        "alias": "regularFont",
+        "src": "Poppins-Bold.woff"
       },
       {
-        "alias": "ProximaNova",
-        "src": "ProximaNova_XtraConmdcensedRegular.woff"
+        "alias": "regularFont",
+        "src": "Poppins-Regular.woff"
       }
     ]
   },
