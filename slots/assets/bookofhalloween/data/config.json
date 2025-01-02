@@ -15,61 +15,23 @@
     "configFile": "config.json",
     "stgConfig": "config_stg.json",
 
-    "width": 130,
-    "height": 155,
-    "columns": 5,
-    "rows": 3,
+    "machine": { "width": 130, "height": 155, "columns": 5, "rows": 3 },
 
     "symbols": [
-      {
-        "filename": "symbols/a",
-        "paytable": [0, 4, 40, 200, 500],
-        "texture": null
-      },
-      {
-        "filename": "symbols/b",
-        "paytable": [0, 3, 30, 150, 300],
-        "texture": null
-      },
-      {
-        "filename": "symbols/c",
-        "paytable": [0, 3, 25, 100, 200],
-        "texture": null
-      },
-      {
-        "filename": "symbols/d",
-        "paytable": [0, 0, 20, 75, 150],
-        "texture": null
-      },
-      {
-        "filename": "symbols/e",
-        "paytable": [0, 0, 15, 50, 100],
-        "texture": null
-      },
-      {
-        "filename": "symbols/f",
-        "paytable": [0, 0, 10, 30, 80],
-        "texture": null
-      },
-      {
-        "filename": "symbols/g",
-        "paytable": [0, 0, 5, 20, 60],
-        "texture": null
-      },
-      {
-        "filename": "symbols/s",
-        "paytable": [0, 0, 4, 15, 50],
-        "texture": null
-      },
-      {
-        "filename": "symbols/w",
-        "paytable": [0, 0, 4, 15, 50],
-        "texture": null
-      }
+      { "filename": "symbols/a", "paytable": [0, 4, 40, 200, 500], "texture": null },
+      { "filename": "symbols/b", "paytable": [0, 3, 30, 150, 300], "texture": null },
+      { "filename": "symbols/c", "paytable": [0, 3, 25, 100, 200], "texture": null },
+      { "filename": "symbols/d", "paytable": [0, 0, 20, 75, 150], "texture": null },
+      { "filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null },
+      { "filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null },
+      { "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      { "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null },
+      { "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null }
     ]
   },
 
   "desktop": {
+
     "prop": {},
 
     "Background": {
@@ -78,7 +40,7 @@
       "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
     },
 
-    "preloader": {
+    "Preloader": {
       "view": {},
       "bg": { "x": 0, "y": 0, "w": 0, "h": 0, "c": "0x000000" },
       "logo": { "frameId": "loadingLogo" },
@@ -87,10 +49,12 @@
     },
 
     "IntroScene": {
+
       "GameLogo": {
         "frameId": "logos/gameLogo",
         "prop": { "x": -5, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
       },
+
       "continueBtn": {
         "frameId": "intro/fsContinueBtn",
         "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
@@ -98,48 +62,24 @@
     },
 
     "GameScene": {
+
       "GameLogo": {
         "frameId": "gameLogo",
         "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
       },
 
       "Machine": {
-        "view": {
-          "x": 0,
-          "y": 95,
-          "center": 1,
-          "wid": 1370,
-          "hei": 936,
-          "columns": 5,
-          "topGap": 40
-        },
+        "view": { "x": 0, "y": 95, "center": 1, "topGap": 40 },
+        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 21 }},
         "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
-        "reelBg": {
-          "frameId": "reelBg",
-          "isReelsBg": true,
-          "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 }
-        },
-        "reelFrame": {
-          "frameId": "reelFrame",
-          "x": 0,
-          "y": 0,
-          "sx": 1,
-          "sy": 1
-        }
+        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 } },
+        "reelFrame": { "frameId": "reelFrame", "prop": {"x": 0, "y": 0, "sx": 1, "sy": 1 }}
       },
 
       "Controls": {
         "view": { "x": 16, "y": 16, "bottom": 1, "center": 1, "bottomGap": 4 },
         "bg": { "frameId": "bg", "x": 0, "y": 0 },
-        "spinBtn": {
-          "frameId": "btn",
-          "x": 0,
-          "y": -56,
-          "bottom": 1,
-          "center": 1,
-          "wid": 238,
-          "hei": 238
-        },
+        "spinBtn": { "frameId": "btn", "x": 0, "y": -56, "bottom": 1, "center": 1, "wid": 238, "hei": 238 },
         "maxBet": { "frameId": "bg", "x": 0, "y": 0 },
         "autoSpinBg": { "frameId": "autoSpin/bg", "x": 0, "y": 0 },
 
@@ -166,25 +106,23 @@
           }
         },
         "menu": {
-          "view": { "x": 0, "y": 650, "bottom": 1, "bGap": 0 },
+          "view": { "x": 0, "y": 670, "bottom": 1, "bGap": 0 },
+
           "menuBtn": {
-            "frameId": "menu/openIcon",
-            "icon": "",
-            "x": 70,
-            "y": 20,
-            "sx": 1,
-            "sy": 1,
-            "visible": true
+            "name": "menuBtn",
+            "on": {
+              "name": "openIcon",
+              "frameId": "menu/openIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "closeIcon",
+              "frameId": "menu/closeIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 80, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
-          "menuCloseBtn": {
-            "frameId": "menu/closeIcon",
-            "icon": "",
-            "x": 70,
-            "y": 20,
-            "sx": 1,
-            "sy": 1,
-            "visible": false
-          },
+        
           "homeBtn": {
             "frameId": "menu/bg",
             "icon": "menu/homeIcon",
@@ -192,26 +130,22 @@
             "y": 0,
             "visible": false
           },
-          "muteBtn": {
-            "name": "muteIcon",
-            "frameId": "options/muteIcon",
-            "icon": "",
-            "x": 1210,
-            "y": 20,
-            "sx": 1,
-            "sy": 1,
-            "visible": true
+
+          "soundBtn": {
+            "name": "soundBtn",
+            "on": {
+              "name": "unmuteIcon",
+              "frameId": "options/unmuteIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "muteIcon",
+              "frameId": "options/muteIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 1210, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
-          "unmuteBtn": {
-            "name": "unmuteIcon",
-            "frameId": "options/unmuteIcon",
-            "icon": "",
-            "x": 1210,
-            "y": 20,
-            "sx": 1,
-            "sy": 1,
-            "visible": true
-          },
+         
           "optionsCtn": [
             {
               "name": "infoIcon",
@@ -246,7 +180,7 @@
             "letterSpacing": 1
           },
           "valueStyle": {
-            "fontSize": 25,
+            "fontSize": 20,
             "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
@@ -307,61 +241,48 @@
         },
         "spinControl": {
           "view": { "x": 640, "y": 660, "visible": true },
-          "betBtn": {
-            "name": "betBtn",
-            "frameId": "panel/maxBet/icon",
-            "icon": "panel/maxBet/icon_normal",
-            "x": 60,
-            "y": 30,
-            "visible": false,
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
-          },
-          "autoPlayBtn": {
-            "name": "autoBtn",
-            "frameId": "panel/autoSpin/playIcon",
-            "icon": "",
-            "prop": {
-              "x": -80,
-              "y": 10,
-              "ax": 0.5,
-              "ay": 0.5,
-              "visible": true
+          "autoSpinBtn": {
+            "name": "autoSpinBtn",
+            "on": {
+              "name": "autoSpinPlay",
+              "frameId": "panel/autoSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
             },
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
-          },
-          "autoStopBtn": {
-            "name": "autoBtn",
-            "frameId": "panel/autoSpin/stopIcon",
-            "icon": "",
-            "prop": {
-              "x": -80,
-              "y": 10,
-              "ax": 0.5,
-              "ay": 0.5,
-              "visible": true
+            "off": {
+              "name": "autoSpinStop",
+              "frameId": "panel/autoSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
             },
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
-          },
-          "quickBtn": {
-            "name": "quickBtn",
-            "frameId": "panel/quickSpin/icon",
-            "icon": "",
-            "x": 80,
-            "y": 10,
-            "visible": true,
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": -80, "y": 10, "px": 0.5, "py": 0.5, "visible": true }
           },
           "spinBtn": {
             "name": "spinBtn",
-            "frameId": "panel/spin/bg",
-            "icons": [
-              "panel/spin/playIcon_normal",
-              "panel/spin/stopIcon_normal"
-            ],
-            "x": 0,
-            "y": 0,
-            "visible": true
-          }
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/spin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/spin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+          "quickBtn": {
+            "name": "quickSpinBtn",
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/quickSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/quickSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 80, "y": 10, "px": 0.5, "py": 0.5, "visible": true }
+          }        
         }
       },
 
@@ -545,15 +466,17 @@
           }
         }
       }
+
     }
+    
   },
 
   "mobile": {
     "prop": {},
 
     "Background": {
-      "frameId": "background",
       "view": {},
+      "frameId": "background",
       "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
     },
 
@@ -583,28 +506,11 @@
       },
 
       "Machine": {
-        "view": {
-          "x": 0,
-          "y": 95,
-          "center": 1,
-          "wid": 1370,
-          "hei": 936,
-          "columns": 5,
-          "topGap": 40
-        },
+        "view": { "x": 0, "y": 95, "center": 1, "wid": 1370, "hei": 936, "columns": 5, "topGap": 40 },
+        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 21 }},
         "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
-        "reelBg": {
-          "frameId": "reelBg",
-          "isReelsBg": true,
-          "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 }
-        },
-        "reelFrame": {
-          "frameId": "reelFrame",
-          "x": 0,
-          "y": 0,
-          "sx": 1,
-          "sy": 1
-        }
+        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 } },
+        "reelFrame": { "frameId": "reelFrame", "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1 }}
       },
 
       "Controls": {
@@ -646,61 +552,45 @@
         },
         "menu": {
           "view": { "x": 0, "y": 0, "bottom": 1, "bGap": 45 },
+
           "menuBtn": {
-            "frameId": "menu/openIcon",
-            "icon": "",
-            "x": 30,
-            "y": 0,
-            "sx": 0.8,
-            "sy": 0.8,
-            "visible": true
+            "name": "menuBtn",
+            "on": {
+              "name": "openIcon",
+              "frameId": "menu/openIcon",
+              "prop": { "x": 0, "y": 0,  "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "closeIcon",
+              "frameId": "menu/closeIcon",
+              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 30, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
-          "menuCloseBtn": {
-            "frameId": "menu/closeIcon",
-            "icon": "",
-            "x": 30,
-            "y": 0,
-            "sx": 1,
-            "sy": 1,
-            "visible": false
-          },
+        
           "homeBtn": {
             "frameId": "menu/bg",
             "icon": "menu/homeIcon",
-            "x": 0.8,
-            "y": 0.8,
+            "x": 1250,
+            "y": 0,
             "visible": false
           },
-          "muteBtn": {
-            "name": "muteIcon",
-            "frameId": "options/muteIcon",
-            "icon": "",
-            "x": 0,
-            "y": 0,
-            "sx": 0.8,
-            "sy": 0.8,
-            "visible": true
+
+          "soundBtn": {
+            "name": "soundBtn",
+            "on": {
+              "name": "unmuteIcon",
+              "frameId": "options/unmuteIcon",
+              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "muteIcon",
+              "frameId": "options/muteIcon",
+              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
-          "unmuteBtn": {
-            "name": "unmuteIcon",
-            "frameId": "options/unmuteIcon",
-            "icon": "",
-            "x": 0,
-            "y": 0,
-            "sx": 0.8,
-            "sy": 0.8,
-            "visible": true
-          },
-          "audioBtn": {
-            "name": "unmuteIcon",
-            "frameId": "menu/unmuteIcon",
-            "icons": ["menu/unmuteIcon", "menu/muteIcon"],
-            "x": 0,
-            "y": 0,
-            "sx": 0.8,
-            "sy": 0.8,
-            "visible": true
-          },
+         
           "optionsCtn": [
             {
               "name": "infoIcon",
@@ -724,11 +614,12 @@
             }
           ]
         },
+       
         "panel": {
           "portraitBg": { "frameId": "panel/bgPort", "prop":{  "x":0, "y":-640, "wid": 0, "hei": 0 } },
           "bg": { "frameId": "panel/bgLand", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
           "txtStyle": {
-            "fontSize": 12,
+            "fontSize": 10,
             "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
@@ -736,7 +627,7 @@
             "letterSpacing": 1
           },
           "valueStyle": {
-            "fontSize": 18,
+            "fontSize": 12,
             "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
@@ -803,67 +694,50 @@
           }
         },
         "spinControl": {
-          "view": {
-            "x": 640,
-            "y": 660,
-            "visible": true
-          },
-          "betBtn": {
-            "name": "betBtn",
-            "frameId": "panel/maxBet/bg",
-            "icon": "panel/maxBet/icon_normal",
-            "x": 60,
-            "y": 30,
-            "visible": false,
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
-          },
-          "autoPlayBtn": {
-            "name": "autoBtn",
-            "frameId": "panel/autoSpin/playIcon",
-            "icon": "",
-            "prop": {
-              "x": -80,
-              "y": 15,
-              "ax": 0.5,
-              "ay": 0.5,
-              "visible": true
+          "view": { "x": 640, "y": 480, "visible": true },
+          "autoSpinBtn": {
+            "name": "autoSpinBtn",
+            "on": {
+              "name": "autoSpinPlay",
+              "frameId": "panel/autoSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
             },
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
-          },
-          "autoStopBtn": {
-            "name": "autoBtn",
-            "frameId": "panel/autoSpin/stopIcon",
-            "icon": "",
-            "prop": {
-              "x": -80,
-              "y": 15,
-              "ax": 0.5,
-              "ay": 0.5,
-              "visible": true
+            "off": {
+              "name": "autoSpinStop",
+              "frameId": "panel/autoSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
             },
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
-          },
-          "quickBtn": {
-            "name": "quickBtn",
-            "frameId": "panel/quickSpin/icon",
-            "icon": "",
-            "x": 80,
-            "y": 15,
-            "visible": true,
-            "iconProp": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5 }
+            "prop": { "x": -80, "y": 17, "px": 0.5, "py": 0.5, "visible": true }
           },
           "spinBtn": {
             "name": "spinBtn",
-            "frameId": "panel/spin/bg",
-            "icons": [
-              "panel/spin/playIcon_normal",
-              "panel/spin/stopIcon_normal"
-            ],
-            "x": 0,
-            "y": 0,
-            "visible": true
-          }
-        }
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/spin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/spin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+          "quickBtn": {
+            "name": "quickSpinBtn",
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/quickSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/quickSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 80, "y": 17, "px": 0.5, "py": 0.5, "visible": true }
+          }        
+        }        
       },
 
       "Overlay": {
