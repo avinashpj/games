@@ -19,9 +19,7 @@
     "path": "images/@${resolution}x/",
     "common": [{ "alias": "common", "src": "common0.json" }],
     "game": [
-      { "alias": "basic", "src": "basic0.json" },
-      { "alias": "desktop", "src": "desktop0.json" },
-      { "alias": "mobile", "src": "mobile0.json" }
+      { "alias": "basic", "src": "basic0.json" }
     ],
 
     "animation": [
