@@ -563,7 +563,7 @@
             "off": {
               "name": "closeIcon",
               "frameId": "menu/closeIcon",
-              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+              "prop": { "x": 0, "y": 0, "sx": 1.0, "sy": 1.0, "ax": 0.5, "ay": 0.5, "visible": true }
             },
             "prop": { "x": 30, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
