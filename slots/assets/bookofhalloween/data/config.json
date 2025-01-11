@@ -15,7 +15,7 @@
     "configFile": "config.json",
     "stgConfig": "config_stg.json",
 
-    "machine": { "width": 130, "height": 155, "columns": 5, "rows": 3 },
+    "machine": { "width": 130, "height": 130, "columns": 5, "rows": 3 },
 
     "symbols": [
       { "filename": "symbols/a", "paytable": [0, 4, 40, 200, 500], "texture": null },
@@ -65,14 +65,14 @@
 
       "GameLogo": {
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "prop": { "x": 640, "y": 70, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
       },
 
       "Machine": {
-        "view": { "x": 0, "y": 95, "center": 1, "topGap": 40 },
-        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 21 }},
-        "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
-        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 } },
+        "view": { "x": 0, "y": 130, "center": 1, "topGap": 10 },
+        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 22 }},
+        "reelSym": { "x": 20, "y": 22, "gapX": 6, "gapY": 0 },
+        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 22, "sx": 1, "sy": 1 } },
         "reelFrame": { "frameId": "reelFrame", "prop": {"x": 0, "y": 0, "sx": 1, "sy": 1 }}
       },
 
