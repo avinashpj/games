@@ -1,5 +1,5 @@
 {
-  "bundleIds": ["common", "game", "animation"],
+  "bundleIds": ["common", "game"],
 
   "fonts": {
     "path": "fonts/",
