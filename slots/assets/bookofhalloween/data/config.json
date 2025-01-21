@@ -16,7 +16,7 @@
     "stgConfig": "config_stg.json",
 
     "machine": { "width": 130, "height": 130, "columns": 5, "rows": 3 },
-
+    "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
     "symbols": [
       { "filename": "symbols/a", "paytable": [0, 4, 40, 200, 500], "texture": null },
       { "filename": "symbols/b", "paytable": [0, 3, 30, 150, 300], "texture": null },
@@ -27,7 +27,20 @@
       { "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null },
       { "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null },
       { "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null }
-    ]
+    ],
+
+    "symbolAnimations":{
+      "a": { "filename": "TOP1_Owl/owl_00",  "startIndex":0,  "endIndex":104},
+      "b": { "filename": "TOP2_Pumpkin/Pumpkin_00",  "startIndex":0,  "endIndex":59},
+      "c": { "filename": "TOP3_Cat/Cat_00",  "startIndex":0,  "endIndex":121},
+      "d": { "filename": "LP1_A/A_00",  "startIndex":0,  "endIndex":59},
+      "e": { "filename": "LP2_K/K_00",  "startIndex":0,  "endIndex":69},
+      "f": { "filename": "LP3_F/Q_00",  "startIndex":0,  "endIndex":120},
+      "g": { "filename": "LP4_J/J_00",  "startIndex":0,  "endIndex":69},
+      "h": { "filename": "LP5_10/Q_00",  "startIndex":0,  "endIndex":120},
+      "s": { "filename": "TOP1_Owl/owl_00",  "startIndex":0,  "endIndex":104},
+      "w": { "filename": "TOP3_Cat/Cat_00",  "startIndex":0,  "endIndex":121}
+    }
   },
 
   "desktop": {
@@ -65,13 +78,14 @@
 
       "GameLogo": {
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 70, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "prop": { "x": 640, "y": 75, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
       },
 
       "Machine": {
-        "view": { "x": 0, "y": 130, "center": 1, "topGap": 10 },
+        "view": { "x": 0, "y": 140, "center": 1, "topGap": 10 },
         "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 22 }},
-        "reelSym": { "x": 20, "y": 22, "gapX": 6, "gapY": 0 },
+        "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
+        "reelSym": { "x": 20, "y": 22, "gapX": 5, "gapY": 0 },
         "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 22, "sx": 1, "sy": 1 } },
         "reelFrame": { "frameId": "reelFrame", "prop": {"x": 0, "y": 0, "sx": 1, "sy": 1 }}
       },

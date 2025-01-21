@@ -1,5 +1,5 @@
 {
-  "bundleIds": ["common", "game"],
+  "bundleIds": ["common", "game", "animation"],
 
   "fonts": {
     "path": "fonts/",
@@ -18,10 +18,7 @@
   "assets": {
     "path": "images/@${resolution}x/",
     "common": [{ "alias": "common", "src": "common0.json" }],
-    "game": [
-      { "alias": "basic", "src": "basic0.json" }
-    ],
-
+    "game": [{ "alias": "basic", "src": "basic0.json" }],
     "animation": [
       { "alias": "animations", "src": "animations0.json" },
       { "alias": "winPopups", "src": "winPopups.json" }
