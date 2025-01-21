@@ -522,6 +522,7 @@
       "Machine": {
         "view": { "x": 0, "y": 95, "center": 1, "wid": 1370, "hei": 936, "columns": 5, "topGap": 40 },
         "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 21 }},
+        "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
         "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
         "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 } },
         "reelFrame": { "frameId": "reelFrame", "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1 }}
