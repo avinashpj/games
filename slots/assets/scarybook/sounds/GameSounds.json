@@ -1,0 +1,174 @@
+{
+  "urls": [
+    "GameSounds.ac3",
+    "GameSounds.mp3",
+    "GameSounds.m4a",
+    "GameSounds.ogg"
+  ],
+  "sprite": {
+    "background": [
+      0,
+      64000, true
+    ],
+    "intro": [
+      65000,
+      10149
+    ],
+    "transition": [
+      77000,
+      4893
+    ],
+    "bigWin": [
+      83000,
+      8766
+    ],
+    "counterEnd": [
+      93000,
+      1728
+    ],
+    "counterLoop": [
+      96000,
+      2087, true
+    ],
+    "megaWin": [
+      100000,
+      6321
+    ],
+    "superMegaWin": [
+      108000,
+      5899
+    ],
+    "superMegaWinDissapear": [
+      115000,
+      2033
+    ],
+    "totalWin": [
+      119000,
+      1931
+    ],
+    "winCounterLoop": [
+      122000,
+      1333, true
+    ],
+    "btnClick": [
+      125000,
+      120
+    ],
+    "goldenFrameOnReel": [
+      127000,
+      1279
+    ],
+    "goldenFrameOnReel2": [
+      130000,
+      1871
+    ],
+    "progressBarFill1": [
+      133000,
+      2667
+    ],
+    "progressBarFill2": [
+      137000,
+      3000
+    ],
+    "progressBarFill3": [
+      142000,
+      3000
+    ],
+    "progressBarFill4": [
+      147000,
+      3000
+    ],
+    "progressBarFill5": [
+      152000,
+      3000
+    ],
+    "stickyWildReelAppear": [
+      157000,
+      3357
+    ],
+    "symbolsFireEnergyShots": [
+      162000,
+      4003
+    ],
+    "backgroundFS": [
+      168000,
+      60539, true
+    ],
+    "fsAwardPopup": [
+      230000,
+      1795
+    ],
+    "fsWinPopup": [
+      233000,
+      2819
+    ],
+    "errorPopup": [
+      237000,
+      1203
+    ],
+    "hidePopup": [
+      240000,
+      1795
+    ],
+    "showPopup": [
+      243000,
+      1795
+    ],
+    "anticipation": [
+      246000,
+      2029, true
+    ],
+    "reelLock": [
+      250000,
+      1279
+    ],
+    "reelSpinning": [
+      253000,
+      1276, true
+    ],
+    "reelStop": [
+      256000,
+      1542
+    ],
+    "spinStart": [
+      259000,
+      1024
+    ],
+    "spinStartBtn": [
+      262000,
+      1539
+    ],
+    "spinStopBtn": [
+      265000,
+      1539
+    ],
+    "aSym": [
+      268000,
+      7290
+    ],
+    "bonusSym": [
+      277000,
+      6070
+    ],
+    "bonusSym_land": [
+      285000,
+      3152
+    ],
+    "bSym": [
+      290000,
+      4338
+    ],
+    "cSym": [
+      296000,
+      2690
+    ],
+    "lowPaySym": [
+      300000,
+      2012
+    ],
+    "wildSym": [
+      304000,
+      7290
+    ]
+  }
+}

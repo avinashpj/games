@@ -1,0 +1,940 @@
+{
+  "common": {
+    "name": "common"
+  },
+  
+  "sounds": {
+    "soundPath": "sounds/"
+  },
+
+  "data": {
+    "gameId": "8",
+    "gameName": "Book of Halloween",
+
+    "path": "data/",
+    "configFile": "config.json",
+    "stgConfig": "config_stg.json",
+
+    "machine": { "width": 140, "height": 140, "columns": 5, "rows": 3 },
+    "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
+    "symbols": [
+      { "filename": "symbols/a", "paytable": [0, 4, 40, 200, 500], "texture": null },
+      { "filename": "symbols/b", "paytable": [0, 3, 30, 150, 300], "texture": null },
+      { "filename": "symbols/c", "paytable": [0, 3, 25, 100, 200], "texture": null },
+      { "filename": "symbols/d", "paytable": [0, 0, 20, 75, 150], "texture": null },
+      { "filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null },
+      { "filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null },
+      { "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      { "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null },
+      { "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null }
+    ],
+
+    "symbolAnimations":{
+      "a": { "filename": "TOP1_Owl/owl_00",  "startIndex":0,  "endIndex":104},
+      "b": { "filename": "TOP2_Pumpkin/Pumpkin_00",  "startIndex":0,  "endIndex":59},
+      "c": { "filename": "TOP3_Cat/Cat_00",  "startIndex":0,  "endIndex":121},
+      "d": { "filename": "LP1_A/A_00",  "startIndex":0,  "endIndex":59},
+      "e": { "filename": "LP2_K/K_00",  "startIndex":0,  "endIndex":69},
+      "f": { "filename": "LP3_F/Q_00",  "startIndex":0,  "endIndex":120},
+      "g": { "filename": "LP4_J/J_00",  "startIndex":0,  "endIndex":69},
+      "h": { "filename": "LP5_10/Q_00",  "startIndex":0,  "endIndex":120},
+      "s": { "filename": "TOP1_Owl/owl_00",  "startIndex":0,  "endIndex":104},
+      "w": { "filename": "TOP3_Cat/Cat_00",  "startIndex":0,  "endIndex":121}
+    }
+  },
+
+  "desktop": {
+
+    "prop": {},
+
+    "Background": {
+      "view": {},
+      "frameId": "background",
+      "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+    },
+
+    "Preloader": {
+      "view": {},
+      "bg": { "x": 0, "y": 0, "w": 0, "h": 0, "c": "0x000000" },
+      "logo": { "frameId": "loadingLogo" },
+      "loadingBarBg": { "frameId": "loadingBarBg" },
+      "loadingBarFill": { "frameId": "loadingBarFill" }
+    },
+
+    "IntroScene": {
+
+      "GameLogo": {
+        "frameId": "logos/gameLogo",
+        "prop": { "x": -5, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      },
+
+      "continueBtn": {
+        "frameId": "intro/fsContinueBtn",
+        "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      }
+    },
+
+    "GameScene": {
+
+      "GameLogo": {
+        "frameId": "gameLogo",
+        "prop": { "x": 640, "y": 30, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+      },
+
+      "Machine": {
+        "view": { "x": 0, "y": 106, "center": 1, "topGap": 10 },
+        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 22 }},
+        "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
+        "reelSym": { "x": 20, "y": 22, "gapX": 5, "gapY": 0 },
+        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 22, "sx": 1, "sy": 1 } },
+        "reelFrame": { "frameId": "reelFrame", "prop": {"x": 0, "y": 0, "sx": 1, "sy": 1 }}
+      },
+
+      "Controls": {
+        "view": { "x": 16, "y": 16, "bottom": 1, "center": 1, "bottomGap": 4 },
+        "bg": { "frameId": "bg", "x": 0, "y": 0 },
+        "spinBtn": { "frameId": "btn", "x": 0, "y": -56, "bottom": 1, "center": 1, "wid": 238, "hei": 238 },
+        "maxBet": { "frameId": "bg", "x": 0, "y": 0 },
+        "autoSpinBg": { "frameId": "autoSpin/bg", "x": 0, "y": 0 },
+
+        "providerLogo": {
+          "frameId": "providerLogo",
+          "prop": { "x": 5, "y": 10, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+        },
+        "time": {
+          "txtCode": "",
+          "prop": {
+            "x": 1200,
+            "y": 30,
+            "ax": 0.5,
+            "ay": 0.5,
+            "visible": false
+          },
+          "sty": {
+            "fontSize": 15,
+            "fontFamily": "regularFont",
+            "fontWeight": "bold",
+            "fill": "#FFFFFF",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          }
+        },
+        "menu": {
+          "view": { "x": 0, "y": 670, "bottom": 1, "bGap": 0 },
+
+          "menuBtn": {
+            "name": "menuBtn",
+            "on": {
+              "name": "openIcon",
+              "frameId": "menu/openIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "closeIcon",
+              "frameId": "menu/closeIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 80, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+        
+          "homeBtn": {
+            "frameId": "menu/bg",
+            "icon": "menu/homeIcon",
+            "x": 1250,
+            "y": 0,
+            "visible": false
+          },
+
+          "soundBtn": {
+            "name": "soundBtn",
+            "on": {
+              "name": "unmuteIcon",
+              "frameId": "options/unmuteIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "muteIcon",
+              "frameId": "options/muteIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 1210, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+         
+          "optionsCtn": [
+            {
+              "name": "infoIcon",
+              "frameId": "options/infoIcon",
+              "icon": "",
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            },
+            {
+              "name": "settingIcon",
+              "frameId": "options/settingIcon",
+              "icon": "",
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            }
+          ]
+        },
+        "panel": {
+          "bg": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 }},
+          "txtStyle": {
+            "fontSize": 12,
+            "fontFamily": "regularFont",
+            "fontWeight": "bold",
+            "fill": "#ffffff",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          },
+          "valueStyle": {
+            "fontSize": 20,
+            "fontFamily": "regularFont",
+            "fontWeight": "bold",
+            "fill": "#ffffff",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          },
+
+          "lines": {
+            "txtCode": "LINES",
+            "prop": { "x": 70, "y": 90, "ax": 0.5, "visible": false }
+          },
+          "coins": {
+            "txtCode": "COINVALUE",
+            "prop": { "x": 210, "y": 90, "ax": 0.5, "visible": false }
+          },
+          "balance": {
+            "txtCode": "BALANCE",
+            "prop": { "x": 860, "y": -75, "ax": 0.5, "ay": 0.5 }
+          },
+          "betMinus": {
+            "frameId": "panel/minuIcon",
+            "prop": { "x": 210, "y": -48, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
+          },
+          "bet": {
+            "txtCode": "BET",
+            "prop": { "x": 300, "y": -75, "ax": 0.5, "ay": 0.5 }
+          },
+          "betPulse": {
+            "frameId": "panel/pulseIcon",
+            "prop": { "x": 390, "y": -48, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
+          },
+          "win": {
+            "txtCode": "WINNING",
+            "prop": { "x": 1060, "y": -75, "ax": 0.5, "ay": 0.5 }
+          },
+
+          "linesValue": {
+            "txtCode": "0",
+            "prop": { "x": 70, "y": -48, "ax": 0.5, "visible": false }
+          },
+          "coinsValue": {
+            "txtCode": "0",
+            "prop": { "x": 210, "y": -48, "ax": 0.5, "visible": false }
+          },
+          "balanceValue": {
+            "txtCode": "$243",
+            "prop": { "x": 860, "y": -48, "ax": 0.5, "ay": 0.5 }
+          },
+
+          "betValue": {
+            "txtCode": "$123",
+            "prop": { "x": 300, "y": -48, "ax": 0.5, "ay": 0.5 }
+          },
+          "winValue": {
+            "txtCode": "0",
+            "prop": { "x": 1060, "y": -48, "ax": 0.5, "ay": 0.5 }
+          }
+        },
+        "spinControl": {
+          "view": { "x": 640, "y": 660, "visible": true },
+          "autoSpinBtn": {
+            "name": "autoSpinBtn",
+            "on": {
+              "name": "autoSpinPlay",
+              "frameId": "panel/autoSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "autoSpinStop",
+              "frameId": "panel/autoSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": -80, "y": 10, "px": 0.5, "py": 0.5, "visible": true }
+          },
+          "spinBtn": {
+            "name": "spinBtn",
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/spin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/spin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+          "quickBtn": {
+            "name": "quickSpinBtn",
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/quickSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/quickSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 80, "y": 10, "px": 0.5, "py": 0.5, "visible": true }
+          }        
+        }
+      },
+
+      "Overlay": {
+        "Settings": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/settingsIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "name": "settingsTitle",
+            "txtCode": "GAME_SETTINGS",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "regularFont",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          },
+
+          "audio": {
+            "title": {
+              "name": "audioTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 320, "y": 150, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "audioLabel",
+                "txtCode": "AUDIO",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "regularFont",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "audioText",
+              "txtCode": "Volume\nSound Effects\nAmbience Sound",
+              "prop": { "x": 220, "y": 200 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          },
+
+          "options": {
+            "title": {
+              "name": "optionsTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 320, "y": 430, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "optionsLabel",
+                "txtCode": "OPTIONS",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "regularFont",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "optionsTxt",
+              "txtCode": "Quick Spin\nPress space bar to spin/stop",
+              "prop": { "x": 220, "y": 480 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          },
+
+          "autospin": {
+            "title": {
+              "name": "autoSpinTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 800, "y": 150, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "autoSpinLabel",
+                "txtCode": "STOP AUTO SPIN",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "regularFont",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "asOnAnyWinTxt",
+              "txtCode": "On any win\nOn per session win limit of",
+              "prop": { "x": 700, "y": 200 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            },
+            "txt1": {
+              "name": "asOnAnyWinTxt1",
+              "txtCode": "On per session loss limit of",
+              "prop": { "x": 700, "y": 410 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          }
+        },
+
+        "Paytable": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/infoIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "txtCode": "PAYTABLE",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "regularFont",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          },
+
+          "leftArrow": {
+            "frameId": "paytable/arrow/btn",
+            "prop": { "x": 40, "y": 360, "ax": 0.5, "ay": 0.5 }
+          },
+          "rightArrow": {
+            "frameId": "paytable/arrow/btn",
+            "prop": {
+              "x": 1240,
+              "y": 360,
+              "ax": 0.5,
+              "ay": 0.5,
+              "sx": -1,
+              "sy": 1
+            }
+          }
+        },
+
+        "Rules": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/rulesIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "txtCode": "RULES",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "regularFont",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          }
+        }
+      }
+
+    }
+    
+  },
+
+  "mobile": {
+    "prop": {},
+
+    "Background": {
+      "view": {},
+      "frameId": "background",
+      "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+    },
+
+    "preloader": {
+      "view": {},
+      "bg": { "x": 0, "y": 0, "w": 0, "h": 0, "c": "0x000000" },
+      "logo": { "frameId": "loadingLogo" },
+      "loadingBarBg": { "frameId": "loadingBarBg" },
+      "loadingBarFill": { "frameId": "loadingBarFill" }
+    },
+
+    "IntroScene": {
+      "GameLogo": {
+        "frameId": "logos/gameLogo",
+        "prop": { "x": -5, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      },
+      "continueBtn": {
+        "frameId": "intro/fsContinueBtn",
+        "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      }
+    },
+
+    "GameScene": {
+      "GameLogo": {
+        "frameId": "gameLogo",
+        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+      },
+
+      "Machine": {
+        "view": { "x": 0, "y": 95, "center": 1, "wid": 1370, "hei": 936, "columns": 5, "topGap": 40 },
+        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 21 }},
+        "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
+        "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
+        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 } },
+        "reelFrame": { "frameId": "reelFrame", "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1 }}
+      },
+
+      "Controls": {
+        "view": { "x": 16, "y": 16, "bottom": 1, "center": 1, "bottomGap": 4 },
+        "bg": { "frameId": "bg", "x": 0, "y": 0 },
+        "spinBtn": {
+          "frameId": "btn",
+          "x": 0,
+          "y": -56,
+          "bottom": 1,
+          "center": 1,
+          "wid": 238,
+          "hei": 238
+        },
+        "maxBet": { "frameId": "bg", "x": 0, "y": 0 },
+        "autoSpinBg": { "frameId": "autoSpin/bg", "x": 0, "y": 0 },
+
+        "providerLogo": {
+          "frameId": "providerLogo",
+          "prop": { "x": 5, "y": 10, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+        },
+        "time": {
+          "txtCode": "",
+          "prop": {
+            "x": 1200,
+            "y": 30,
+            "ax": 0.5,
+            "ay": 0.5,
+            "visible": false
+          },
+          "sty": {
+            "fontSize": 15,
+            "fontFamily": "regularFont",
+            "fontWeight": "bold",
+            "fill": "#FFFFFF",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          }
+        },
+        "menu": {
+          "view": { "x": 0, "y": 0, "bottom": 1, "bGap": 45 },
+
+          "menuBtn": {
+            "name": "menuBtn",
+            "on": {
+              "name": "openIcon",
+              "frameId": "menu/openIcon",
+              "prop": { "x": 0, "y": 0,  "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "closeIcon",
+              "frameId": "menu/closeIcon",
+              "prop": { "x": 0, "y": 0, "sx": 1.0, "sy": 1.0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 30, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+        
+          "homeBtn": {
+            "frameId": "menu/bg",
+            "icon": "menu/homeIcon",
+            "x": 1250,
+            "y": 0,
+            "visible": false
+          },
+
+          "soundBtn": {
+            "name": "soundBtn",
+            "on": {
+              "name": "unmuteIcon",
+              "frameId": "options/unmuteIcon",
+              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "muteIcon",
+              "frameId": "options/muteIcon",
+              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+         
+          "optionsCtn": [
+            {
+              "name": "infoIcon",
+              "frameId": "options/infoIcon",
+              "icon": "",
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            },
+            {
+              "name": "settingIcon",
+              "frameId": "options/settingIcon",
+              "icon": "",
+              "x": 0,
+              "y": 0,
+              "ax": 0.5,
+              "ay": 0.5,
+              "visible": true
+            }
+          ]
+        },
+       
+        "panel": {
+          "portraitBg": { "frameId": "panel/bgPort", "prop":{  "x":0, "y":-640, "wid": 0, "hei": 0 } },
+          "bg": { "frameId": "panel/bgLand", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
+          "txtStyle": {
+            "fontSize": 10,
+            "fontFamily": "regularFont",
+            "fontWeight": "bold",
+            "fill": "#ffffff",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          },
+          "valueStyle": {
+            "fontSize": 12,
+            "fontFamily": "regularFont",
+            "fontWeight": "bold",
+            "fill": "#ffffff",
+            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "letterSpacing": 1
+          },
+
+          "lines": {
+            "txtCode": "LINES",
+            "prop": { "x": 70, "y": 90, "ax": 0.5, "visible": false }
+          },
+          "coins": {
+            "txtCode": "COINVALUE",
+            "prop": { "x": 210, "y": 90, "ax": 0.5, "visible": false }
+          },
+
+          "betMinus": {
+            "frameId": "panel/minuIcon",
+            "prop": { "x": 100, "y": -98, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5 }          
+          },
+
+          "bet": {
+            "txtCode": "BET",
+            "prop": { "x": 0, "y": -125, "ax": 0.5, "ay": 0.5 }
+          },
+
+          "betPulse": {
+            "frameId": "panel/pulseIcon",
+            "prop": { "x": 260, "y": -98, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5}
+          },
+
+          "balance": {
+            "txtCode": "BALANCE",
+            "prop": { "x": 12, "y": -50, "ax": 0, "ay": 0.5 }
+          },
+
+          "win": {
+            "txtCode": "WINNING",
+            "prop": { "x": 0, "y": -50, "ax": 1, "ay": 0.5 }
+          },
+
+          "linesValue": {
+            "txtCode": "0",
+            "prop": { "x": 70, "y": 112, "ax": 0.5, "visible": false }
+          },
+          "coinsValue": {
+            "txtCode": "0",
+            "prop": { "x": 210, "y": 112, "ax": 0.5, "visible": false }
+          },
+
+          "betValue": {
+            "txtCode": "$123",
+            "prop": { "x": 0, "y": -98, "ax": 0.5, "ay": 0.5 }
+          },
+
+          "balanceValue": {
+            "txtCode": "$243",
+            "prop": { "x": 12, "y": -30, "ax": 0, "ay": 0.5 }
+          },
+
+          "winValue": {
+            "txtCode": "0",
+            "prop": { "x": 0, "y": -30, "ax": 1, "ay": 0.5 }
+          }
+        },
+        "spinControl": {
+          "view": { "x": 640, "y": 480, "visible": true },
+          "autoSpinBtn": {
+            "name": "autoSpinBtn",
+            "on": {
+              "name": "autoSpinPlay",
+              "frameId": "panel/autoSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "autoSpinStop",
+              "frameId": "panel/autoSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": -80, "y": 17, "px": 0.5, "py": 0.5, "visible": true }
+          },
+          "spinBtn": {
+            "name": "spinBtn",
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/spin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/spin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
+          },
+          "quickBtn": {
+            "name": "quickSpinBtn",
+            "on": {
+              "name": "spinPlay",
+              "frameId": "panel/quickSpin/playIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "off": {
+              "name": "spinStop",
+              "frameId": "panel/quickSpin/stopIcon",
+              "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
+            },
+            "prop": { "x": 80, "y": 17, "px": 0.5, "py": 0.5, "visible": true }
+          }        
+        }        
+      },
+
+      "Overlay": {
+        "Settings": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/settingsIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "name": "settingsTitle",
+            "txtCode": "GAME_SETTINGS",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "regularFont",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          },
+
+          "audio": {
+            "title": {
+              "name": "audioTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 320, "y": 150, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "audioLabel",
+                "txtCode": "AUDIO",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "regularFont",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "audioText",
+              "txtCode": "Volume\nSound Effects\nAmbience Sound",
+              "prop": { "x": 220, "y": 200 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          },
+
+          "options": {
+            "title": {
+              "name": "optionsTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 320, "y": 430, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "optionsLabel",
+                "txtCode": "OPTIONS",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "regularFont",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "optionsTxt",
+              "txtCode": "Quick Spin\nPress space bar to spin/stop",
+              "prop": { "x": 220, "y": 480 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          },
+
+          "autospin": {
+            "title": {
+              "name": "autoSpinTitle",
+              "frameId": "settings/label_empty",
+              "prop": { "x": 800, "y": 150, "ax": 0.5, "ay": 0.5 },
+              "label": {
+                "name": "autoSpinLabel",
+                "txtCode": "STOP AUTO SPIN",
+                "prop": { "x": -100, "y": 12, "ax": 0, "ay": 0.5 },
+                "sty": {
+                  "fontFamily": "regularFont",
+                  "fill": ["#084b6f", "#107b98"],
+                  "fontSize": 30,
+                  "align": "left",
+                  "lineHeight": 120
+                }
+              }
+            },
+            "txt": {
+              "name": "asOnAnyWinTxt",
+              "txtCode": "On any win\nOn per session win limit of",
+              "prop": { "x": 700, "y": 200 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            },
+            "txt1": {
+              "name": "asOnAnyWinTxt1",
+              "txtCode": "On per session loss limit of",
+              "prop": { "x": 700, "y": 410 },
+              "sty": {
+                "fontFamily": "regularFont",
+                "fill": "#FFFFFF",
+                "fontSize": 35,
+                "align": "left",
+                "lineHeight": 120
+              }
+            }
+          }
+        },
+
+        "Paytable": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/infoIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "txtCode": "PAYTABLE",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "regularFont",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          },
+
+          "leftArrow": {
+            "frameId": "paytable/arrow/btn",
+            "prop": { "x": 40, "y": 360, "ax": 0.5, "ay": 0.5 }
+          },
+          "rightArrow": {
+            "frameId": "paytable/arrow/btn",
+            "prop": {
+              "x": 1240,
+              "y": 360,
+              "ax": 0.5,
+              "ay": 0.5,
+              "sx": -1,
+              "sy": 1
+            }
+          }
+        },
+
+        "Rules": {
+          "icon": {
+            "frameId": "options/bg_normal",
+            "icon": "options/rulesIcon",
+            "prop": { "x": 50, "y": 50, "ax": 0.5, "ay": 0.5 }
+          },
+          "title": {
+            "txtCode": "RULES",
+            "prop": { "x": 95, "y": 50, "ax": 0, "ay": 0.5 },
+            "sty": {
+              "fontFamily": "regularFont",
+              "fontSize": 50,
+              "fill": "#FFFFFF",
+              "align": "left"
+            }
+          }
+        }
+      }
+    }
+  }
+}
