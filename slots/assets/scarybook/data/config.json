@@ -9,7 +9,7 @@
 
   "data": {
     "gameId": "8",
-    "gameName": "Book of Halloween",
+    "gameName": "Scary book",
 
     "path": "data/",
     "configFile": "config.json",
@@ -18,13 +18,17 @@
     "machine": { "width": 140, "height": 140, "columns": 5, "rows": 3 },
     "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
     "symbols": [
-      { "filename": "symbols/a", "paytable": [0, 4, 40, 200, 500], "texture": null },
-      { "filename": "symbols/b", "paytable": [0, 3, 30, 150, 300], "texture": null },
-      { "filename": "symbols/c", "paytable": [0, 3, 25, 100, 200], "texture": null },
-      { "filename": "symbols/d", "paytable": [0, 0, 20, 75, 150], "texture": null },
+      { "filename": "symbols/a", "paytable": [0, 2, 25, 125, 750], "texture": null },
+      { "filename": "symbols/b", "paytable": [0, 0, 20, 100, 400], "texture": null },
+      { "filename": "symbols/c", "paytable": [0, 0, 15, 75, 250], "texture": null },
+      { "filename": "symbols/d", "paytable": [0, 0, 15, 75, 250], "texture": null },
       { "filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null },
       { "filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null },
       { "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      { "filename": "symbols/h", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      { "filename": "symbols/i", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      { "filename": "symbols/j", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      { "filename": "symbols/k", "paytable": [0, 0, 5, 20, 60], "texture": null },
       { "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null },
       { "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null }
     ],
