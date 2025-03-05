@@ -34,16 +34,16 @@
     ],
 
     "symbolAnimations":{
-      "a": { "filename": "TOP1_Owl/owl_00",  "startIndex":0,  "endIndex":104},
-      "b": { "filename": "TOP2_Pumpkin/Pumpkin_00",  "startIndex":0,  "endIndex":59},
-      "c": { "filename": "TOP3_Cat/Cat_00",  "startIndex":0,  "endIndex":121},
-      "d": { "filename": "LP1_A/A_00",  "startIndex":0,  "endIndex":59},
-      "e": { "filename": "LP2_K/K_00",  "startIndex":0,  "endIndex":69},
-      "f": { "filename": "LP3_F/Q_00",  "startIndex":0,  "endIndex":120},
-      "g": { "filename": "LP4_J/J_00",  "startIndex":0,  "endIndex":69},
-      "h": { "filename": "LP5_10/Q_00",  "startIndex":0,  "endIndex":120},
-      "s": { "filename": "TOP1_Owl/owl_00",  "startIndex":0,  "endIndex":104},
-      "w": { "filename": "TOP3_Cat/Cat_00",  "startIndex":0,  "endIndex":121}
+      "a": { "filename": "Grave/Grave_00",  "startIndex":0,  "endIndex":59},
+      "d": { "filename": "Bat/Bat_00",  "startIndex":0,  "endIndex":59},
+      "e": { "filename": "Candle/Candle_00",  "startIndex":0,  "endIndex":59},
+      "c": { "filename": "Cat/cat_00",  "startIndex":0,  "endIndex":59},
+      "h": { "filename": "Pot/Pot_00",  "startIndex":0,  "endIndex":59},
+      "f": { "filename": "Pumpkin/Pumpkin_00",  "startIndex":0,  "endIndex":59},
+      "g": { "filename": "Scatter/Scatter_00",  "startIndex":0,  "endIndex":59}
+    },
+    "animations":{
+      "bgchar": { "filename": "cat_anim/cat_00", "startIndex": 0, "endIndex": 119, "x":1082, "y":470 }
     }
   },
 
