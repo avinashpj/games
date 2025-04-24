@@ -21,7 +21,9 @@
     "game": [{ "alias": "basic", "src": "basic0.json" }],
     "animations": [
       { "alias": "animations", "src": "animations0.json" },
-      { "alias": "winPopups", "src": "winPopups.json" }
+      { "alias": "winPopups", "src": "winPopups.json" },
+      { "alias": "BitmapFont", "src": "BitmapFont.xml" },
+      { "alias": "Desyrel", "src": "desyrel.xml" }
     ],
 
     "bonus": [{ "alias": "features", "src": "features0.json" }]

@@ -9,6 +9,7 @@
 
   "data": {
     "gameId": "8",
+    "gameTag": "bgb1",
     "gameName": "Scary book",
 
     "path": "data/",
@@ -18,32 +19,40 @@
     "machine": { "width": 140, "height": 140, "columns": 5, "rows": 3 },
     "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
     "symbols": [
-      { "filename": "symbols/a", "paytable": [0, 2, 25, 125, 750], "texture": null },
-      { "filename": "symbols/b", "paytable": [0, 0, 20, 100, 400], "texture": null },
-      { "filename": "symbols/c", "paytable": [0, 0, 15, 75, 250], "texture": null },
-      { "filename": "symbols/d", "paytable": [0, 0, 15, 75, 250], "texture": null },
-      { "filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null },
-      { "filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null },
-      { "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null },
-      { "filename": "symbols/h", "paytable": [0, 0, 5, 20, 60], "texture": null },
-      { "filename": "symbols/i", "paytable": [0, 0, 5, 20, 60], "texture": null },
-      { "filename": "symbols/j", "paytable": [0, 0, 5, 20, 60], "texture": null },
-      { "filename": "symbols/k", "paytable": [0, 0, 5, 20, 60], "texture": null },
-      { "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null },
-      { "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null }
+      {"id":"1", "filename": "symbols/a", "paytable": [0, 2, 25, 125, 750], "texture": null },
+      {"id":"2", "filename": "symbols/b", "paytable": [0, 0, 20, 100, 400], "texture": null },
+      {"id":"3", "filename": "symbols/c", "paytable": [0, 0, 15, 75, 250], "texture": null },
+      {"id":"4", "filename": "symbols/d", "paytable": [0, 0, 15, 75, 250], "texture": null },
+      {"id":"5", "filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null },
+      {"id":"6", "filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null },
+      {"id":"7", "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      {"id":"8", "filename": "symbols/h", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      {"id":"9", "filename": "symbols/i", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      {"id":"10", "filename": "symbols/j", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      {"id":"11", "filename": "symbols/k", "paytable": [0, 0, 5, 20, 60], "texture": null },
+      {"id":"12", "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null },
+      {"id":"13", "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null }
     ],
 
     "symbolAnimations":{
-      "a": { "filename": "Grave/Grave_00",  "startIndex":0,  "endIndex":59},
-      "d": { "filename": "Bat/Bat_00",  "startIndex":0,  "endIndex":59},
-      "e": { "filename": "Candle/Candle_00",  "startIndex":0,  "endIndex":59},
-      "c": { "filename": "Cat/cat_00",  "startIndex":0,  "endIndex":59},
-      "h": { "filename": "Pot/Pot_00",  "startIndex":0,  "endIndex":59},
-      "f": { "filename": "Pumpkin/Pumpkin_00",  "startIndex":0,  "endIndex":59},
-      "g": { "filename": "Scatter/Scatter_00",  "startIndex":0,  "endIndex":59}
+      "a": { "id":"1", "filename": "Grave/Grave_00",  "startIndex":0,  "endIndex":59},
+      "b": { "id":"2", "filename": "Owl/owl_00",  "startIndex":0,  "endIndex":59},
+      "c": { "id":"3", "filename": "Pumpkin/Pumpkin_00",  "startIndex":0,  "endIndex":59},
+      "d": { "id":"4", "filename": "Bat/Bat_00",  "startIndex":0,  "endIndex":59},
+      "e": { "id":"5", "filename": "Candle/Candle_00",  "startIndex":0,  "endIndex":59},
+      "f": { "id":"6", "filename": "A/A_00",  "startIndex":0,  "endIndex":59},
+      "g": { "id":"7", "filename": "K/K_00",  "startIndex":0,  "endIndex":59},
+      "h": { "id":"8", "filename": "Q/Q_00",  "startIndex":0,  "endIndex":59},
+      "i": { "id":"9", "filename": "J/J_00",  "startIndex":0,  "endIndex":59},
+      "j": { "id":"10", "filename": "10/10_00",  "startIndex":0,  "endIndex":59},
+      "k": { "id":"11", "filename": "9/9_00",  "startIndex":0,  "endIndex":59},
+      "s": { "id":"12", "filename": "Scatter_Moment/scatter_00",  "startIndex":0,  "endIndex":59},
+      "w": { "id":"13", "filename": "Wild_Moment/wild_00",  "startIndex":0,  "endIndex":59}
     },
     "animations":{
-      "bgchar": { "filename": "cat_anim/cat_00", "startIndex": 0, "endIndex": 119, "x":1082, "y":470 }
+      "bgchar": { "filename": "cat_anim/Cat_00", "startIndex": 0, "endIndex": 119, "x":1082, "y":470, "anchorX" :"0.5","anchorY":"0.5", "speed":0.5 },
+      "frame": { "filename": "frame_anim/flame_00", "startIndex": 3, "endIndex": 19, "x":0, "y":0, "anchorX" :"0","anchorY":"0","speed":0.5 },
+      "flame": { "filename": "Flame/Scatter flame_00", "startIndex": 0, "endIndex": 59, "x":0, "y":0, "anchorX" :"0","anchorY":"0","speed":0.5 }
     }
   },
 
@@ -194,7 +203,7 @@
             "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
-            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "stroke": { "color": "#391400", "width": 0, "join": "round" },
             "letterSpacing": 1
           },
           "valueStyle": {
@@ -202,7 +211,7 @@
             "fontFamily": "regularFont",
             "fontWeight": "bold",
             "fill": "#ffffff",
-            "stroke": { "color": "#391400", "width": 5, "join": "round" },
+            "stroke": { "color": "#391400", "width": 0, "join": "round" },
             "letterSpacing": 1
           },
 
