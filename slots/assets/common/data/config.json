@@ -1,57 +1,108 @@
 {
-  "bundleIds": ["common", "game", "animations"],
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2023-11-15",
+    "author": "Avinash Pabba - avinash.pabba@hotmail.com"
+  }, 
 
-  "fonts": {
-    "path": "fonts/",
-    "fontFamily": [
-      {
-        "alias": "regularFont",
-        "src": "Poppins-Bold.woff"
+  "resources": {
+    "assetBundles": {
+      "common": true,
+      "game": true,
+      "animations": true,
+      "bonus": false
+    },
+    
+    "fonts": {
+      "directory": "fonts/",
+      "families": [
+        {
+          "id": "regularFont",
+          "familyName": "Poppins",
+          "weight": "bold",
+          "files": ["Poppins-Bold.woff", "Poppins-Bold.woff2"]
+        },
+        {
+          "id": "regularFont",
+          "familyName": "Poppins",
+          "weight": "regular",
+          "files": ["Poppins-Regular.woff", "Poppins-Regular.woff2"]
+        }
+      ]
+    },
+
+    "images": {
+      "path": "images/@${resolution}x/",
+      "resolutions": {
+        "1x": "1x/",
+        "2x": "2x/",
+        "3x": "3x/"
       },
-      {
-        "alias": "regularFont",
-        "src": "Poppins-Regular.woff"
+      "bundles": {
+        "common": [{ "alias": "common", "src": "common0.json" }],
+        "game": [
+          { "alias": "intro", "src": "intro0.json" },
+          { "alias": "basic", "src": "basic0.json" }
+        ],
+        "bonus": [{ "alias": "features", "src": "features0.json" }],
+        "animations": [
+          { "alias": "animations", "src": "animations0.json" },
+          { "alias": "winPopups", "src": "winPopups.json" },
+          { "alias": "BitmapFont", "src": "BitmapFont.xml" },
+          { "alias": "Desyrel", "src": "desyrel.xml" }
+        ]
       }
-    ]
+    },
+
+    "animations": {     
+     
+      "bitmapFonts": [
+        {
+          "id": "main-font",
+          "fontFile": "BitmapFont.xml",
+          "textureFile": "BitmapFont.png"
+        },
+        {
+          "id": "decorative-font",
+          "fontFile": "Desyrel.xml",
+          "textureFile": "Desyrel.png"
+        }
+      ]
+    },
+
+    "audio": {
+      "directory": "assets/audio/",
+      "categories": {
+        "ui": "ui/",
+        "game": "game/",
+        "music": "music/"
+      }
+    }
   },
 
-  "assets": {
-    "path": "images/@${resolution}x/",
-    "common": [{ "alias": "common", "src": "common0.json" }],
-    "game": [{ "alias": "basic", "src": "basic0.json" }],
-    "animations": [
-      { "alias": "animations", "src": "animations0.json" },
-      { "alias": "winPopups", "src": "winPopups.json" },
-      { "alias": "BitmapFont", "src": "BitmapFont.xml" },
-      { "alias": "Desyrel", "src": "desyrel.xml" }
-    ],
+  "gameConfig": {
+    "gameInfo": { "id": "0", "tag": "tag", "name": "default", "category": "slot" },
+    "reelLayout": { "width": 180, "height": 172, "columns": 5, "rows": 3 },
 
-    "bonus": [{ "alias": "features", "src": "features0.json" }]
-  },
-
-  "sounds": {
-    "soundPath": "sounds/"
-  },
-
-  "data": {
-    "path": "data/",
-    "configFile": "config.json",
-    "stgConfig": "config_stg.json",
-    "width": 180,
-    "height": 172,
-    "columns": 5,
-    "rows": 3,
+    "filePaths": {
+      "config": "data/config.json",
+      "audio": "sounds/"
+    },
 
     "symbols": [
-      {"filename": "symbols/a","paytable": [0, 4, 40, 200, 500],"texture": null},
-      {"filename": "symbols/b","paytable": [0, 3, 30, 150, 300],"texture": null},
-      {"filename": "symbols/c","paytable": [0, 3, 25, 100, 200],"texture": null},
-      {"filename": "symbols/d","paytable": [0, 0, 20, 75, 150],"texture": null},
-      {"filename": "symbols/e","paytable": [0, 0, 15, 50, 100],"texture": null},
-      {"filename": "symbols/f","paytable": [0, 0, 10, 30, 80],"texture": null},
-      {"filename": "symbols/g","paytable": [0, 0, 5, 20, 60],"texture": null},
-      {"filename": "symbols/s","paytable": [0, 0, 4, 15, 50],"texture": null},
-      {"filename": "symbols/w","paytable": [0, 0, 4, 15, 50],"texture": null}
+      {"id":"1", "type": "regular","filename": "symbols/a", "paytable": [0, 2, 25, 125, 750], "texture": null, "animation": { "key": "owl_anim", "filename": "Grave/Grave_00", "startFrame": 0, "endFrame": 59 }},
+      {"id":"2", "type": "regular","filename": "symbols/b", "paytable": [0, 0, 20, 100, 400], "texture": null, "animation": { "key": "owl_anim", "filename": "Owl/owl_00", "startFrame": 0, "endFrame": 59 }},
+      {"id":"3", "type": "regular","filename": "symbols/c", "paytable": [0, 0, 15, 75, 250], "texture": null, "animation": { "key": "book_anim", "filename": "Pumpkin/Pumpkin_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"4", "type": "regular","filename": "symbols/d", "paytable": [0, 0, 15, 75, 250], "texture": null, "animation": { "key": "bat_anim", "filename": "Bat/bat_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"5", "type": "regular","filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null, "animation": { "key": "candle_anim", "filename": "Candle/Candle_00",  "startFrame":0,  "endFrame":59} },
+      {"id":"6", "type": "regular","filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null, "animation": { "key": "book_anim", "filename": "A/A_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"7", "type": "regular","filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "K/K_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"8", "type": "regular","filename": "symbols/h", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "Q/Q_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"9", "type": "regular","filename": "symbols/i", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "J/J_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"10", "type": "regular", "filename": "symbols/j", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "10/10_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"11", "type": "regular", "filename": "symbols/k", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "9/9_00", "startFrame": 0, "endFrame": 59 } },
+      {"id":"12", "type": "scatter", "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null, "animation": { "key": "scatter_anim", "filename": "Scatter_Moment/scatter_00", "startFrame": 0, "endFrame": 59 }  },
+      {"id":"13", "type": "wild", "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null, "animation": { "key": "wild_anim", "filename": "Wild_Moment/wild_00", "startFrame": 0, "endFrame": 59 } }     
     ]
   }
 }

@@ -48,6 +48,14 @@
 	"spriteSourceSize": {"x":0,"y":0,"w":346,"h":268},
 	"sourceSize": {"w":346,"h":268}
 },
+"popup/fsContinue/bg_disabled":
+{
+	"frame": {"x":1725,"y":1082,"w":114,"h":30},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":114,"h":30},
+	"sourceSize": {"w":114,"h":30}
+},
 "popup/fsContinue/bg_down":
 {
 	"frame": {"x":1725,"y":1082,"w":114,"h":30},
@@ -215,6 +223,6 @@
 	"format": "RGBA8888",
 	"size": {"w":1770,"h":1748},
 	"scale": "1.0",
-	"smartupdate": "$TexturePacker:SmartUpdate:9b40b35de76ac9ffdcd1f6e0c32dcba6:94a9879ffe887d8d02276bff54af4229:12b6cc114ad391ecfad2946d80ede848$"
+	"smartupdate": "$TexturePacker:SmartUpdate:512961d8fe601610a5ef201fcf3b5ead:9f21420a1061f9ff21d9871d46f790c4:12b6cc114ad391ecfad2946d80ede848$"
 }
 }

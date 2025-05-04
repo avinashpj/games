@@ -1,0 +1,60 @@
+{
+  "bundleIds": ["common", "game", "animations"],
+
+  "fonts": {
+    "path": "fonts/",
+    "fontFamily": [
+      {
+        "alias": "regularFont",
+        "src": "Poppins-Bold.woff"
+      },
+      {
+        "alias": "regularFont",
+        "src": "Poppins-Regular.woff"
+      }
+    ]
+  },
+
+  "assets": {
+    "path": "images/@${resolution}x/",
+    "common": [{ "alias": "common", "src": "common0.json" }],
+    "game": [
+      { "alias": "intro", "src": "intro0.json" },
+      { "alias": "basic", "src": "basic0.json" }
+    ],
+    "animations": [
+      { "alias": "animations", "src": "animations0.json" },
+      { "alias": "winPopups", "src": "winPopups.json" },
+      { "alias": "BitmapFont", "src": "BitmapFont.xml" },
+      { "alias": "Desyrel", "src": "desyrel.xml" }
+    ],
+
+    "bonus": [{ "alias": "features", "src": "features0.json" }]
+  },
+
+  "sounds": {
+    "soundPath": "sounds/"
+  },
+
+  "data": {
+    "path": "data/",
+    "configFile": "config.json",
+    "stgConfig": "config_stg.json",
+    "width": 180,
+    "height": 172,
+    "columns": 5,
+    "rows": 3,
+
+    "symbols": [
+      {"filename": "symbols/a","paytable": [0, 4, 40, 200, 500],"texture": null},
+      {"filename": "symbols/b","paytable": [0, 3, 30, 150, 300],"texture": null},
+      {"filename": "symbols/c","paytable": [0, 3, 25, 100, 200],"texture": null},
+      {"filename": "symbols/d","paytable": [0, 0, 20, 75, 150],"texture": null},
+      {"filename": "symbols/e","paytable": [0, 0, 15, 50, 100],"texture": null},
+      {"filename": "symbols/f","paytable": [0, 0, 10, 30, 80],"texture": null},
+      {"filename": "symbols/g","paytable": [0, 0, 5, 20, 60],"texture": null},
+      {"filename": "symbols/s","paytable": [0, 0, 4, 15, 50],"texture": null},
+      {"filename": "symbols/w","paytable": [0, 0, 4, 15, 50],"texture": null}
+    ]
+  }
+}

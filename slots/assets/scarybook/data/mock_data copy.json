@@ -1,0 +1,100 @@
+{
+    "init":[
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "99540.65", "bank": "2.00", "cash": "99540.65", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt", "num_rows": "3", "num_columns": "5", "min_coins": "10", "max_coins": "10", "default_coins": "10", "num_coins": "10", "default_coin_value": "10", "coin_values": "2;4;10;20;40;100;200;400;1000", "fixed_coins": "1", "paylines_type": "fixed", "num_paylines": "10", "num_paylines_fs": "10", "rtp": "95.50", "extra_coins": "", "max_win": [{ "default": "100"  } ], "max_win_hit": [  { "default": "0.0036"  } ], "extra_info": "" },
+            "current_round": [],
+            "next_round": [],
+            "previous_round": { "round_id": "65230881", "matrix": "fafcg;edeba;bbbad", "win_amount": 30000, "num_paylines": "10", "coin_value": 1000, "num_coins": "10", "sticky_win_details": "", "other_feature_win_details": "", "bonus_details": "", "other_details": null }
+        }
+    ],
+    
+    "spin":[
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "99553.65", "bank": "2.00", "cash": "99553.65", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65234921", "matrix": "badee;gdebg;ffgff", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []        
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "99098.65", "bank": "2.00", "cash": "99098.65", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65234931", "matrix": "segde;bbfbc;gdeeb", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "99866.65", "bank": "2.00", "cash": "99866.65", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65234943", "matrix": "deefe;efccf;fgwgg", "payline_wins": {   "format": "betline_number;win;blink;num_repeats;betline;matrix_positions",   "details": "7:10000:11100:3:eeeff:5,1,2" },
+            "win_amount": 10000, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null,  "bonus_games_won": [],  "payline_win_amount": 10000, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "99496.65", "bank": "2.00", "cash": "99496.65", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65234948", "matrix": "gdewa;ebbca;aedbb", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": [] 
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "101148.89", "bank": "2.00", "cash": "101148.89", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235393", "matrix": "ecsfd;fdggf;dsfee", "payline_wins": {   "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": {"first_name": "ng16","user_name": "ng16","account_id": 57,"balance": "101099.89","bank": "2.00","cash": "101099.89","currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235398", "matrix": "edegb;sfgea;befwg", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+         },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "101157.89", "bank": "2.00", "cash": "101157.89", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235400", "matrix": "sffbg;fdgdc;ccaee", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "7:10000:11100:3:fffbc:5,1,2" }, "win_amount": 10000, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 10000, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "100587.89", "bank": "2.00", "cash": "100587.89", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235412", "matrix": "gddcd;ffcdf;ecege", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" },
+            "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [],
+            "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "101109.89", "bank": "2.00", "cash": "101109.89", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235418", "matrix": "fdffe;ecggg;bbedf", "payline_wins": {   "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "100809.89", "bank": "2.00", "cash": "100809.89", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235422", "matrix": "gggfd;defgf;bbeee", "payline_wins": {   "format": "betline_number;win;blink;num_repeats;betline;matrix_positions",   "details": "2:10000:11100:3:gggfd:0,1,2" }, "win_amount": 10000, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 10000, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "100709.89", "bank": "2.00", "cash": "100709.89", "currency": "GBP", "bonus_bucks": "1000.00" },     
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235423", "matrix": "efedb;fdgeg;scsgc", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+        },
+
+        {
+            "player": { "first_name": "ng16", "user_name": "ng16", "account_id": 57, "balance": "100409.89", "bank": "2.00", "cash": "100409.89", "currency": "GBP", "bonus_bucks": "1000.00" },
+            "game": { "game_id": "8", "game_name": "treasuresofegypt" },
+            "current_round": { "round_id": "65235426", "matrix": "fdfge;dfdfc;scsdb", "payline_wins": { "format": "betline_number;win;blink;num_repeats;betline;matrix_positions", "details": "" }, "win_amount": 0, "screen_wins": [], "parent_type": null, "post_matrix_info": [], "multipliers": [], "cluster_wins": null, "bonus_games_won": [], "payline_win_amount": 0, "spin_type": "normal" },
+            "next_round": []
+        }
+    ]
+}
