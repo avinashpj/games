@@ -48,6 +48,8 @@
         "animations": [
           { "alias": "animations", "src": "animations0.json" },
           { "alias": "winPopups", "src": "winPopups.json" },
+          { "alias": "BigWin", "src": "BigWin.json" },
+          { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
           { "alias": "BitmapFont", "src": "BitmapFont.xml" },
           { "alias": "Desyrel", "src": "desyrel.xml" }
         ]
