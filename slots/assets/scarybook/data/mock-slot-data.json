@@ -1,0 +1,488 @@
+{
+
+  "init": {
+    "request": { "set": "game", "game": "bgb1" },
+    "response": {
+      "on": { "set": "game", "game": "bgb1" },
+      "previous": {
+        "bet_sum": 1,
+        "num_lines": 10,
+        "reels": [
+          [9, 1, 2],
+          [11, 2, 4],
+          [3, 11, 4],
+          [3, 7, 2],
+          [8, 3, 11]
+        ]
+      },
+      "config": false,
+      "game": {
+        "tag": "bgb1",
+        "id": 8,
+        "family": "slot1",
+        "size": { "width": 5, "height": 3 },
+        "paytable": {
+          "regular": [
+            { "id": 1, "name": "nine", "price": [0, 2, 4, 30, 100] },
+            { "id": 2, "name": "ten", "price": [0, 0, 4, 30, 100] },
+            { "id": 3, "name": "jack", "price": [0, 0, 4, 30, 100] },
+            { "id": 4, "name": "queen", "price": [0, 0, 4, 30, 100] },
+            { "id": 5, "name": "king", "price": [0, 0, 10, 50, 120] },
+            { "id": 6, "name": "ace", "price": [0, 0, 10, 50, 120] },
+            { "id": 7, "name": "drum", "price": [0, 0, 20, 70, 250] },
+            { "id": 8, "name": "flippers", "price": [0, 0, 20, 70, 250] },
+            { "id": 9, "name": "potato", "price": [0, 0, 20, 100, 400] },
+            { "id": 10, "name": "watermelon", "price": [0, 2, 30, 120, 800] },
+            { "id": 11, "name": "strawberry", "price": [0, 2, 30, 120, 800] }
+          ],
+          "scatter": [
+            { "id": 12, "name": "briefcase", "price": [0, 2, 4, 20, 500] }
+          ],
+          "wild": [
+            { "id": 13, "name": "banana", "price": [0, 10, 250, 2500, 9000] }
+          ]
+        },
+        "lines": [
+          ["-----", "XXXXX", "-----"],
+          ["-----", "-----", "XXXXX"],
+          ["XXXXX", "-----", "-----"],
+          ["--X--", "-X-X-", "X---X"],
+          ["X---X", "-X-X-", "--X--"],
+          ["-XXX-", "X---X", "-----"],
+          ["-----", "X---X", "-XXX-"],
+          ["XX---", "--X--", "---XX"],
+          ["---XX", "--X--", "XX---"],
+          ["-----", "--X--", "XX-XX"]
+        ],
+        "max_lines": 10,
+        "bonus": {
+          "f45": {
+            "number": {
+              "scatters": 3,
+              "spins": 45
+            },
+            "multiplier": 100
+          }
+        },
+        "bigwin_level": [20, 100, 250]
+      },
+      "bets": [
+        0.1, 0.2, 0.5, 0.8, 1.0, 1.5, 2.0, 3.0, 5.0, 8.0, 10.0, 15.0, 20.0,
+        40.0, 50.0, 60.0, 80.0, 100.0
+      ],
+      "wallet": { "balance": 7777, "currency": "FUN" }
+    }
+  },
+
+  "spins": [
+    {
+      "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [2, 12, 3],
+            [9, 5, 3],
+            [2, 5, 11],
+            [3, 7, 2],
+            [3, 11, 1]
+          ],
+          "total": {
+            "bet": 100
+          },
+          "counter": 53
+        },
+        "wallet": {
+          "balance": 7626.4
+        }
+      }
+    },
+    {
+      "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [11, 4, 6],
+            [8, 3, 5],
+            [10, 6, 9],
+            [1, 11, 7],
+            [1, 13, 5]
+          ],
+          "total": { "bet": 100 },
+          "counter": 54
+        },
+        "wallet": { "balance": 7526.4 }
+      }
+    },
+    {
+      "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [3, 2, 7],
+            [3, 5, 8],
+            [3, 11, 4],
+            [7, 2, 9],
+            [4, 10, 1]
+          ],
+          "win": [
+            {
+              "type": "regular",
+              "id": 3,
+              "multiplier": 4,
+              "line": 2,
+              "win": 40,
+              "reels": [
+                [3, 0, 0],
+                [3, 0, 0],
+                [3, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+              ]
+            }
+          ],
+          "total": { "win": 40, "bet": 100 },
+          "counter": 55
+        },
+        "wallet": { "balance": 7466.4 }
+      }
+    },
+    {
+      "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [6, 5, 12],
+            [11, 2, 4],
+            [6, 2, 12],
+            [6, 7, 5],
+            [3, 4, 10]
+          ],
+          "win": [
+            {
+              "type": "scatter",
+              "id": 12,
+              "multiplier": 2,
+              "win": 200,
+              "reels": [
+                [0, 0, 12],
+                [0, 0, 0],
+                [0, 0, 12],
+                [0, 0, 0],
+                [0, 0, 0]
+              ]
+            }
+          ],
+          "total": { "win": 200, "bet": 100 },
+          "counter": 56
+        },
+        "wallet": { "balance": 7566.4 }
+      }
+    },
+    {
+      "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [2, 4, 9],
+            [11, 2, 4],
+            [4, 9, 6],
+            [2, 10, 5],
+            [13, 5, 2]
+          ],
+          "total": { "bet": 100 },
+          "counter": 57
+        },
+        "wallet": {
+          "balance": 7466.4
+        }
+      }
+    },
+    {
+      "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [7, 3, 2],
+            [5, 1, 7],
+            [10, 6, 2],
+            [9, 1, 7],
+            [6, 1, 13]
+          ],
+          "total": { "bet": 100 },
+          "counter": 58
+        },
+        "wallet": { "balance": 7366.4 }
+      }
+    }
+  ],
+
+  "freeSpinAward": {
+    "request": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+    "response": {
+      "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+      "bet": {
+        "bet_sum": 100,
+        "num_lines": 10,
+        "reels": [
+          [3, 4, 12],
+          [8, 5, 12],
+          [12, 3, 4],
+          [4, 5, 8],
+          [7, 3, 1]
+        ],
+        "win": [
+          {
+            "type": "scatter",
+            "id": 12,
+            "multiplier": 4,
+            "win": 400,
+            "reels": [
+              [0, 0, 12],
+              [0, 0, 12],
+              [12, 0, 0],
+              [0, 0, 0],
+              [0, 0, 0]
+            ],
+            "award": {
+              "type": "freespins",
+              "number": 10
+            }
+          }
+        ],
+        "freespin": {
+          "counter": 0,
+          "limit": 10,
+          "bet": 100,
+          "win": 0
+        },
+        "total": {
+          "win": 400,
+          "bet": 100
+        },
+        "counter": 133
+      },
+      "wallet": {
+        "balance": 4506.4
+      }
+    }
+  },
+
+  "freeSpins": [
+    {
+      "request": { "set": "bet" },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [11, 5, 9],
+            [5, 1, 11],
+            [7, 4, 3],
+            [5, 7, 1],
+            [5, 13, 4]
+          ],
+          "freespin": { "counter": 1, "limit": 45, "bet": 100, "win": 400 },
+          "total": { "bet": 0 },
+          "counter": 134
+        },
+        "wallet": { "balance": 4506.4 }
+      }
+    },
+    {
+      "request": { "set": "bet" },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 100, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [2, 7, 6],
+            [5, 12, 2],
+            [8, 3, 7],
+            [7, 6, 9],
+            [9, 5, 13]
+          ],
+          "freespin": { "counter": 2, "limit": 45, "bet": 100, "win": 400 },
+          "total": { "bet": 0 },
+          "counter": 135
+        },
+
+        "wallet": {
+          "balance": 4506.4
+        }
+      }
+    },
+    {
+      "request": {
+        "set": "bet"
+      },
+      "response": {
+        "on": {
+          "set": "bet",
+          "bet_sum": 100,
+          "num_lines": 10
+        },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [4, 8, 2],
+            [8, 4, 10],
+            [5, 4, 8],
+            [3, 13, 1],
+            [6, 8, 1]
+          ],
+          "freespin": {
+            "counter": 3,
+            "limit": 45,
+            "bet": 100,
+            "win": 400
+          },
+          "total": {
+            "bet": 0
+          },
+          "counter": 136
+        },
+        "wallet": {
+          "balance": 4506.4
+        }
+      }
+    },
+    {
+      "request": {
+        "set": "bet"
+      },
+      "response": {
+        "on": {
+          "set": "bet",
+          "bet_sum": 100,
+          "num_lines": 10
+        },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [7, 1, 9],
+            [5, 13, 6],
+            [3, 7, 2],
+            [7, 1, 4],
+            [6, 8, 5]
+          ],
+          "win": [
+            {
+              "type": "wild",
+              "id": 1,
+              "multiplier": 4,
+              "line": 0,
+              "win": 40,
+              "reels": [
+                [0, 1, 0],
+                [0, 13, 0],
+                [0, 0, 0],
+                [0, 0, 0],
+                [0, 0, 0]
+              ]
+            }
+          ],
+          "freespin": {
+            "counter": 4,
+            "limit": 45,
+            "bet": 100,
+            "win": 400
+          },
+          "total": {
+            "win": 40,
+            "bet": 0
+          },
+          "counter": 137
+        },
+        "wallet": {
+          "balance": 4546.4
+        }
+      }
+    },
+    {
+      "request": {
+        "set": "bet"
+      },
+      "response": {
+        "on": {
+          "set": "bet",
+          "bet_sum": 100,
+          "num_lines": 10
+        },
+        "bet": {
+          "bet_sum": 100,
+          "num_lines": 10,
+          "reels": [
+            [13, 5, 8],
+            [7, 3, 8],
+            [10, 1, 7],
+            [7, 6, 9],
+            [1, 11, 3]
+          ],
+          "freespin": {
+            "counter": 5,
+            "limit": 45,
+            "bet": 100,
+            "win": 440
+          },
+          "total": {
+            "bet": 0
+          },
+          "counter": 138
+        },
+        "wallet": {
+          "balance": 4546.4
+        }
+      }
+    },
+    {
+      "request": { "set": "bet" },
+      "response": {
+        "on": { "set": "bet", "bet_sum": 1, "num_lines": 10 },
+        "bet": {
+          "bet_sum": 1,
+          "num_lines": 10,
+          "reels": [
+            [7, 1, 9],
+            [9, 3, 4],
+            [7, 5, 4],
+            [3, 7, 5],
+            [5, 1, 11]
+          ],
+          "freespin": {
+            "counter": 45,
+            "limit": 45,
+            "bet": 1,
+            "last": true,
+            "win": 55.4
+          },
+          "total": { "bet": 0 },
+          "counter": 45
+        },
+        "wallet": { "balance": 7832.4 }
+      }
+    }
+  ]
+  
+}

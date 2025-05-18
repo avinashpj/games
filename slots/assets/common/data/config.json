@@ -48,10 +48,11 @@
         "animations": [
           { "alias": "animations", "src": "animations0.json" },
           { "alias": "winPopups", "src": "winPopups.json" },
-          { "alias": "BigWin", "src": "BigWin.json" },
+          { "alias": "BigWinData", "src": "BigWin.json" },
           { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
           { "alias": "BitmapFont", "src": "BitmapFont.xml" },
           { "alias": "Desyrel", "src": "desyrel.xml" }
+
         ]
       }
     },
@@ -85,6 +86,12 @@
   "gameConfig": {
     "gameInfo": { "id": "0", "tag": "tag", "name": "default", "category": "slot" },
     "reelLayout": { "width": 180, "height": 172, "columns": 5, "rows": 3 },
+
+    "betOptions": [0.10, 0.20, 0.50, 0.80, 1.00, 1.50, 2.00, 3.00, 5.00, 8.00, 10.00, 15.00, 20.00, 40.00, 50.00, 60.00, 80.00, 100.00],
+    "lineOptions": [1, 5, 10, 15, 20, 25],
+    "bigWinLevels": [20, 100, 250],
+
+    "socketURL": "wss://wss.polishchuk.com/nonstop-ws",
 
     "filePaths": {
       "config": "data/config.json",
