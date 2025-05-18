@@ -213,7 +213,7 @@
         },
 
         "panel": {
-          "background": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
+          "background": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0, "visible":false } },
           "textStyles": {
             "label": {
               "fontFamily": "regularFont",
@@ -536,8 +536,8 @@
         },
        
         "panel": {
-          "portraitBg": { "frameId": "panel/bgPort", "prop":{  "x":0, "y":-640, "wid": 0, "hei": 0 } },
-          "background": { "frameId": "panel/bgLand", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0 } },
+          "portraitBg": { "frameId": "panel/bgPort", "prop":{ "x": 0, "y": -640, "wid": 0, "hei": 0, "visible": false } },
+          "background": { "frameId": "panel/bgLand", "prop":{ "x": 0, "y": -155, "wid": 0, "hei": 0, "visible": false } },
           "textStyles": {
               "label": {
               "fontSize": 10,
