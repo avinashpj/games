@@ -50,8 +50,7 @@
           { "alias": "winPopups", "src": "winPopups.json" },
           { "alias": "BigWinData", "src": "BigWin.json" },
           { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
-          { "alias": "BitmapFont", "src": "BitmapFont.xml" },
-          { "alias": "Desyrel", "src": "desyrel.xml" }
+          { "alias": "bitmap1x-export", "src": "bitmap1x-export.xml" }
 
         ]
       }
@@ -62,13 +61,13 @@
       "bitmapFonts": [
         {
           "id": "main-font",
-          "fontFile": "BitmapFont.xml",
-          "textureFile": "BitmapFont.png"
+          "fontFile": "bitmap1x-export.xml",
+          "textureFile": "bitmap1x-export.png"
         },
         {
           "id": "decorative-font",
-          "fontFile": "Desyrel.xml",
-          "textureFile": "Desyrel.png"
+          "fontFile": "bitmap1x-export.xml",
+          "textureFile": "bitmap1x-export.png"
         }
       ]
     },
