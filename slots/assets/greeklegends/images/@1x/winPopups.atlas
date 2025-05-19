@@ -1,0 +1,321 @@
+
+winPopups.png
+size: 4096,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1Big_Back
+  rotate: false
+  xy: 1889, 259
+  size: 411, 182
+  orig: 411, 182
+  offset: 0, 0
+  index: -1
+1Big_Front
+  rotate: false
+  xy: 3535, 886
+  size: 391, 170
+  orig: 391, 170
+  offset: 0, 0
+  index: -1
+1Big_Mid
+  rotate: false
+  xy: 3531, 702
+  size: 404, 182
+  orig: 404, 182
+  offset: 0, 0
+  index: -1
+1Win1_Front
+  rotate: false
+  xy: 3009, 889
+  size: 524, 167
+  orig: 524, 167
+  offset: 0, 0
+  index: -1
+1Win_Back
+  rotate: false
+  xy: 3321, 1440
+  size: 538, 179
+  orig: 538, 179
+  offset: 0, 0
+  index: -1
+1Win_Mid
+  rotate: false
+  xy: 2455, 521
+  size: 538, 179
+  orig: 538, 179
+  offset: 0, 0
+  index: -1
+2Mega_Back
+  rotate: false
+  xy: 790, 130
+  size: 747, 192
+  orig: 747, 192
+  offset: 0, 0
+  index: -1
+2Mega_Front
+  rotate: false
+  xy: 2455, 1083
+  size: 725, 170
+  orig: 725, 170
+  offset: 0, 0
+  index: -1
+2Mega_Mid
+  rotate: false
+  xy: 2556, 1255
+  size: 746, 191
+  orig: 746, 191
+  offset: 0, 0
+  index: -1
+2Win_Back
+  rotate: false
+  xy: 2455, 894
+  size: 552, 187
+  orig: 552, 187
+  offset: 0, 0
+  index: -1
+2Win_Front
+  rotate: false
+  xy: 3005, 552
+  size: 524, 166
+  orig: 524, 166
+  offset: 0, 0
+  index: -1
+2Win_Mid
+  rotate: false
+  xy: 3182, 1058
+  size: 546, 187
+  orig: 546, 187
+  offset: 0, 0
+  index: -1
+3Mega_Back
+  rotate: true
+  xy: 1889, 443
+  size: 748, 195
+  orig: 748, 195
+  offset: 0, 0
+  index: -1
+3Mega_Front
+  rotate: true
+  xy: 2282, 662
+  size: 725, 171
+  orig: 725, 171
+  offset: 0, 0
+  index: -1
+3Mega_Mid
+  rotate: true
+  xy: 2086, 443
+  size: 748, 194
+  orig: 748, 194
+  offset: 0, 0
+  index: -1
+3Super_Back
+  rotate: false
+  xy: 2, 127
+  size: 786, 195
+  orig: 786, 195
+  offset: 0, 0
+  index: -1
+3Super_Front
+  rotate: false
+  xy: 2564, 1448
+  size: 755, 171
+  orig: 755, 171
+  offset: 0, 0
+  index: -1
+3Super_Mid
+  rotate: true
+  xy: 1693, 409
+  size: 782, 194
+  orig: 782, 194
+  offset: 0, 0
+  index: -1
+3Win_Back
+  rotate: false
+  xy: 3304, 1247
+  size: 581, 191
+  orig: 581, 191
+  offset: 0, 0
+  index: -1
+3Win_Front
+  rotate: false
+  xy: 3005, 720
+  size: 524, 167
+  orig: 524, 167
+  offset: 0, 0
+  index: -1
+3Win_Mid
+  rotate: false
+  xy: 2455, 702
+  size: 548, 190
+  orig: 548, 190
+  offset: 0, 0
+  index: -1
+Big_Win_Elipse
+  rotate: true
+  xy: 3847, 1622
+  size: 416, 205
+  orig: 416, 205
+  offset: 0, 0
+  index: -1
+Big_Win_Rays
+  rotate: false
+  xy: 2, 1601
+  size: 1281, 437
+  orig: 1281, 437
+  offset: 0, 0
+  index: -1
+Big_Win_Shine
+  rotate: false
+  xy: 2564, 1621
+  size: 1281, 417
+  orig: 1281, 417
+  offset: 0, 0
+  index: -1
+Big_Win_Stars
+  rotate: false
+  xy: 1284, 1193
+  size: 835, 406
+  orig: 835, 406
+  offset: 0, 0
+  index: -1
+Super_Mega_Win_Stars
+  rotate: false
+  xy: 1284, 1193
+  size: 835, 406
+  orig: 835, 406
+  offset: 0, 0
+  index: -1
+CoinL_01
+  rotate: false
+  xy: 192, 43
+  size: 117, 82
+  orig: 117, 82
+  offset: 0, 0
+  index: -1
+CoinL_02
+  rotate: true
+  xy: 3454, 474
+  size: 76, 69
+  orig: 76, 69
+  offset: 0, 0
+  index: -1
+CoinL_03
+  rotate: false
+  xy: 2455, 1264
+  size: 80, 123
+  orig: 80, 123
+  offset: 0, 0
+  index: -1
+CoinL_04
+  rotate: false
+  xy: 2, 2
+  size: 188, 123
+  orig: 188, 123
+  offset: 0, 0
+  index: -1
+CoinL_05
+  rotate: false
+  xy: 3531, 559
+  size: 72, 57
+  orig: 72, 57
+  offset: 0, 0
+  index: -1
+CoinL_06
+  rotate: false
+  xy: 1693, 362
+  size: 76, 45
+  orig: 76, 45
+  offset: 0, 0
+  index: -1
+CoinR_01
+  rotate: false
+  xy: 3531, 618
+  size: 118, 82
+  orig: 118, 82
+  offset: 0, 0
+  index: -1
+CoinR_02
+  rotate: false
+  xy: 3730, 1103
+  size: 72, 58
+  orig: 72, 58
+  offset: 0, 0
+  index: -1
+CoinR_03
+  rotate: false
+  xy: 2282, 578
+  size: 119, 82
+  orig: 119, 82
+  offset: 0, 0
+  index: -1
+CoinR_04
+  rotate: true
+  xy: 2121, 1204
+  size: 183, 116
+  orig: 183, 116
+  offset: 0, 0
+  index: -1
+CoinR_05
+  rotate: false
+  xy: 2282, 519
+  size: 83, 57
+  orig: 83, 57
+  offset: 0, 0
+  index: -1
+CoinR_06
+  rotate: false
+  xy: 3730, 1163
+  size: 119, 82
+  orig: 119, 82
+  offset: 0, 0
+  index: -1
+Mega_Win_Elipse
+  rotate: false
+  xy: 2995, 325
+  size: 457, 225
+  orig: 457, 225
+  offset: 0, 0
+  index: -1
+Mega_Win_Rays
+  rotate: false
+  xy: 2, 1162
+  size: 1280, 437
+  orig: 1280, 437
+  offset: 0, 0
+  index: -1
+Mega_Win_Shine
+  rotate: false
+  xy: 2, 743
+  size: 1281, 417
+  orig: 1281, 417
+  offset: 0, 0
+  index: -1
+Mega_Win_Stars
+  rotate: true
+  xy: 1285, 356
+  size: 835, 406
+  orig: 835, 406
+  offset: 0, 0
+  index: -1
+Super_Mega_Win_Elipse
+  rotate: false
+  xy: 2121, 1389
+  size: 433, 210
+  orig: 433, 210
+  offset: 0, 0
+  index: -1
+Super_Mega_Win_Rays
+  rotate: false
+  xy: 1285, 1601
+  size: 1277, 437
+  orig: 1277, 437
+  offset: 0, 0
+  index: -1
+Super_Mega_Win_Shine
+  rotate: false
+  xy: 2, 324
+  size: 1281, 417
+  orig: 1281, 417
+  offset: 0, 0
+  index: -1

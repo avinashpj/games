@@ -1,0 +1,86 @@
+{
+    "init":[     
+        {
+            "on": { "set": "game", "game": "bgb1" },
+            "previous": { "bet_sum": 1, "num_lines": 10,
+            "reels": [ [9, 6, 2], [8, 1, 6], [2, 5, 11], [2, 9, 3], [10, 1, 9] ] },
+            "config": false,
+            "game": {
+                "max_lines": 10,
+                "tag": "bgb1", "id": 8, "family": "slot1", "size": { "width": 5, "height": 3 },
+                "paytable": {
+                    "regular": [
+                        {"id": 1, "name": "nine", "price": [0, 2, 4, 30, 100]},
+                        {"id": 2, "name": "ten", "price": [0, 0, 4, 30, 100]},
+                        {"id": 3, "name": "jack", "price": [0, 0, 4, 30, 100]},
+                        {"id": 4, "name": "queen", "price": [0, 0, 4, 30, 100]},
+                        {"id": 5, "name": "king", "price": [0, 0, 10, 50, 120]},
+                        {"id": 6, "name": "ace", "price": [0, 0, 10, 50, 120]},
+                        {"id": 7, "name": "drum", "price": [0, 0, 20, 70, 250]},
+                        {"id": 8, "name": "flippers", "price": [0, 0, 20, 70, 250]},
+                        {"id": 9, "name": "potato", "price": [0, 0, 20, 100, 400]},
+                        {"id": 10, "name": "watermelon", "price": [0, 2, 30, 120, 800]},
+                        {"id": 11, "name": "strawberry", "price": [0, 2, 30, 120, 800]}
+                    ],
+                    "scatter": [
+                        {"id": 12, "name": "briefcase", "price": [0, 2, 4, 20, 500]}
+                    ],
+                    "wild": [
+                        {"id": 13, "name": "banana", "price": [0, 10, 250, 2500, 9000]}
+                    ]
+                },
+                "bonus": { "f45": { "number": { "scatters": 3, "spins": 45 }, "multiplier": 100 }},
+                "bigwin_level": [20, 100, 250]
+            },
+            "bets": [0.10, 0.20, 0.50, 0.80, 1.00, 1.50, 2.00, 3.00, 5.00, 8.00, 10.00, 15.00, 20.00, 40.00, 50.00, 60.00, 80.00, 100.00],            
+            "wallet": { "balance": 7777, "currency": "FUN" }
+        }
+    ],
+    
+    "spin":[
+        {
+            "on": { "set": "bet", "bet_sum": 1, "num_lines": 10 },
+            "bet": { "bet_sum": 1, "num_lines": 10, "reels": [ [7, 3, 2], [6, 3, 9], [11, 6, 1], [8, 2, 10], [5, 2, 11] ],
+            "total": { "bet": 1 }, "counter": 1  },  
+            "wallet": { "balance": 7776, "currency": "FUN" }
+        },
+
+        {
+            "on": { "set": "bet", "bet_sum": 1, "num_lines": 10  },
+            "bet": { "bet_sum": 1, "num_lines": 10, "reels": [ [1, 1, 1], [6, 3, 9], [11, 6, 1], [8, 2, 10], [5, 2, 11] ], 
+                "win": [{ "type": "regular",  "id": 1,  "multiplier": 4,  "line": 1,  "win": 4, "reels": [[0, 1, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]}],
+                "total": { "bet": 1, "win": 4},
+                "counter": 2 },
+            "wallet": { "balance": 7779, "currency": "FUN"}
+        },
+
+        {"on":{"set":"bet","bet_sum":100,"num_lines":10},"bet":{"bet_sum":100,"num_lines":10,"reels":[[6,5,12],[11,2,4],[6,2,12],[6,7,5],[3,4,10]],"win":[{"type":"scatter","id":12,"multiplier":2,"win":200,"reels":[[0,0,12],[0,0,0],[0,0,12],[0,0,0],[0,0,0]]}],"total":{"win":200,"bet":100},"counter":56},"PHP":{"extra":{"PLAYER_ACTION":"SET_BET","PLAYER_IP":"122.183.157.234","ORIGIN":"https://polishchuk.com","BALANCE":756640,"DEMO":1,"GAME_ID":8,"GAME_TAG":"bgb1","STAKE":[{"BET":10000,"WIN":20000,"STATUS":"success","COUNTER":56}],"STAKE_INDEX":0,"PHP_SCRIPT":"0","SCRIPT":"signin"},"params":{"currency":"EUR","language":"UK","player":"p436739908"}},"math_debug":{"current":{"bet":74600,"win":57540,"rtp":77.13,"count":95},"days_3":{"bet":86600,"win":86600,"rtp":66.674,"count":107}},"wallet":{"balance":7566.4}},
+        {"on":{"set":"bet","bet_sum":100,"num_lines":10},"bet":{"bet_sum":100,"num_lines":10,"reels":[[11,4,13],[5,1,7],[9,1,2],[1,11,7],[3,4,10]],"win":[{"type":"wild","id":1,"multiplier":4,"line":3,"win":40,"reels":[[0,0,13],[0,1,0],[0,0,0],[0,0,0],[0,0,0]]}],"total":{"win":40,"bet":100},"counter":68},"PHP":{"extra":{"PLAYER_ACTION":"SET_BET","PLAYER_IP":"122.183.157.234","ORIGIN":"https://polishchuk.com","BALANCE":660640,"DEMO":1,"GAME_ID":8,"GAME_TAG":"bgb1","STAKE":[{"BET":10000,"WIN":4000,"STATUS":"success","COUNTER":68}],"STAKE_INDEX":0,"PHP_SCRIPT":"0","SCRIPT":"signin"},"params":{"currency":"EUR","language":"UK","player":"p436739908"}},"math_debug":{"current":{"bet":194600,"win":81540,"rtp":41.90,"count":107},"days_3":{"bet":206600,"win":206600,"rtp":39.564,"count":119}},"wallet":{"balance":6606.4}},
+        {
+            "on": { "set": "bet", "bet_sum": 1, "num_lines": 10},
+            "bet": { "bet_sum": 1, "num_lines": 10, "reels": [[12, 12, 12],[6, 3, 9],[11, 6, 1],[8, 2, 10],[5, 2, 11] ],
+            "freespin": {"counter": 1,"limit": 45,"bet": 1,"win": 0 },
+            "total": {"bet": 0 }, "counter": 7  },
+            "wallet": { "balance": 7771, "currency": "FUN"  }
+        },
+        {"on":{"set":"bet","bet_sum":100,"num_lines":10},"bet":{"bet_sum":100,"num_lines":10,"reels":[[3,4,12],[8,5,12],[12,3,4],[4,5,8],[7,3,1]],"win":[{"type":"scatter","id":12,"multiplier":4,"win":400,"reels":[[0,0,12],[0,0,12],[12,0,0],[0,0,0],[0,0,0]],"award":{"type":"freespins","number":45}}],"freespin":{"counter":0,"limit":45,"bet":100,"win":0},"total":{"win":400,"bet":100},"counter":133},"PHP":{"extra":{"PLAYER_ACTION":"SET_BET","PLAYER_IP":"122.183.157.234","ORIGIN":"https://polishchuk.com","BALANCE":450640,"DEMO":1,"GAME_ID":8,"GAME_TAG":"bgb1","STAKE":[{"BET":10000,"WIN":40000,"STATUS":"success","COUNTER":133}],"STAKE_INDEX":0,"PHP_SCRIPT":"0","SCRIPT":"signin"},"params":{"currency":"EUR","language":"UK","player":"p436739908"}},"math_debug":{"current":{"bet":844600,"win":521540,"rtp":61.74,"count":172},"days_3":{"bet":856600,"win":856600,"rtp":60.908,"count":184}},"wallet":{"balance":4506.4}}
+    ],
+    "freespin":[
+        {
+            "on": { "set": "bet", "bet_sum": 1, "num_lines": 10 },
+            "bet": { "bet_sum": 1, "num_lines": 10, "reels": [ [9, 6, 3], [2, 5, 13], [9, 10, 6], [3, 7, 5], [10, 5, 1] ],
+            "win": [ { "type": "wild", "id": 6, "multiplier": 20, "line": 6, "win": 2, "reels": [[0, 6, 0],[0, 0, 13],[0, 0, 6],[0, 0, 0],[0, 0, 0]]}],
+            "freespin": { "counter": 2, "limit": 45, "bet": 1, "win": 0 },
+            "total": { "win": 2, "bet": 0 }, "counter": 8 },
+            "wallet": { "balance": 7773, "currency": "FUN" }
+        },
+
+        {
+            "on": {"set": "bet","bet_sum": 1,"num_lines": 10          },
+            "bet": {"bet_sum": 1,"num_lines": 10,"reels": [ [13, 13, 13], [13, 13, 13], [13, 13, 13], [13, 13, 13], [13, 13, 13]],
+            "win": [ {"type": "wild","id": 13,"multiplier": 9000,"line": 10,"win": 9000,"reels": [[0, 13, 0],[0, 13, 0],[0, 13, 0],[0, 13, 0],[0, 13, 0]    ]  }],
+            "total": {  "bet": 1,  "win": 9000}, "counter": 9},
+            "wallet": {"balance": 16773,"currency": "FUN"}
+        }
+    ]
+}

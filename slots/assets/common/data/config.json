@@ -50,7 +50,7 @@
           { "alias": "winPopups", "src": "winPopups.json" },
           { "alias": "BigWinData", "src": "BigWin.json" },
           { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
-          { "alias": "bitmap1x-export", "src": "bitmap1x-export.xml" }
+          { "alias": "bitmapFont", "src": "bitmapFont.xml" }
 
         ]
       }
