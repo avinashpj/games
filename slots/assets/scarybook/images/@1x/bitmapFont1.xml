@@ -2,7 +2,7 @@
 	<info face="bitmapFont" size="120" bold="0" italic="0" chasrset="" unicode="0" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1"/>
 	<common lineHeight="80" base="61" scaleW="533" scaleH="591" pages="1" packed="0" />
 	<pages>
-		<page id="0" file="bitmapFont.png" />
+		<page id="0" file="bitmapFont1.png" />
 	</pages>
 	<chars count="16">
 		<char id="48" x="331" y="198" width="105" height="198" xoffset="0" yoffset="-118" xadvance="106" page="0" chnl="0" letter="0" /><!-- 0 -->
