@@ -33,42 +33,27 @@
 
     "images": {
       "path": "images/@${resolution}x/",
-      "resolutions": {
-        "1x": "1x/",
-        "2x": "2x/",
-        "3x": "3x/"
-      },
+      "resolutions": {"1x": "1x/","2x": "2x/","3x": "3x/" },
       "bundles": {
         "common": [{ "alias": "common", "src": "common0.json" }],
         "game": [
           { "alias": "intro", "src": "intro0.json" },
           { "alias": "basic", "src": "basic0.json" }
         ],
-        "bonus": [{ "alias": "features", "src": "features0.json" }],
         "animations": [
           { "alias": "animations", "src": "animations0.json" },
           { "alias": "winPopups", "src": "winPopups.json" },
           { "alias": "BigWinData", "src": "BigWin.json" },
           { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
           { "alias": "bitmapFont1", "src": "bitmapFont1.xml" }
-
         ]
       }
     },
 
     "animations": {     
-     
-      "bitmapFonts": [
-        {
-          "id": "main-font",
-          "fontFile": "bitmap1x-export.xml",
-          "textureFile": "bitmap1x-export.png"
-        },
-        {
-          "id": "decorative-font",
-          "fontFile": "bitmap1x-export.xml",
-          "textureFile": "bitmap1x-export.png"
-        }
+      "bitmapFonts": [ 
+        { "id": "main-font", "fontFile": "bitmap1x-export.xml", "textureFile": "bitmap1x-export.png" },
+        { "id": "decorative-font", "fontFile": "bitmap1x-export.xml", "textureFile": "bitmap1x-export.png" }
       ]
     },
 

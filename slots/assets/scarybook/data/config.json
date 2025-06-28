@@ -5,30 +5,261 @@
     "author": "Avinash Pabba - avinash.pabba@hotmail.com"
   },
 
+  "resources": {
+    "assetBundles": {
+      "common": true,
+      "game": true,
+      "animations": true,
+      "bonus": false
+    },
+
+    "fonts": {
+      "directory": "fonts/",
+      "families": []
+    },
+
+    "images": {      
+      "bundles": {        
+        "bonus": [{ "alias": "features", "src": "features0.json" }],
+        "animations": [
+          { "alias": "animations", "src": "animations0.json" },
+          { "alias": "winPopups", "src": "winPopups.json" },
+          { "alias": "BigWinData", "src": "BigWin.json" },
+          { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
+          { "alias": "bitmapFont1", "src": "bitmapFont1.xml" }
+        ]
+      }
+    },
+
+    "animations": {
+      "bitmapFonts": [ 
+        { "id": "main-font", "fontFile": "bitmap1x-export.xml", "textureFile": "bitmap1x-export.png" },
+        { "id": "decorative-font", "fontFile": "bitmap1x-export.xml", "textureFile": "bitmap1x-export.png" }
+      ]
+    },
+
+    "audio": {
+      "directory": "assets/audio/",
+      "categories": {
+        "ui": "ui/",
+        "game": "game/",
+        "music": "music/"
+      }
+    }
+  },
+
   "gameConfig": {
-    "gameInfo": { "id": "8", "tag": "bgb1", "name": "Scary Book", "category": "slot" },
+    "gameInfo": {
+      "id": "8",
+      "tag": "bgb1",
+      "name": "Scary Book",
+      "category": "slot"
+    },
     "reelLayout": { "width": 140, "height": 140, "columns": 5, "rows": 3 },
 
-    "symbols": [        
-      {"id":1, "type": "regular","filename": "symbols/a", "paytable": [0, 2, 25, 125, 750], "texture": null, "animation": { "key": "owl_anim", "filename": "Grave/Grave_00", "startFrame": 0, "endFrame": 59 }},
-      {"id":2, "type": "regular","filename": "symbols/b", "paytable": [0, 0, 20, 100, 400], "texture": null, "animation": { "key": "owl_anim", "filename": "Owl/owl_00", "startFrame": 0, "endFrame": 59 }},
-      {"id":3, "type": "regular","filename": "symbols/c", "paytable": [0, 0, 15, 75, 250], "texture": null, "animation": { "key": "book_anim", "filename": "Pumpkin/Pumpkin_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":4, "type": "regular","filename": "symbols/d", "paytable": [0, 0, 15, 75, 250], "texture": null, "animation": { "key": "bat_anim", "filename": "Bat/Bat_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":5, "type": "regular","filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null, "animation": { "key": "candle_anim", "filename": "Candle/Candle_00",  "startFrame":0,  "endFrame":59} },
-      {"id":6, "type": "regular","filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null, "animation": { "key": "book_anim", "filename": "A/A_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":7, "type": "regular","filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "K/K_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":8, "type": "regular","filename": "symbols/h", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "Q/Q_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":9, "type": "regular","filename": "symbols/i", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "J/J_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":10, "type": "regular", "filename": "symbols/j", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "10/10_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":11, "type": "regular", "filename": "symbols/k", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "9/9_00", "startFrame": 0, "endFrame": 59 } },
-      {"id":12, "type": "scatter", "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null, "animation": { "key": "scatter_anim", "filename": "Scatter_Moment/scatter_00", "startFrame": 0, "endFrame": 59 }  },
-      {"id":13, "type": "wild", "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null, "animation": { "key": "wild_anim", "filename": "Wild_Moment/wild_00", "startFrame": 0, "endFrame": 59 } }     
+    "symbols": [
+      {
+        "id": 1,
+        "type": "regular",
+        "filename": "symbols/a",
+        "paytable": [0, 2, 25, 125, 750],
+        "texture": null,
+        "animation": {
+          "key": "owl_anim",
+          "filename": "Grave/Grave_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 2,
+        "type": "regular",
+        "filename": "symbols/b",
+        "paytable": [0, 0, 20, 100, 400],
+        "texture": null,
+        "animation": {
+          "key": "owl_anim",
+          "filename": "Owl/owl_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 3,
+        "type": "regular",
+        "filename": "symbols/c",
+        "paytable": [0, 0, 15, 75, 250],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "Pumpkin/Pumpkin_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 4,
+        "type": "regular",
+        "filename": "symbols/d",
+        "paytable": [0, 0, 15, 75, 250],
+        "texture": null,
+        "animation": {
+          "key": "bat_anim",
+          "filename": "Bat/Bat_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 5,
+        "type": "regular",
+        "filename": "symbols/e",
+        "paytable": [0, 0, 15, 50, 100],
+        "texture": null,
+        "animation": {
+          "key": "candle_anim",
+          "filename": "Candle/Candle_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 6,
+        "type": "regular",
+        "filename": "symbols/f",
+        "paytable": [0, 0, 10, 30, 80],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "A/A_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 7,
+        "type": "regular",
+        "filename": "symbols/g",
+        "paytable": [0, 0, 5, 20, 60],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "K/K_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 8,
+        "type": "regular",
+        "filename": "symbols/h",
+        "paytable": [0, 0, 5, 20, 60],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "Q/Q_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 9,
+        "type": "regular",
+        "filename": "symbols/i",
+        "paytable": [0, 0, 5, 20, 60],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "J/J_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 10,
+        "type": "regular",
+        "filename": "symbols/j",
+        "paytable": [0, 0, 5, 20, 60],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "10/10_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 11,
+        "type": "regular",
+        "filename": "symbols/k",
+        "paytable": [0, 0, 5, 20, 60],
+        "texture": null,
+        "animation": {
+          "key": "book_anim",
+          "filename": "9/9_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 12,
+        "type": "scatter",
+        "filename": "symbols/s",
+        "paytable": [0, 0, 4, 15, 50],
+        "texture": null,
+        "animation": {
+          "key": "scatter_anim",
+          "filename": "Scatter_Moment/scatter_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      },
+      {
+        "id": 13,
+        "type": "wild",
+        "filename": "symbols/w",
+        "paytable": [0, 0, 4, 15, 50],
+        "texture": null,
+        "animation": {
+          "key": "wild_anim",
+          "filename": "Wild_Moment/wild_00",
+          "startFrame": 0,
+          "endFrame": 59
+        }
+      }
     ],
 
     "animations": {
-      "bgchar": { "filename": "cat_anim/Cat_00", "startFrame": 0, "endFrame": 119, "x":1082, "y":470, "anchorX" :"0.5","anchorY":"0.5", "speed":0.5 },
-      "frame": { "filename": "frame_anim/flame_00", "startFrame": 3, "endFrame": 19, "x":0, "y":0, "anchorX" :"0","anchorY":"0","speed":0.5 },
-      "flame": { "filename": "Flame/Scatter flame_00", "startFrame": 0, "endFrame": 59, "x":0, "y":0, "anchorX" :"0","anchorY":"0","speed":0.5 },
+      "bgchar": {
+        "filename": "cat_anim/Cat_00",
+        "startFrame": 0,
+        "endFrame": 119,
+        "x": 1082,
+        "y": 470,
+        "anchorX": "0.5",
+        "anchorY": "0.5",
+        "speed": 0.5
+      },
+      "frame": {
+        "filename": "frame_anim/flame_00",
+        "startFrame": 3,
+        "endFrame": 19,
+        "x": -250,
+        "y": -100,
+        "anchorX": "0",
+        "anchorY": "0",
+        "speed": 0.5
+      },
+      "flame": {
+        "filename": "Flame/Scatter flame_00",
+        "startFrame": 0,
+        "endFrame": 59,
+        "x": 0,
+        "y": 0,
+        "anchorX": "0",
+        "anchorY": "0",
+        "speed": 0.5
+      },
       "background": [
         {
           "key": "bg_character",
@@ -51,10 +282,9 @@
   },
 
   "desktop": {
-
     "Background": {
       "view": {},
-      "frameId": "background",
+      "frameId": "background",      
       "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
       "freespins": { "frameId": "backgroundFS" }
     },
@@ -85,7 +315,6 @@
     },
 
     "GameScene": {
-
       "gameLogo": {
         "frameId": "gameLogo",
         "prop": { "x": 640, "y": 30, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
@@ -116,7 +345,6 @@
             "prop": { "x": 20, "y": 22 }
           }
         }
-        
       },
 
       "controls": {
@@ -213,7 +441,10 @@
         },
 
         "panel": {
-          "background": { "frameId": "panel/bg", "prop":{  "x":0, "y":-155, "wid": 0, "hei": 0, "visible":false } },
+          "background": {
+            "frameId": "panel/bg",
+            "prop": { "x": 0, "y": -155, "wid": 0, "hei": 0, "visible": false }
+          },
           "textStyles": {
             "label": {
               "fontFamily": "regularFont",
@@ -232,28 +463,60 @@
           },
           "elements": {
             "balance": {
-              "label": { "txtCode": "BALANCE", "prop": { "x": 860, "y": -75, "ax": 0.5, "ay": 0.5 } },
-              "value": { "txtCode": "$243", "prop": { "x": 860, "y": -48, "ax": 0.5, "ay": 0.5 } }
+              "label": {
+                "txtCode": "BALANCE",
+                "prop": { "x": 860, "y": -75, "ax": 0.5, "ay": 0.5 }
+              },
+              "value": {
+                "txtCode": "$243",
+                "prop": { "x": 860, "y": -48, "ax": 0.5, "ay": 0.5 }
+              }
             },
             "bet": {
-              "label": { "txtCode": "BET", "prop": { "x": 300, "y": -75, "ax": 0.5, "ay": 0.5 } },
-              "value": { "txtCode": "$123", "prop": { "x": 300, "y": -48, "ax": 0.5, "ay": 0.5 } },
+              "label": {
+                "txtCode": "BET",
+                "prop": { "x": 300, "y": -75, "ax": 0.5, "ay": 0.5 }
+              },
+              "value": {
+                "txtCode": "$123",
+                "prop": { "x": 300, "y": -48, "ax": 0.5, "ay": 0.5 }
+              },
               "controls": {
                 "decrease": {
                   "frameId": "panel/minuIcon",
-                 "prop": { "x": 210, "y": -48, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
+                  "prop": {
+                    "x": 210,
+                    "y": -48,
+                    "sx": 1,
+                    "sy": 1,
+                    "ax": 0.5,
+                    "ay": 0.5
+                  }
                 },
                 "increase": {
                   "frameId": "panel/pulseIcon",
-                  "prop": { "x": 390, "y": -48, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
+                  "prop": {
+                    "x": 390,
+                    "y": -48,
+                    "sx": 1,
+                    "sy": 1,
+                    "ax": 0.5,
+                    "ay": 0.5
+                  }
                 }
               }
             },
             "win": {
-              "label": { "txtCode": "WINNING", "prop": { "x": 1060, "y": -75, "ax": 0.5, "ay": 0.5 }},
-              "value": { "txtCode": "0", "prop": { "x": 1060, "y": -48, "ax": 0.5, "ay": 0.5 } }
+              "label": {
+                "txtCode": "WINNING",
+                "prop": { "x": 1060, "y": -75, "ax": 0.5, "ay": 0.5 }
+              },
+              "value": {
+                "txtCode": "0",
+                "prop": { "x": 1060, "y": -48, "ax": 0.5, "ay": 0.5 }
+              }
             }
-          }         
+          }
         },
 
         "spinControl": {
@@ -366,7 +629,7 @@
       }
     }
   },
-   "mobile": {
+  "mobile": {
     "prop": {},
 
     "Background": {
@@ -403,7 +666,15 @@
       },
 
       "machine": {
-        "view": { "x": 0, "y": 95, "center": 1, "wid": 1370, "hei": 936, "columns": 5, "topGap": 40 },
+        "view": {
+          "x": 0,
+          "y": 95,
+          "center": 1,
+          "wid": 1370,
+          "hei": 936,
+          "columns": 5,
+          "topGap": 40
+        },
         "reels": {
           "view": { "x": 20, "y": 22, "gapX": 5, "gapY": 0 },
           "container": {
@@ -427,11 +698,24 @@
             "prop": { "x": 20, "y": 22 }
           }
         },
-        "reelsContainer": { "label":"reelsContainer",  "prop": { "x": 20, "y": 21 }},
-        "winContainer": { "label":"winContainer",  "prop": { "x": 20, "y": 22 }},
+        "reelsContainer": {
+          "label": "reelsContainer",
+          "prop": { "x": 20, "y": 21 }
+        },
+        "winContainer": {
+          "label": "winContainer",
+          "prop": { "x": 20, "y": 22 }
+        },
         "reelSym": { "x": 20, "y": 21, "gapX": 6, "gapY": 0 },
-        "reelBg": { "frameId": "reelBg", "isReelsBg": true, "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 } },
-        "reelFrame": { "frameId": "reelFrame", "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1 }}
+        "reelBg": {
+          "frameId": "reelBg",
+          "isReelsBg": true,
+          "prop": { "x": 20, "y": 21, "sx": 1, "sy": 1 }
+        },
+        "reelFrame": {
+          "frameId": "reelFrame",
+          "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1 }
+        }
       },
 
       "controls": {
@@ -479,16 +763,32 @@
             "on": {
               "name": "openIcon",
               "frameId": "menu/openIcon",
-              "prop": { "x": 0, "y": 0,  "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+              "prop": {
+                "x": 0,
+                "y": 0,
+                "sx": 0.8,
+                "sy": 0.8,
+                "ax": 0.5,
+                "ay": 0.5,
+                "visible": true
+              }
             },
             "off": {
               "name": "closeIcon",
               "frameId": "menu/closeIcon",
-              "prop": { "x": 0, "y": 0, "sx": 1.0, "sy": 1.0, "ax": 0.5, "ay": 0.5, "visible": true }
+              "prop": {
+                "x": 0,
+                "y": 0,
+                "sx": 1.0,
+                "sy": 1.0,
+                "ax": 0.5,
+                "ay": 0.5,
+                "visible": true
+              }
             },
             "prop": { "x": 30, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
-        
+
           "homeBtn": {
             "frameId": "menu/bg",
             "icon": "menu/homeIcon",
@@ -502,16 +802,32 @@
             "on": {
               "name": "unmuteIcon",
               "frameId": "options/unmuteIcon",
-              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+              "prop": {
+                "x": 0,
+                "y": 0,
+                "sx": 0.8,
+                "sy": 0.8,
+                "ax": 0.5,
+                "ay": 0.5,
+                "visible": true
+              }
             },
             "off": {
               "name": "muteIcon",
               "frameId": "options/muteIcon",
-              "prop": { "x": 0, "y": 0, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5, "visible": true }
+              "prop": {
+                "x": 0,
+                "y": 0,
+                "sx": 0.8,
+                "sy": 0.8,
+                "ax": 0.5,
+                "ay": 0.5,
+                "visible": true
+              }
             },
             "prop": { "x": 0, "y": 0, "px": 0.5, "py": 0.5, "visible": true }
           },
-         
+
           "optionsCtn": [
             {
               "name": "infoIcon",
@@ -535,12 +851,18 @@
             }
           ]
         },
-       
+
         "panel": {
-          "portraitBg": { "frameId": "panel/bgPort", "prop":{ "x": 0, "y": -640, "wid": 0, "hei": 0, "visible": false } },
-          "background": { "frameId": "panel/bgLand", "prop":{ "x": 0, "y": -155, "wid": 0, "hei": 0, "visible": false } },
+          "portraitBg": {
+            "frameId": "panel/bgPort",
+            "prop": { "x": 0, "y": -640, "wid": 0, "hei": 0, "visible": false }
+          },
+          "background": {
+            "frameId": "panel/bgLand",
+            "prop": { "x": 0, "y": -155, "wid": 0, "hei": 0, "visible": false }
+          },
           "textStyles": {
-              "label": {
+            "label": {
               "fontSize": 10,
               "fontFamily": "regularFont",
               "fontWeight": "bold",
@@ -548,41 +870,73 @@
               "stroke": { "color": "#391400", "width": 5, "join": "round" },
               "letterSpacing": 1
             },
-          "value": {
-            "fontSize": 12,
-            "fontFamily": "regularFont",
-            "fontWeight": "bold",
-            "fill": "#ffffff",
-            "stroke": { "color": "#391400", "width": 5, "join": "round" },
-            "letterSpacing": 1
-          }
+            "value": {
+              "fontSize": 12,
+              "fontFamily": "regularFont",
+              "fontWeight": "bold",
+              "fill": "#ffffff",
+              "stroke": { "color": "#391400", "width": 5, "join": "round" },
+              "letterSpacing": 1
+            }
           },
 
           "elements": {
             "balance": {
-              "label": { "txtCode": "BALANCE", "prop": {  "x": 12, "y": -50, "ax": 0, "ay": 0.5 } },
-              "value": { "txtCode": "$243", "prop": { "x": 12, "y": -30, "ax": 0, "ay": 0.5 } }
+              "label": {
+                "txtCode": "BALANCE",
+                "prop": { "x": 12, "y": -50, "ax": 0, "ay": 0.5 }
+              },
+              "value": {
+                "txtCode": "$243",
+                "prop": { "x": 12, "y": -30, "ax": 0, "ay": 0.5 }
+              }
             },
             "bet": {
-              "label": { "txtCode": "BET", "prop": { "x": 0, "y": -125, "ax": 0.5, "ay": 0.5 }},
-              "value": { "txtCode": "$123", "prop": { "x": 0, "y": -98, "ax": 0.5, "ay": 0.5 } },
+              "label": {
+                "txtCode": "BET",
+                "prop": { "x": 0, "y": -125, "ax": 0.5, "ay": 0.5 }
+              },
+              "value": {
+                "txtCode": "$123",
+                "prop": { "x": 0, "y": -98, "ax": 0.5, "ay": 0.5 }
+              },
               "controls": {
                 "decrease": {
                   "frameId": "panel/minuIcon",
-                 "prop": { "x": 100, "y": -98, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5 }
+                  "prop": {
+                    "x": 100,
+                    "y": -98,
+                    "sx": 0.8,
+                    "sy": 0.8,
+                    "ax": 0.5,
+                    "ay": 0.5
+                  }
                 },
                 "increase": {
                   "frameId": "panel/pulseIcon",
-                  "prop": { "x": 260, "y": -98, "sx": 0.8, "sy": 0.8, "ax": 0.5, "ay": 0.5 }
+                  "prop": {
+                    "x": 260,
+                    "y": -98,
+                    "sx": 0.8,
+                    "sy": 0.8,
+                    "ax": 0.5,
+                    "ay": 0.5
+                  }
                 }
               }
             },
             "win": {
-              "label": { "txtCode": "WINNING", "prop": {"x": 0, "y": -50, "ax": 1, "ay": 0.5  }},
-              "value": { "txtCode": "0", "prop": { "x": 0, "y": -30, "ax": 1, "ay": 0.5 } }
+              "label": {
+                "txtCode": "WINNING",
+                "prop": { "x": 0, "y": -50, "ax": 1, "ay": 0.5 }
+              },
+              "value": {
+                "txtCode": "0",
+                "prop": { "x": 0, "y": -30, "ax": 1, "ay": 0.5 }
+              }
             }
           }
-        },        
+        },
 
         "spinControl": {
           "view": { "x": 640, "y": 480, "visible": true },
@@ -627,8 +981,8 @@
               "prop": { "x": 0, "y": 0, "ax": 0.5, "ay": 0.5, "visible": true }
             },
             "prop": { "x": 80, "y": 17, "px": 0.5, "py": 0.5, "visible": true }
-          }        
-        }        
+          }
+        }
       },
 
       "overlay": {
