@@ -28,7 +28,10 @@
             "Malfunction voids all pays and plays.",
             "For this game, the long-term expected payback is 96.00%"
           ]
-        },
+        }
+      
+      ],
+      "temp":[
         {
           "title": "Auto Play Game Rules:",
           "items": [

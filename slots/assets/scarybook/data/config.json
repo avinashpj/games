@@ -15,7 +15,20 @@
 
     "fonts": {
       "directory": "fonts/",
-      "families": []
+      "families":  [
+        {
+          "id": "regularFont",
+          "familyName": "Poppins",
+          "weight": "bold",
+          "files": ["Poppins-Bold.woff", "Poppins-Bold.woff2"]
+        },
+        {
+          "id": "regularFont",
+          "familyName": "Poppins",
+          "weight": "regular",
+          "files": ["Poppins-Regular.woff", "Poppins-Regular.woff2"]
+        }
+      ]
     },
 
     "images": {      
@@ -306,7 +319,7 @@
     "IntroScene": {
       "gameLogo": {
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 30, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "prop": { "x": 640, "y": 240, "sx": 1.8, "sy": 1.8, "ax": 0.5, "ay": 0 }
       },
       "continueBtn": {
         "frameId": "continue/btn",

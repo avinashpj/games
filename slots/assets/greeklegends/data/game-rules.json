@@ -9,6 +9,7 @@
     "gameRules": {
       "title": "Greek Legends Game Rules",
       "description": "By playing our games, you agree that you do not find them offensive, unfair or indecent.",
+      "sectionCount": 4,
       "sections": [
         {
           "id": "1",
@@ -30,8 +31,10 @@
             "Malfunction voids all pays and plays.",
             "For this game, the long-term expected payback is 96.00%"
           ]
-        },
-        
+        }
+      ],
+
+      "temp": [
         {
           "id": "3",
           "title": "Auto Play Game Rules:",
