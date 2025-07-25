@@ -251,7 +251,9 @@
         "y": 470,
         "anchorX": "0.5",
         "anchorY": "0.5",
-        "speed": 0.5
+        "speed": 0.5,
+        "autoPlay": true,
+        "visible": true
       },
       "frame": {
         "filename": "frame_anim/flame_00",
@@ -280,7 +282,9 @@
           "frameRange": [0, 119],
           "position": { "x": 1082, "y": 470 },
           "anchor": { "x": 0.5, "y": 0.5 },
-          "speed": 0.5
+          "speed": 0.5,
+          "autoPlay": true,
+          "visible": true
         },
         {
           "key": "frame_animation",
@@ -288,7 +292,9 @@
           "frameRange": [3, 19],
           "position": { "x": 0, "y": 0 },
           "anchor": { "x": 0, "y": 0 },
-          "speed": 0.5
+          "speed": 0.5,
+          "autoPlay": true,
+          "visible": true
         }
       ]
     }
@@ -461,7 +467,7 @@
           "textStyles": {
             "label": {
               "fontFamily": "regularFont",
-              "fontSize": 12,
+              "fontSize": 16,
               "fontWeight": "bold",
               "fill": "#ffffff",
               "stroke": { "color": "#391400", "width": 0 }
@@ -642,6 +648,7 @@
       }
     }
   },
+
   "mobile": {
     "prop": {},
 
