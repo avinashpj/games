@@ -71,177 +71,20 @@
     "reelLayout": { "width": 140, "height": 140, "columns": 5, "rows": 3 },
 
     "symbols": [
-      {
-        "id": 1,
-        "type": "regular",
-        "filename": "symbols/a",
-        "paytable": [0, 2, 25, 125, 750],
-        "texture": null,
-        "animation": {
-          "key": "owl_anim",
-          "filename": "Grave/Grave_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 2,
-        "type": "regular",
-        "filename": "symbols/b",
-        "paytable": [0, 0, 20, 100, 400],
-        "texture": null,
-        "animation": {
-          "key": "owl_anim",
-          "filename": "Owl/owl_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 3,
-        "type": "regular",
-        "filename": "symbols/c",
-        "paytable": [0, 0, 15, 75, 250],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "Pumpkin/Pumpkin_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 4,
-        "type": "regular",
-        "filename": "symbols/d",
-        "paytable": [0, 0, 15, 75, 250],
-        "texture": null,
-        "animation": {
-          "key": "bat_anim",
-          "filename": "Bat/Bat_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 5,
-        "type": "regular",
-        "filename": "symbols/e",
-        "paytable": [0, 0, 15, 50, 100],
-        "texture": null,
-        "animation": {
-          "key": "candle_anim",
-          "filename": "Candle/Candle_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 6,
-        "type": "regular",
-        "filename": "symbols/f",
-        "paytable": [0, 0, 10, 30, 80],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "A/A_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 7,
-        "type": "regular",
-        "filename": "symbols/g",
-        "paytable": [0, 0, 5, 20, 60],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "K/K_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 8,
-        "type": "regular",
-        "filename": "symbols/h",
-        "paytable": [0, 0, 5, 20, 60],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "Q/Q_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 9,
-        "type": "regular",
-        "filename": "symbols/i",
-        "paytable": [0, 0, 5, 20, 60],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "J/J_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 10,
-        "type": "regular",
-        "filename": "symbols/j",
-        "paytable": [0, 0, 5, 20, 60],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "10/10_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 11,
-        "type": "regular",
-        "filename": "symbols/k",
-        "paytable": [0, 0, 5, 20, 60],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "9/9_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 12,
-        "type": "scatter",
-        "filename": "symbols/s",
-        "paytable": [0, 0, 4, 15, 50],
-        "texture": null,
-        "animation": {
-          "key": "scatter_anim",
-          "filename": "Scatter_Moment/scatter_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 13,
-        "type": "wild",
-        "filename": "symbols/w",
-        "paytable": [0, 0, 4, 15, 50],
-        "texture": null,
-        "animation": {
-          "key": "wild_anim",
-          "filename": "Wild_Moment/wild_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      }
+      { "id": 1, "type": "regular", "filename": "symbols/k", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim",  "filename": "9/9_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 2, "type": "regular", "filename": "symbols/j", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "10/10_00", "startFrame": 0, "endFrame": 59 }  },  
+      { "id": 3, "type": "regular", "filename": "symbols/i", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "J/J_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 4, "type": "regular", "filename": "symbols/h", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "Q/Q_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 5, "type": "regular", "filename": "symbols/g", "paytable": [0, 0, 5, 20, 60], "texture": null, "animation": { "key": "book_anim", "filename": "K/K_00", "startFrame": 0, "endFrame": 59 }   },
+      { "id": 6, "type": "regular", "filename": "symbols/f", "paytable": [0, 0, 10, 30, 80], "texture": null, "animation": { "key": "book_anim", "filename": "A/A_00", "startFrame": 0, "endFrame": 59 }  },  
+      { "id": 7, "type": "regular", "filename": "symbols/e", "paytable": [0, 0, 15, 50, 100], "texture": null, "animation": { "key": "candle_anim", "filename": "Candle/Candle_00", "startFrame": 0, "endFrame": 59   }  },
+      { "id": 8, "type": "regular", "filename": "symbols/d", "paytable": [0, 0, 15, 75, 250], "texture": null, "animation": { "key": "bat_anim", "filename": "Bat/Bat_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 9, "type": "regular", "filename": "symbols/c", "paytable": [0, 0, 15, 75, 250], "texture": null, "animation": { "key": "book_anim", "filename": "Pumpkin/Pumpkin_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 10, "type": "regular", "filename": "symbols/b", "paytable": [0, 0, 20, 100, 400], "texture": null, "animation": { "key": "owl_anim", "filename": "Owl/owl_00",  "startFrame": 0, "endFrame": 59 }  },
+      { "id": 11, "type": "regular", "filename": "symbols/a", "paytable": [0, 2, 25, 125, 750], "texture": null, "animation": { "key": "owl_anim", "filename": "Grave/Grave_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 12, "type": "scatter", "filename": "symbols/s", "paytable": [0, 0, 4, 15, 50], "texture": null, "animation": { "key": "scatter_anim", "filename": "Scatter_Moment/scatter_00", "startFrame": 0, "endFrame": 59 }  },
+      { "id": 13, "type": "wild", "filename": "symbols/w", "paytable": [0, 0, 4, 15, 50], "texture": null, "animation": {    "key": "wild_anim",    "filename": "Wild_Moment/wild_00",    "startFrame": 0,    "endFrame": 59    }  }
     ],
-
     "animations": {
       "bgchar": {
         "filename": "cat_anim/Cat_00",
