@@ -6,7 +6,11 @@
   },
 
   "resources": {
+
     "assetBundles": {
+      "common": true,
+      "game": true,
+      "animations": true,
       "bonus": false
     },
 
@@ -32,10 +36,52 @@
       "bundles": {
         "bonus": [{ "alias": "features", "src": "features0.json" }],
         "animations": [
-          { "alias": "animations", "src": "animations0.json" },
+          
           { "alias": "winPopups", "src": "winPopups.json" },
-          { "alias": "gameBGData", "src": "free_game.json" },
-          { "alias": "gameBGAtlas", "src": "free_game.atlas" },
+
+          { "alias": "gameBGData", "src": "gameBackground.json" },
+          { "alias": "gameBGAtlas", "src": "gameBackground.atlas" },
+
+          { "alias": "logo_introData", "src": "logo_intro/Logo.json" },
+          { "alias": "logo_introAtlas", "src": "logo_intro/Logo.atlas" },
+
+          { "alias": "logo_gameData", "src": "logo_game/Logo_BG.json" },
+          { "alias": "logo_gameAtlas", "src": "logo_game/Logo_BG.atlas" },
+
+          { "alias": "hp_kingData", "src": "hp_king/King.json" },
+          { "alias": "hp_kingAtlas", "src": "hp_king/King.atlas" },
+
+          { "alias": "hp_queenAtlas", "src": "hp_queen/Queen.atlas" },
+          { "alias": "hp_queenData", "src": "hp_queen/Queen.json" },
+         
+          { "alias": "hp_harpData", "src": "hp_harp/skeleton.json" },
+          { "alias": "hp_harpAtlas", "src": "hp_harp/skeleton.atlas" },
+
+          { "alias": "hp_tridentData", "src": "hp_trident/Trident.json" },
+          { "alias": "hp_tridentAtlas", "src": "hp_trident/Trident.atlas" },
+          
+          { "alias": "lp_AData", "src": "lp_A/Letter_A.json" },
+          { "alias": "lp_AAtlas", "src": "lp_A/Letter_A.atlas" },
+
+          { "alias": "lp_KData", "src": "lp_K/Letter_K.json" },
+          { "alias": "lp_KAtlas", "src": "lp_K/Letter_K.atlas" },
+
+          { "alias": "lp_QData", "src": "lp_Q/Letter_Q.json" },
+          { "alias": "lp_QAtlas", "src": "lp_Q/Letter_Q.atlas" },
+
+          { "alias": "lp_JData", "src": "lp_J/Letter_J.json" },
+          { "alias": "lp_JAtlas", "src": "lp_J/Letter_J.atlas" },          
+
+          { "alias": "lp_10Data", "src": "lp_10/Number 10.json" },
+          { "alias": "lp_10Atlas", "src": "lp_10/Number 10.atlas" },
+
+          { "alias": "sp_scatterData", "src": "sp_scatter/Scatter.json" },
+          { "alias": "sp_scatterAtlas", "src": "sp_scatter/Scatter.atlas" },
+
+          { "alias": "sp_wildData", "src": "sp_wild/Wild.json" },
+          { "alias": "sp_wildAtlas", "src": "sp_wild/Wild.atlas" },
+
+
           { "alias": "BigWinData", "src": "BigWin.json" },
           { "alias": "BigWinAtlas", "src": "BigWin.atlas" },
           { "alias": "bitmapFont1", "src": "bitmapFont1.xml" }
@@ -45,16 +91,8 @@
 
     "animations": {
       "bitmapFonts": [
-        {
-          "id": "main-font",
-          "fontFile": "bitmap1x-export.xml",
-          "textureFile": "bitmap1x-export.png"
-        },
-        {
-          "id": "decorative-font",
-          "fontFile": "bitmap1x-export.xml",
-          "textureFile": "bitmap1x-export.png"
-        }
+        { "id": "main-font", "fontFile": "bitmap1x-export.xml", "textureFile": "bitmap1x-export.png" },        
+        { "id": "decorative-font", "fontFile": "bitmap1x-export.xml", "textureFile": "bitmap1x-export.png" }
       ]
     },
 
@@ -67,201 +105,134 @@
       }
     }
   },
-
+  
   "gameConfig": {
     "gameInfo": {
-      "id": "8",
-      "tag": "bgb1",
+      "id": "6",
+      "tag": "bor1",
       "name": "Greek Legends",
       "category": "slot"
     },
     "reelLayout": { "width": 140, "height": 140, "columns": 5, "rows": 3 },
-
+    
     "symbols": [
+      { 
+        "id": 1, "type": "regular", "filename": "symbols/i", "paytable": [0, 0, 5, 25, 100], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "lp_10Atlas", "skeleton": "lp_10Data"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },
+      { 
+        "id": 2, "type": "regular", "filename": "symbols/h", "paytable": [0, 0, 5, 25, 100], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "lp_JAtlas", "skeleton": "lp_JData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },
+      { 
+        "id": 3, "type": "regular", "filename": "symbols/g", "paytable": [0, 0, 5, 25, 100], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "lp_QAtlas", "skeleton": "lp_QData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },
+      { 
+        "id": 4, "type": "regular", "filename": "symbols/f", "paytable": [0, 0, 5, 40, 150], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "lp_KAtlas", "skeleton": "lp_KData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },      
+      { 
+        "id": 5, "type": "regular", "filename": "symbols/e", "paytable": [0, 0, 5, 40, 150], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "lp_AAtlas", "skeleton": "lp_AData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },
+      { 
+        "id": 6, "type": "scatter", "filename": "symbols/s", "paytable": [0, 0, 2, 20, 200], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "sp_scatterAtlas", "skeleton": "sp_scatterData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },      
+      { 
+        "id": 7, "type": "regular", "filename": "symbols/d", "paytable": [0, 5, 30, 100, 750], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "hp_tridentAtlas", "skeleton": "hp_tridentData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },      
+      { 
+        "id": 8, "type": "regular", "filename": "symbols/c", "paytable": [0, 5, 30, 100, 750], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "hp_harpAtlas", "skeleton": "hp_harpData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
+      },      
       {
-        "id": 1,
-        "type": "regular",
-        "filename": "symbols/a",
-        "paytable": [0, 10, 100, 1000, 5000],
-        "texture": null,
-        "animation": {
-          "key": "owl_anim",
-          "filename": "Grave/Grave_00",
-          "startFrame": 0,
-          "endFrame": 59
+        "id": 9, "type": "regular", "filename": "symbols/b", "paytable": [0, 5, 40, 400, 2000], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "hp_queenAtlas", "skeleton": "hp_queenData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
         }
       },
       {
-        "id": 2,
-        "type": "regular",
-        "filename": "symbols/b",
-        "paytable": [0, 5, 40, 400, 2000],
-        "texture": null,
-        "animation": {
-          "key": "owl_anim",
-          "filename": "Owl/owl_00",
-          "startFrame": 0,
-          "endFrame": 59
+        "id": 10, "type": "regular", "filename": "symbols/a", "paytable": [0, 10, 100, 1000, 5000], "texture": null, 
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "hp_kingAtlas", "skeleton": "hp_kingData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
         }
-      },
-      {
-        "id": 3,
-        "type": "regular",
-        "filename": "symbols/c",
-        "paytable": [0, 5, 30, 100, 750],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "Pumpkin/Pumpkin_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 4,
-        "type": "regular",
-        "filename": "symbols/d",
-        "paytable": [0, 5, 30, 100, 750],
-        "texture": null,
-        "animation": {
-          "key": "bat_anim",
-          "filename": "Bat/Bat_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 5,
-        "type": "regular",
-        "filename": "symbols/e",
-        "paytable": [0, 0, 5, 40, 150],
-        "texture": null,
-        "animation": {
-          "key": "candle_anim",
-          "filename": "Candle/Candle_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 6,
-        "type": "regular",
-        "filename": "symbols/f",
-        "paytable": [0, 0, 5, 40, 150],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "A/A_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 7,
-        "type": "regular",
-        "filename": "symbols/g",
-        "paytable": [0, 0, 5, 25, 100],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "K/K_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 8,
-        "type": "regular",
-        "filename": "symbols/h",
-        "paytable": [0, 0, 5, 25, 100],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "Q/Q_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 9,
-        "type": "regular",
-        "filename": "symbols/i",
-        "paytable": [0, 0, 5, 25, 100],
-        "texture": null,
-        "animation": {
-          "key": "book_anim",
-          "filename": "J/J_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 10,
-        "type": "scatter",
-        "filename": "symbols/s",
-        "paytable": [0, 0, 2, 20, 200],
-        "texture": null,
-        "animation": {
-          "key": "scatter_anim",
-          "filename": "Scatter_Moment/scatter_00",
-          "startFrame": 0,
-          "endFrame": 59
-        }
-      },
-      {
-        "id": 11,
-        "type": "wild",
-        "filename": "symbols/w",
-        "paytable": [0, 0, 2, 20, 200],
-        "texture": null,
-        "animation": {
-          "key": "wild_anim",
-          "filename": "Wild_Moment/wild_00",
-          "startFrame": 0,
-          "endFrame": 59
+      },     
+      { 
+        "id": 11, "type": "wild", "filename": "symbols/w", "paytable": [0, 0, 2, 20, 200], "texture": null,
+        "animationType":"spine",
+        "spine":{
+          "data":{"atlas": "sp_wildAtlas", "skeleton": "sp_wildData"},
+          "animation": [{"name": "default", "loop":true }],
+          "prop": { "x": 0, "y": 0, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
         }
       }
     ],
-
-    "animations": {      
-      "flame": {
-        "filename": "Flame/Scatter flame_00",
-        "startFrame": 0,
-        "endFrame": 59,
-        "x": 0,
-        "y": 0,
-        "anchorX": "0",
-        "anchorY": "0",
-        "speed": 0.5
-      },
-      "background": [
-        {
-          "key": "bg_character",
-          "path": "cat_anim/Cat_00",
-          "frameRange": [0, 119],
-          "position": { "x": 1082, "y": 470 },
-          "anchor": { "x": 0.5, "y": 0.5 },
-          "speed": 0.5
-        },
-        {
-          "key": "frame_animation",
-          "path": "frame_anim/flame_00",
-          "frameRange": [3, 19],
-          "position": { "x": 0, "y": 0 },
-          "anchor": { "x": 0, "y": 0 },
-          "speed": 0.5
-        }
-      ]
+    
+    "animations": {
     }
   },
-
   "desktop": {
+
     "Background": {
-      "view": {},
+      "type": "spine",
       "frameId": "background",
-      "isSpine": false,
+      "freespins": { "frameId": "backgroundFS" },
       "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
-      "freespins": { "frameId": "backgroundFS" }
+
+      "spine":{
+        "data":{"atlas": "gameBGAtlas", "skeleton": "gameBGData"},
+        "animation": [{"name": "default", "loop":true}, { "name": "default", "loop": true }],
+        "prop": { "x": 640, "y": 360, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+      }
     },
 
     "LoadScene": {
@@ -280,19 +251,34 @@
 
     "IntroScene": {
       "gameLogo": {
+        "type": "spine",
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 20, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0 }
+        "prop": { "x": 640, "y": 325, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0 },
+
+        "spine":{
+          "data":{"atlas": "logo_introAtlas", "skeleton": "logo_introData"},
+          "animation": [{"name": "appear", "loop":false, "next": "auto" }, {"name": "loop", "loop":true }, {"name": "close", "loop":false } ],
+          "prop": { "x": 640, "y": 330, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
       },
       "continueBtn": {
         "frameId": "continue/btn",
-        "prop": { "x": 640, "y": 640, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0.5 }
+        "prop": { "x": 640, "y": 580, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0.5 }
       }
     },
 
-    "GameScene": {
-      "gameLogo": {
+    "GameScene": { 
+
+       "gameLogo": {
+        "type": "spine",
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": -15, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0 }
+        "prop": { "x": 640, "y": -15, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0 },
+
+        "spine":{
+          "data":{"atlas": "logo_gameAtlas", "skeleton": "logo_gameData"},
+          "animation": [{"name": "default_2", "loop":true}, {"name": "default_2", "loop":true } ],
+          "prop": { "x": 640, "y": 65, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+        }
       },
 
       "machine": {
@@ -310,7 +296,7 @@
           },
           "frame": {
             "frameId": "reelFrame",
-            "prop": { "x": 0, "y": 0 },
+            "prop": { "x": 2, "y": -8 },
             "scale": { "x": 1, "y": 1 }
           },
           "symbolSpacing": { "x": 5, "y": 0 },
@@ -418,7 +404,7 @@
         "panel": {
           "background": {
             "frameId": "panel/bg",
-            "prop": { "x": 0, "y": -155, "wid": 0, "hei": 0, "visible": true, "alpha": 0.8}
+            "prop": { "x": 0, "y": -154, "wid": 0, "hei": 0, "visible": true, "alpha": 0.8}
           },
           "textStyles": {
             "label": {
@@ -607,10 +593,18 @@
 
   "mobile": {
     "Background": {
-      "view": {},
+     "type": "spine",
       "frameId": "background",
-      "isSpine": true,
-      "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
+      "freespins": { "frameId": "backgroundFS" },
+      "mp": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
+      "ml": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
+
+      "spine":{
+        "data":{"atlas": "gameBGAtlas", "skeleton": "gameBGData"},
+        "animation": [{"name": "default", "loop":true}, { "name": "default", "loop": true }],
+        "mp": { "x": 640, "y": 360, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 },
+        "ml": { "x": 640, "y": 360, "sx": 0.5, "sy": 0.5, "px": 0.5, "py": 0.5 }
+      }
     },
 
     "LoadScene": {
@@ -623,20 +617,32 @@
 
     "IntroScene": {
       "gameLogo": {
+        "type": "spine",
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
-      },
+        "mp": { "x": 640, "y": 36, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c" },
+        "ml": { "x": 640, "y": 36, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c"  },
+
+        "spine":{
+          "data":{"atlas": "logo_introAtlas", "skeleton": "logo_introData"},
+          "animation": [{"name": "appear", "loop":false, "next": "auto" }, {"name": "loop", "loop":true }, {"name": "close", "loop":false } ],
+          "mp": { "x": 640, "y": 250, "sx": 0.2, "sy": 0.2, "px": 0.5, "py": 0.5, "autoX":"c" },
+          "ml": { "x": 640, "y": 150, "sx": 0.2, "sy": 0.2, "px": 0.5, "py": 0.5, "autoX":"c" }
+        }
+      },      
+    
       "continueBtn": {
         "frameId": "continue/btn",
         "label": "introContinue",
-        "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "mp": { "x": 0, "y": 400, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c"  },
+        "ml": { "x": 0, "y": 300, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c"  }
       }
     },
 
     "GameScene": {
       "gameLogo": {
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "mp": { "x": 640, "y": 36, "sx": 0.3, "sy": 0.3, "ax": 0.5, "ay": 0, "autoX":"c"  },
+        "ml": { "x": 640, "y": 36, "sx": 0.3, "sy": 0.3, "ax": 0.5, "ay": 0, "autoX":"c"  }
       },
 
       "machine": {

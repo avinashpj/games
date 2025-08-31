@@ -6,6 +6,7 @@
   },
 
   "resources": {
+
     "assetBundles": {
       "common": true,
       "game": true,
@@ -63,7 +64,7 @@
 
   "gameConfig": {
     "gameInfo": {
-      "id": "8",
+      "id": "1",
       "tag": "bgb1",
       "name": "Scary Book",
       "category": "slot"
@@ -496,10 +497,11 @@
     "prop": {},
 
     "Background": {
-      "view": {},
+      "type": "regular",
       "frameId": "background",
-      "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
-      "freespins": { "frameId": "backgroundFS" }
+      "freespins": { "frameId": "backgroundFS" },
+      "mp": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
+      "ml": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 }
     },
 
     "LoadScene": {
@@ -512,20 +514,25 @@
 
     "IntroScene": {
       "gameLogo": {
+        "type": "regular",
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "mp": { "x": 0, "y": 200, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0, "autoX":"c" },
+        "ml": { "x": 0, "y": 110, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0, "autoX":"c"}
       },
       "continueBtn": {
         "frameId": "continue/btn",
         "label": "introContinue",
-        "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "mp": { "x": 0, "y": 400, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c" },
+        "ml": { "x": 0, "y": 300, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c" }
       }
     },
 
     "GameScene": {
       "gameLogo": {
+        "type": "regular",
         "frameId": "gameLogo",
-        "prop": { "x": 640, "y": 36, "sx": 1, "sy": 1, "ax": 0.5, "ay": 0 }
+        "mp": { "x": 640, "y": 80, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c" },
+        "ml": { "x": 640, "y": 6, "sx": 0.5, "sy": 0.5, "ax": 0.5, "ay": 0, "autoX":"c"}
       },
 
       "machine": {

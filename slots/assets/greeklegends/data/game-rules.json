@@ -33,6 +33,45 @@
           ]
         }
       ],
+      "bonus": {
+        "title": "Bonus Feature",
+        "img": "./assets/greeklegends/images/symbols/s.png",
+        "description": "Landing 3 or more Bonus symbols starts Free Spins.",
+        "items": [
+          "3 Bonus symbols - 10 Free Spins",
+          "4 Bonus symbols - 15 Free Spins",
+          "5 Bonus symbols - 20 Free Spins"
+        ]
+      },
+      "wild": {
+        "title": "Wild Symbol",
+        "img": "./assets/greeklegends/images/symbols/w.png",
+        "description": "Wild symbols substitute for all symbols, excluding the Bonus symbol. <br> In the main game, Wild symbols land only on reels 2, 3 and 4."
+      },
+      "symbols": {
+        "title": "SYMBOLS:",
+        "highPaySym":[
+          { "img": "", "class":"paySymHeader", "pay":["x5", "x4", "x3", "x2"]},
+          { "img": "./assets/greeklegends/images/symbols/a.png", "pay":["800", "120", "30", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/b.png", "pay":["800", "120", "30", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/c.png", "pay":["400", "100", "20", ""]},
+          { "img": "./assets/greeklegends/images/symbols/d.png", "pay":["250", "70", "10", ""]}
+        ],
+        "lowPaySym":[
+          { "img": "", "class":"paySymHeader", "pay":["x5", "x4", "x3", "x2"]},
+          { "img": "./assets/greeklegends/images/symbols/e.png", "pay":["250", "70", "20", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/f.png", "pay":["250", "70", "20", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/g.png", "pay":["400", "100", "20", ""]},
+          { "img": "./assets/greeklegends/images/symbols/h.png", "pay":["250", "70", "10", ""]},
+          { "img": "./assets/greeklegends/images/symbols/i.png", "pay":["250", "70", "10", ""]}
+        ],
+        "description": "Wild symbols substitute for all symbols, excluding the Bonus symbol. <br> In the main game, Wild symbols land only on reels 2, 3 and 4."
+      },
+
+      "paylines": {
+        "title": "Paylines",
+        "img": "./assets/greeklegends/images/symbols/winLines.png"
+      },
 
       "temp": [
         {

@@ -1,0 +1,89 @@
+Queen.png
+size:1976,1412
+filter:Linear,Linear
+pma:true
+BG
+bounds:1412,285,280,279
+offsets:1,1,282,281
+Bottom Left Corner
+bounds:1858,526,46,39
+offsets:1,1,48,41
+Bottom Right Corner
+bounds:1694,380,46,39
+offsets:1,1,48,41
+Crown
+bounds:1694,475,162,90
+Frame
+bounds:1694,567,280,279
+offsets:1,1,282,281
+Queen
+bounds:1412,4,266,279
+Queen Glow/Glow__00000
+bounds:2,1130,280,280
+Queen Glow/Glow__00001
+bounds:2,848,280,280
+Queen Glow/Glow__00002
+bounds:284,1130,280,280
+Queen Glow/Glow__00003
+bounds:2,566,280,280
+Queen Glow/Glow__00004
+bounds:284,848,280,280
+Queen Glow/Glow__00005
+bounds:566,1130,280,280
+Queen Glow/Glow__00006
+bounds:2,284,280,280
+Queen Glow/Glow__00007
+bounds:284,566,280,280
+Queen Glow/Glow__00008
+bounds:566,848,280,280
+Queen Glow/Glow__00009
+bounds:848,1130,280,280
+Queen Glow/Glow__00010
+bounds:2,2,280,280
+Queen Glow/Glow__00011
+bounds:284,284,280,280
+Queen Glow/Glow__00012
+bounds:566,566,280,280
+Queen Glow/Glow__00013
+bounds:848,848,280,280
+Queen Glow/Glow__00014
+bounds:1130,1130,280,280
+Queen Glow/Glow__00015
+bounds:284,2,280,280
+Queen Glow/Glow__00016
+bounds:566,284,280,280
+Queen Glow/Glow__00017
+bounds:848,566,280,280
+Queen Glow/Glow__00018
+bounds:1130,848,280,280
+Queen Glow/Glow__00019
+bounds:1412,1130,280,280
+Queen Glow/Glow__00020
+bounds:566,2,280,280
+Queen Glow/Glow__00021
+bounds:848,284,280,280
+Queen Glow/Glow__00022
+bounds:1130,566,280,280
+Queen Glow/Glow__00023
+bounds:1412,848,280,280
+Queen Glow/Glow__00024
+bounds:1694,1130,280,280
+Queen Glow/Glow__00025
+bounds:848,2,280,280
+Queen Glow/Glow__00026
+bounds:1130,284,280,280
+Queen Glow/Glow__00027
+bounds:1412,566,280,280
+Queen Glow/Glow__00028
+bounds:1694,848,280,280
+Queen Glow/Glow__00029
+bounds:1130,2,280,280
+Upper Left Corner
+bounds:1748,434,46,39
+offsets:1,1,48,41
+Upper Right Corner
+bounds:1858,485,46,39
+offsets:1,1,48,41
+sparkleex
+bounds:1694,421,52,52
+offsets:0,0,53,52

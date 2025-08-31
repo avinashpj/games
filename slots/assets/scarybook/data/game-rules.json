@@ -9,8 +9,10 @@
     "gameRules": {
       "title": "Scary Book Game Rules",
       "description": "By playing our games, you agree that you do not find them offensive, unfair or indecent.",
+      "sectionCount": 4,
       "sections": [
         {
+          "id": "1",
           "title": "How to Play Slots:",
           "items": [
             "Choose the amount you would like to bet with. Control the bet amount by clicking the plus or minus button next to the Stake/Bet.",
@@ -18,6 +20,7 @@
           ]
         },
         {
+          "id": "2",
           "title": "Game Rules:",
           "items": [
             "The game is played with 10 fixed paylines.",
@@ -29,9 +32,48 @@
             "For this game, the long-term expected payback is 96.00%"
           ]
         }
-      
       ],
-      "temp":[
+        "bonus": {
+        "title": "Bonus Feature",
+        "img": "./assets/scarybook/images/symbols/s.png",
+        "description": "Landing 3 or more Bonus symbols starts Free Spins.",
+        "items": [
+          "3 Bonus symbols - 10 Free Spins",
+          "4 Bonus symbols - 15 Free Spins",
+          "5 Bonus symbols - 20 Free Spins"
+        ]
+      },
+      "wild": {
+        "title": "Wild Symbol",
+        "img": "./assets/scarybook/images/symbols/w.png",
+        "description": "Wild symbols substitute for all symbols, excluding the Bonus symbol. <br> In the main game, Wild symbols land only on reels 2, 3 and 4."
+      },
+      "symbols": {
+        "title": "SYMBOLS:",
+        "highPaySym":[
+          { "img": "", "class":"paySymHeader", "pay":["x5", "x4", "x3", "x2"]},
+          { "img": "./assets/scarybook/images/symbols/a.png", "pay":["800", "120", "30", "2"]},
+          { "img": "./assets/scarybook/images/symbols/b.png", "pay":["800", "120", "30", "2"]},
+          { "img": "./assets/scarybook/images/symbols/c.png", "pay":["400", "100", "20", ""]},
+          { "img": "./assets/scarybook/images/symbols/d.png", "pay":["250", "70", "10", ""]}
+        ],
+        "lowPaySym":[
+          { "img": "", "class":"paySymHeader", "pay":["x5", "x4", "x3", ""]},
+          { "img": "./assets/scarybook/images/symbols/e.png", "pay":["250", "70", "20", "2"]},
+          { "img": "./assets/scarybook/images/symbols/f.png", "pay":["250", "70", "20", "2"]},
+          { "img": "./assets/scarybook/images/symbols/g.png", "pay":["400", "100", "20", ""]},
+          { "img": "./assets/scarybook/images/symbols/h.png", "pay":["250", "70", "10", ""]},
+          { "img": "./assets/scarybook/images/symbols/i.png", "pay":["250", "70", "10", ""]}
+        ],
+        "description": "Wild symbols substitute for all symbols, excluding the Bonus symbol. <br> In the main game, Wild symbols land only on reels 2, 3 and 4."
+      },
+
+      "paylines": {
+        "title": "Paylines",
+        "img": "./assets/scarybook/images/symbols/winLines.png"
+      },
+
+      "temp": [
         {
           "title": "Auto Play Game Rules:",
           "items": [
