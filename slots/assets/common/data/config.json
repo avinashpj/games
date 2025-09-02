@@ -37,7 +37,6 @@
       "bundles": {
         "common": [{ "alias": "common", "src": "common0.json" }],
         "game": [
-          { "alias": "intro", "src": "intro0.json" },
           { "alias": "basic", "src": "basic0.json" }
         ],
         "animations": [

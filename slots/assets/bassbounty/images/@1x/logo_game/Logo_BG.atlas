@@ -1,0 +1,16 @@
+Logo_BG.png
+size:447,696
+filter:Linear,Linear
+pma:true
+Board
+bounds:2,2,501,221
+offsets:1,1,503,223
+rotate:90
+Center Decor
+bounds:2,505,235,104
+Frame Glow
+bounds:225,2,501,220
+rotate:90
+Logo Text
+bounds:2,611,442,83
+offsets:1,1,444,85

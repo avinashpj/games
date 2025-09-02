@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2023-11-15",
+    "author": "Avinash Pabba - avinash.pabba@hotmail.com"
+  },
+
+  "content": {
+    "gameRules": {
+      "title": "Greek Legends Game Rules",
+      "description": "By playing our games, you agree that you do not find them offensive, unfair or indecent.",
+      "sectionCount": 4,
+      "sections": [
+        {
+          "id": "1",
+          "title": "How to Play Slots:",
+          "items": [
+            "Choose the amount you would like to bet with. Control the bet amount by clicking the plus or minus button next to the Stake/Bet.",
+            "Your winnings are automatically added to your account balance. You can see your Total Win displayed in the <b>WINNING</b> on the screen."
+          ]
+        },
+        {
+          "id": "2",
+          "title": "Game Rules:",
+          "items": [
+            "The game is played with 10 fixed paylines.",
+            "Payouts are made according to the paytable.",
+            "All symbols pay from left to right in consecutive order.",
+            "Pay line wins are multiplied by coin value.",
+            "Only the highest win per active pay line is paid.",
+            "Malfunction voids all pays and plays.",
+            "For this game, the long-term expected payback is 96.00%"
+          ]
+        }
+      ],
+      "bonus": {
+        "title": "Bonus Feature",
+        "img": "./assets/greeklegends/images/symbols/s.png",
+        "description": "Landing 3 or more Bonus symbols starts Free Spins.",
+        "items": [
+          "3 Bonus symbols - 10 Free Spins",
+          "4 Bonus symbols - 15 Free Spins",
+          "5 Bonus symbols - 20 Free Spins"
+        ]
+      },
+      "wild": {
+        "title": "Wild Symbol",
+        "img": "./assets/greeklegends/images/symbols/w.png",
+        "description": "Wild symbols substitute for all symbols, excluding the Bonus symbol. <br> In the main game, Wild symbols land only on reels 2, 3 and 4."
+      },
+      "symbols": {
+        "title": "SYMBOLS:",
+        "highPaySym":[
+          { "img": "", "class":"paySymHeader", "pay":["x5", "x4", "x3", "x2"]},
+          { "img": "./assets/greeklegends/images/symbols/a.png", "pay":["800", "120", "30", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/b.png", "pay":["800", "120", "30", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/c.png", "pay":["400", "100", "20", ""]},
+          { "img": "./assets/greeklegends/images/symbols/d.png", "pay":["250", "70", "10", ""]}
+        ],
+        "lowPaySym":[
+          { "img": "", "class":"paySymHeader", "pay":["x5", "x4", "x3", "x2"]},
+          { "img": "./assets/greeklegends/images/symbols/e.png", "pay":["250", "70", "20", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/f.png", "pay":["250", "70", "20", "2"]},
+          { "img": "./assets/greeklegends/images/symbols/g.png", "pay":["400", "100", "20", ""]},
+          { "img": "./assets/greeklegends/images/symbols/h.png", "pay":["250", "70", "10", ""]},
+          { "img": "./assets/greeklegends/images/symbols/i.png", "pay":["250", "70", "10", ""]}
+        ],
+        "description": "Wild symbols substitute for all symbols, excluding the Bonus symbol. <br> In the main game, Wild symbols land only on reels 2, 3 and 4."
+      },
+
+      "paylines": {
+        "title": "Paylines",
+        "img": "./assets/greeklegends/images/symbols/winLines.png"
+      },
+
+      "temp": [
+        {
+          "id": "3",
+          "title": "Auto Play Game Rules:",
+          "items": [
+            "<b>Auto Play</b> is like a regular spin; you can choose <b>Auto Play</b> for a selected number of spins.",
+            "As soon as <b>Auto Play</b> begins, the <b>Auto Spin</b> button is replaced by a counter displaying the remaining <b>Auto-bet</b> rounds. The <b>Auto Spin</b> button changes to the <b>Stop Auto Spin</b> icon.",
+            "<b>Auto Play</b> automatically plays the game for the selected number of rounds.",
+            "<b>Auto Play</b> can be stopped at any time by clicking the <b>Auto Spin</b> (Auto Stop) button.",
+            "<b>Auto Play</b> settings will return to default when you trigger any Feature round (Free Spins/Bonus Round).",
+            "If you are disconnected while playing, all <b>Auto-play</b> settings will return to default when you reload the game."
+          ]
+        },
+
+        {
+          "id": "4",
+          "title": "Additional Information:",
+          "items": [
+            "Guidance on RTP/Bonus Feature/Wild/Free Spins is covered under Pay table section of respective games. You can access this by clicking the Paytable button.",
+            "Any stakes that you place are non-refundable, unless a system malfunction occurs, in which case, all stakes placed on the particular game being played at the time of the malfunction will be refunded. We have no obligation to repay players who abuse these occurrences, and therefore, an alternative action may be deemed suitable depending on the individual circumstances.",
+            "The in-game pay table shows symbol payouts as the multipliers on the total bet amount, which is calculated as 'total bet = (lines * coin value * number of fixed coins)'. Hence the actual payouts will be coins * coin value * paytable factor when bet lines are kept constant.",
+            "If a query arises as a result of a gaming session, where there is a mismatch between your records and the data recorded by our servers, the latter will be considered correct.",
+            "In the event of any disagreement between yourself and this website, the management's decision will be considered final.",
+            "If the game is interrupted due to connection loss, <b>Balance</b> and <b>Win</b> information can be viewed using Game Logs.",
+            "In the event of malfunction of gaming hardware/software, all affected game bets and payouts are rendered void and all affected bets are refunded."
+          ]
+        }
+      ]
+    }
+  }
+}

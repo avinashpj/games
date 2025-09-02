@@ -34,13 +34,10 @@
 
     "images": {
       "bundles": {
-        "bonus": [{ "alias": "features", "src": "features0.json" }],
-        "animations": [
+        "bonus": [
           
-          { "alias": "winPopups", "src": "winPopups.json" },
-
-          { "alias": "gameBGData", "src": "gameBackground.json" },
-          { "alias": "gameBGAtlas", "src": "gameBackground.atlas" },
+        ],
+        "animations": [
 
           { "alias": "logo_introData", "src": "logo_intro/Logo.json" },
           { "alias": "logo_introAtlas", "src": "logo_intro/Logo.atlas" },
@@ -223,7 +220,7 @@
   "desktop": {
 
     "Background": {
-      "type": "spine",
+      "type": "regular",
       "frameId": "background",
       "freespins": { "frameId": "backgroundFS" },
       "prop": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
@@ -593,7 +590,7 @@
 
   "mobile": {
     "Background": {
-     "type": "spine",
+     "type": "regular",
       "frameId": "background",
       "freespins": { "frameId": "backgroundFS" },
       "mp": { "x": 0, "y": 0, "sx": 1, "sy": 1, "ax": 0, "ay": 0 },
@@ -642,18 +639,18 @@
       "gameLogo": {
         "frameId": "gameLogo",
         "mp": { "x": 640, "y": 36, "sx": 0.3, "sy": 0.3, "ax": 0.5, "ay": 0, "autoX":"c"  },
-        "ml": { "x": 640, "y": 36, "sx": 0.3, "sy": 0.3, "ax": 0.5, "ay": 0, "autoX":"c"  }
+        "ml": { "x": 640, "y": -30, "sx": 0.3, "sy": 0.3, "ax": 0.5, "ay": 0, "autoX":"c"  }
       },
 
       "machine": {
         "view": {
           "x": 0,
-          "y": 95,
+          "y": 46,
           "center": 1,
           "wid": 1370,
           "hei": 936,
           "columns": 5,
-          "topGap": 40
+          "topGap": 46
         },
         "reels": {
           "view": { "x": 20, "y": 22, "gapX": 5, "gapY": 0 },
@@ -835,11 +832,11 @@
         "panel": {
           "portraitBg": {
             "frameId": "panel/bgPort",
-            "prop": { "x": 0, "y": -640, "wid": 0, "hei": 0, "visible": false }
+            "prop": { "x": 0, "y": -420, "wid": 0, "hei": 0, "visible": true,"alpha": 1 }
           },
           "background": {
             "frameId": "panel/bgLand",
-            "prop": { "x": 0, "y": -155, "wid": 0, "hei": 0, "visible": false }
+            "prop": { "x": 0, "y": -140, "wid": 0, "hei": 0, "visible": true,"alpha": 1 }
           },
           "textStyles": {
             "label": {

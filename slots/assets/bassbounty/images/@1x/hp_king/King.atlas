@@ -1,0 +1,309 @@
+King.png
+size:2017,1978
+filter:Linear,Linear
+pma:true
+BG
+bounds:428,1696,280,280
+offsets:1,1,282,282
+Body
+bounds:1857,1450,284,106
+rotate:90
+Bottom Left Decor
+bounds:1965,1549,46,40
+offsets:1,1,48,42
+rotate:90
+Bottom Right Decor
+bounds:1965,1501,46,40
+offsets:1,1,48,42
+rotate:90
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00000
+bounds:1857,1736,240,155
+offsets:45,97,333,333
+rotate:90
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00001
+bounds:1857,1736,240,155
+offsets:45,97,333,333
+rotate:90
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00002
+bounds:1386,52,241,190
+offsets:44,65,333,333
+rotate:90
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00003
+bounds:427,1413,1,1
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00006
+bounds:427,1413,1,1
+Eye_Light/Eye_Light_00014
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00001
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00003
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00005
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00007
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00009
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00011
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00013
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00015
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00017
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00018
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00020
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00022
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00024
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00026
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00027
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00028
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00029
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00030
+bounds:427,1413,1,1
+Eye_light2/Eye_light2_00031
+bounds:427,1413,1,1
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00004
+bounds:696,16,243,131
+offsets:48,117,333,333
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00005
+bounds:560,553,241,139
+offsets:48,108,333,333
+rotate:90
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00007
+bounds:2,2,234,119
+offsets:50,114,333,333
+Elements - Electricity 042 Charge loop noCT noRSZ/E 042_00008
+bounds:1556,1428,232,123
+offsets:48,116,333,333
+Eye_Light/Eye_Light_00000
+bounds:283,1219,171,423
+offsets:9,17,200,440
+rotate:90
+Eye_Light/Eye_Light_00001
+bounds:284,1392,141,421
+offsets:10,19,200,440
+Eye_Light/Eye_Light_00002
+bounds:2,1815,161,424
+offsets:14,16,200,440
+rotate:90
+Eye_Light/Eye_Light_00003
+bounds:1270,727,152,421
+offsets:6,19,200,440
+Eye_Light/Eye_Light_00004
+bounds:1424,734,146,422
+offsets:29,18,200,440
+rotate:90
+Eye_Light/Eye_Light_00005
+bounds:558,131,136,420
+offsets:17,20,200,440
+Eye_Light/Eye_Light_00006
+bounds:1556,1553,149,423
+offsets:22,17,200,440
+Eye_Light/Eye_Light_00007
+bounds:1108,285,128,421
+offsets:20,19,200,440
+Eye_Light/Eye_Light_00008
+bounds:974,285,132,421
+offsets:29,19,200,440
+Eye_Light/Eye_Light_00009
+bounds:563,796,139,421
+offsets:16,19,200,440
+Eye_Light/Eye_Light_00010
+bounds:847,990,154,421
+offsets:13,19,200,440
+rotate:90
+Eye_Light/Eye_Light_00011
+bounds:1707,1553,148,423
+offsets:18,17,200,440
+Eye_Light/Eye_Light_00012
+bounds:1260,577,148,423
+offsets:11,17,200,440
+rotate:90
+Eye_Light/Eye_Light_00013
+bounds:708,990,137,424
+offsets:20,16,200,440
+Eye_Light/Eye_Light_00015
+bounds:1238,153,146,422
+offsets:18,18,200,440
+Eye_light2/Eye_light2_00000
+bounds:238,78,43,32
+offsets:30,35,142,142
+rotate:90
+Eye_light2/Eye_light2_00002
+bounds:1790,1428,48,57
+offsets:33,30,142,142
+rotate:90
+Eye_light2/Eye_light2_00004
+bounds:1965,1666,49,68
+offsets:35,29,142,142
+Eye_light2/Eye_light2_00006
+bounds:1942,815,51,73
+offsets:36,31,142,142
+Eye_light2/Eye_light2_00008
+bounds:1933,745,68,76
+offsets:37,37,142,142
+rotate:90
+Eye_light2/Eye_light2_00010
+bounds:1848,737,76,83
+offsets:33,33,142,142
+rotate:90
+Eye_light2/Eye_light2_00012
+bounds:272,13,76,83
+offsets:34,31,142,142
+rotate:90
+Eye_light2/Eye_light2_00014
+bounds:551,54,75,85
+offsets:35,31,142,142
+rotate:90
+Eye_light2/Eye_light2_00016
+bounds:1848,815,73,92
+offsets:37,29,142,142
+rotate:90
+Eye_light2/Eye_light2_00019
+bounds:357,15,74,84
+offsets:42,34,142,142
+rotate:90
+Eye_light2/Eye_light2_00021
+bounds:1790,1478,63,73
+offsets:51,45,142,142
+Eye_light2/Eye_light2_00023
+bounds:1965,1597,47,67
+offsets:57,49,142,142
+Eye_light2/Eye_light2_00025
+bounds:1975,1286,27,39
+offsets:76,71,142,142
+Eyes
+bounds:1975,1327,76,28
+offsets:2,1,81,31
+rotate:90
+Face
+bounds:1578,3,165,203
+offsets:0,0,167,203
+rotate:90
+Frame
+bounds:2,1533,280,280
+offsets:1,1,282,282
+King Glow/Glow_00000
+bounds:2,123,280,274
+offsets:0,6,280,280
+rotate:90
+King Glow/Glow_00001
+bounds:847,1146,280,274
+offsets:0,6,280,280
+King Glow/Glow_00002
+bounds:704,713,280,275
+offsets:0,5,280,280
+King Glow/Glow_00003
+bounds:992,1702,280,274
+offsets:0,6,280,280
+King Glow/Glow_00004
+bounds:1274,1703,280,273
+offsets:0,7,280,280
+King Glow/Glow_00005
+bounds:986,708,280,272
+offsets:0,8,280,280
+rotate:90
+King Glow/Glow_00006
+bounds:701,431,280,271
+offsets:0,9,280,280
+rotate:90
+King Glow/Glow_00007
+bounds:992,1426,280,274
+offsets:0,6,280,280
+King Glow/Glow_00008
+bounds:710,1700,280,276
+offsets:0,4,280,280
+King Glow/Glow_00009
+bounds:2,687,280,277
+offsets:0,3,280,280
+rotate:90
+King Glow/Glow_00010
+bounds:427,1416,280,278
+offsets:0,2,280,280
+King Glow/Glow_00011
+bounds:2,1251,280,279
+offsets:0,1,280,280
+rotate:90
+King Glow/Glow_00012
+bounds:2,969,280,279
+offsets:0,1,280,280
+rotate:90
+King Glow/Glow_00013
+bounds:283,937,280,278
+offsets:0,2,280,280
+rotate:90
+King Glow/Glow_00014
+bounds:281,655,280,277
+offsets:0,3,280,280
+rotate:90
+King Glow/Glow_00015
+bounds:2,405,280,277
+offsets:0,3,280,280
+rotate:90
+King Glow/Glow_00016
+bounds:281,373,280,275
+offsets:0,5,280,280
+rotate:90
+King Glow/Glow_00017
+bounds:1129,1150,280,274
+offsets:0,6,280,280
+King Glow/Glow_00018
+bounds:1274,1428,280,273
+offsets:0,7,280,280
+King Glow/Glow_00019
+bounds:278,91,280,271
+offsets:0,9,280,280
+rotate:90
+King Glow/Glow_00020
+bounds:696,149,280,269
+offsets:0,11,280,280
+rotate:90
+King Glow/Glow_00021
+bounds:1693,1158,280,268
+offsets:0,12,280,280
+King Glow/Glow_00022
+bounds:1706,890,280,266
+offsets:0,14,280,280
+King Glow/Glow_00023
+bounds:1685,452,280,264
+offsets:0,16,280,280
+rotate:90
+King Glow/Glow_00024
+bounds:1386,295,280,261
+offsets:0,19,280,280
+rotate:90
+King Glow/Glow_00025
+bounds:1649,170,280,260
+offsets:0,20,280,280
+rotate:90
+King Glow/Glow_00026
+bounds:967,3,280,264
+offsets:0,16,280,280
+rotate:90
+King Glow/Glow_00027
+bounds:1424,882,280,269
+offsets:0,11,280,280
+King Glow/Glow_00028
+bounds:1411,1153,280,273
+offsets:0,7,280,280
+King Glow/Glow_00029
+bounds:710,1422,280,276
+offsets:0,4,280,280
+Upper Left Decor
+bounds:1965,1453,46,40
+offsets:1,1,48,42
+rotate:90
+Upper Right Decor
+bounds:1975,1405,46,40
+offsets:1,1,48,42
+rotate:90

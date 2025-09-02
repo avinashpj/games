@@ -1,0 +1,485 @@
+gameBG_1.png
+size:4054,4092
+filter:Linear,Linear
+pma:true
+Cloud 2
+bounds:1346,737,740,443
+offsets:38,0,778,443
+Cloud 3
+bounds:2558,548,1127,448
+offsets:0,0,1127,521
+Cloud 4
+bounds:2026,3392,1022,399
+offsets:1,5,1025,426
+Cloud 5
+bounds:624,3912,1073,178
+offsets:2,5,1077,189
+Cloud 7
+bounds:1699,3856,234,353
+offsets:1,1,236,355
+rotate:90
+Electricity 021/Electricity 021_00000
+bounds:2088,724,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00001
+bounds:2,460,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00002
+bounds:472,360,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00003
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00005
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00007
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00009
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00011
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00013
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00015
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00017
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00019
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00020
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00022
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00024
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00026
+bounds:942,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00004
+bounds:1412,279,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00006
+bounds:1882,266,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00008
+bounds:2352,90,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00010
+bounds:2822,90,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00012
+bounds:3292,90,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00014
+bounds:2,2,468,456
+offsets:14,12,500,500
+Elements - Electricity 052/Electricity 052_00001
+bounds:3158,3650,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00002
+bounds:3606,3650,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00003
+bounds:1130,3470,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00004
+bounds:1578,3414,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00005
+bounds:3050,3208,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00006
+bounds:3498,3208,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00007
+bounds:2,3128,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00008
+bounds:450,3128,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00009
+bounds:898,3028,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00010
+bounds:1346,2972,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00011
+bounds:1794,2950,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00012
+bounds:2242,2950,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00013
+bounds:2690,2766,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00014
+bounds:3138,2766,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00015
+bounds:3586,2766,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00016
+bounds:2,2686,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00017
+bounds:450,2686,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00018
+bounds:898,2586,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00019
+bounds:1346,2530,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00020
+bounds:1794,2508,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00021
+bounds:2242,2508,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00022
+bounds:2690,2324,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00023
+bounds:3138,2324,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00024
+bounds:3586,2324,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00025
+bounds:2,2244,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00026
+bounds:450,2244,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00027
+bounds:898,2144,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00028
+bounds:1346,2088,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00029
+bounds:1794,2066,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00030
+bounds:2242,2066,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00031
+bounds:2690,1882,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00032
+bounds:3138,1882,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00033
+bounds:3586,1882,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00034
+bounds:2,1802,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00035
+bounds:450,1802,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00036
+bounds:898,1702,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00037
+bounds:1346,1646,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00038
+bounds:1794,1624,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00039
+bounds:2242,1624,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00040
+bounds:2690,1440,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00041
+bounds:3138,1440,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00042
+bounds:3586,1440,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00043
+bounds:2,1360,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00044
+bounds:450,1360,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00045
+bounds:898,1260,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00046
+bounds:1346,1204,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00047
+bounds:1794,1182,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00048
+bounds:2242,1182,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00049
+bounds:2690,998,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00050
+bounds:3138,998,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00051
+bounds:3586,998,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00052
+bounds:2,918,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00053
+bounds:450,918,440,446
+offsets:26,34,500,500
+rotate:90
+Elements - Electricity 052/Electricity 052_00054
+bounds:898,818,440,446
+offsets:26,34,500,500
+rotate:90
+Light
+bounds:168,3927,163,454
+offsets:4,6,170,467
+rotate:90
+Light 2
+bounds:2,3996,164,94
+offsets:4,4,173,107
+Upper Cloud 1
+bounds:2054,3793,1102,297
+offsets:7,2,1110,300
+Upper Cloud 2
+bounds:2,3570,1126,340
+offsets:1,16,1144,357
+
+gameBG_2.png
+size:3850,4058
+filter:Linear,Linear
+pma:true
+Electricity 021/Electricity 021_00016
+bounds:2,3600,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00018
+bounds:472,3600,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00021
+bounds:942,3600,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00023
+bounds:1412,3600,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00025
+bounds:1882,3600,468,456
+offsets:14,12,500,500
+Electricity 021/Electricity 021_00027
+bounds:2352,3600,468,456
+offsets:14,12,500,500
+Stairs
+bounds:2,3133,1559,465
+offsets:0,0,1943,465
+Thunder/1
+bounds:2822,3544,512,512
+Thunder/2
+bounds:2822,3544,512,512
+Thunder/10
+bounds:3336,3544,512,512
+Thunder/11
+bounds:1563,3086,512,512
+Thunder/12
+bounds:2077,3086,512,512
+Thunder/13
+bounds:2591,3030,512,512
+Thunder/14
+bounds:3105,3030,512,512
+Thunder/15
+bounds:2,2619,512,512
+Thunder/16
+bounds:516,2619,512,512
+Thunder/17
+bounds:1030,2619,512,512
+Thunder/18
+bounds:1544,2572,512,512
+Thunder/19
+bounds:2058,2572,512,512
+Thunder/20
+bounds:2572,2516,512,512
+Thunder/21
+bounds:3086,2516,512,512
+Thunder/22
+bounds:2,2105,512,512
+Thunder/23
+bounds:516,2105,512,512
+Thunder/24
+bounds:1030,2105,512,512
+Thunder/25
+bounds:1544,2058,512,512
+Thunder/26
+bounds:2058,2058,512,512
+Thunder/27
+bounds:2572,2002,512,512
+Thunder/28
+bounds:3086,2002,512,512
+Thunder/29
+bounds:2,1591,512,512
+Thunder/3
+bounds:516,1591,512,512
+Thunder/30
+bounds:1030,1591,512,512
+Thunder/31
+bounds:1544,1544,512,512
+Thunder/32
+bounds:2058,1544,512,512
+Thunder/33
+bounds:2572,1488,512,512
+Thunder/34
+bounds:3086,1488,512,512
+Thunder/35
+bounds:2,1077,512,512
+Thunder/36
+bounds:516,1077,512,512
+Thunder/37
+bounds:1030,1077,512,512
+Thunder/38
+bounds:1544,1030,512,512
+Thunder/39
+bounds:2058,1030,512,512
+Thunder/4
+bounds:2572,974,512,512
+Thunder/40
+bounds:3086,974,512,512
+Thunder/41
+bounds:2,563,512,512
+Thunder/42
+bounds:516,563,512,512
+Thunder/43
+bounds:1030,563,512,512
+Thunder/44
+bounds:1544,516,512,512
+Thunder/45
+bounds:2058,516,512,512
+Thunder/46
+bounds:2572,460,512,512
+Thunder/47
+bounds:3086,460,512,512
+Thunder/48
+bounds:2,49,512,512
+Thunder/49
+bounds:516,49,512,512
+Thunder/5
+bounds:1030,49,512,512
+Thunder/50
+bounds:1544,2,512,512
+Thunder/51
+bounds:2058,2,512,512
+
+gameBG_3.png
+size:4014,3999
+filter:Linear,Linear
+pma:true
+BG
+bounds:2,1438,2559,1440
+offsets:1,1,2561,1442
+rotate:90
+Cloud 1
+bounds:1085,283,1153,648
+rotate:90
+Cloud 6
+bounds:1444,3081,2559,916
+offsets:1,1,2561,919
+Golden Gate
+bounds:2,272,1081,1164
+offsets:1,7,1083,1172
+Silver Gates
+bounds:1444,2099,2517,980
+offsets:1,2,2519,983
+Thunder/52
+bounds:1444,1585,512,512
+Thunder/53
+bounds:1958,1585,512,512
+Thunder/54
+bounds:2472,1585,512,512
+Thunder/55
+bounds:1735,2,512,512
+Thunder/56
+bounds:2249,2,512,512
+Thunder/57
+bounds:2986,1585,512,512
+Thunder/58
+bounds:3500,1585,512,512
+Thunder/59
+bounds:2597,1071,512,512
+Thunder/6
+bounds:2597,557,512,512
+Thunder/60
+bounds:2763,43,512,512
+Thunder/7
+bounds:3277,1071,512,512
+Thunder/8
+bounds:3111,557,512,512
+Thunder/9
+bounds:3277,43,512,512
+Waterfall
+bounds:1735,516,1067,860
+rotate:90
